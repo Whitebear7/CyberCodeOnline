@@ -4728,7 +4728,7 @@
  	 	"donation13": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"사이버-눈송이\"기부 제목",
+ 	 	 	 	 	"trans": "\"사이버-눈송이\"후원 타이틀",
  	 	 	 	 	"eng": "\"CyberFrost\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
@@ -4888,23 +4888,23 @@
  	 	"donation17": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "블랙 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "검은색 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Black frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "블랙 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "검은색 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Black Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -4912,15 +4912,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -4928,23 +4928,23 @@
  	 	"donation19": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"Cyberpuppy\"기부 제목",
+ 	 	 	 	 	"trans": "\"Cyberpuppy\"후원 타이틀",
  	 	 	 	 	"eng": "\"CyberPuppy\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "브라운 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "갈색 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Brown frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "브라운 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "갈색 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Brown Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -4952,15 +4952,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -4968,23 +4968,23 @@
  	 	"donation18": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
- 	 	 	 	 	"trans": "오션 프레임 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "바다 프레임 (애니메이션 포함)",
  	 	 	 	 	"eng": "Ocean frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "해양 프로필 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "바다 프로필 (애니메이션 포함)",
  	 	 	 	 	"eng": "Ocean Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -4992,15 +4992,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -5008,11 +5008,11 @@
  	 	"donation20": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
@@ -5024,7 +5024,7 @@
  	 	 	 	 	"eng": "White Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -5032,15 +5032,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
@@ -5048,11 +5048,11 @@
  	 	"donation21": {
  	 	 	"benefits": {
  	 	 	 	"1": {
- 	 	 	 	 	"trans": "\"프레스티지\"기부 제목",
+ 	 	 	 	 	"trans": "\"프레스티지\"후원 타이틀",
  	 	 	 	 	"eng": "\"Prestige\" donation title"
  	 	 	 	},
  	 	 	 	"2": {
- 	 	 	 	 	"trans": "프로필 사진 사용자 정의 잠금 해제",
+ 	 	 	 	 	"trans": "프로필 사진 커스터마이징 가능",
  	 	 	 	 	"eng": "Unlock profile picture customization"
  	 	 	 	},
  	 	 	 	"3": {
@@ -5060,11 +5060,11 @@
  	 	 	 	 	"eng": "Red frame (with animation)"
  	 	 	 	},
  	 	 	 	"4": {
- 	 	 	 	 	"trans": "빨간 프로파일 (애니메이션 포함)",
+ 	 	 	 	 	"trans": "빨간색 프로파일 (애니메이션 포함)",
  	 	 	 	 	"eng": "Red Profile (with animation)"
  	 	 	 	},
  	 	 	 	"5": {
- 	 	 	 	 	"trans": "사용자 정의 바이오 잠금 해제",
+ 	 	 	 	 	"trans": "맞춤형 자기소개 작성 가능",
  	 	 	 	 	"eng": "Unlock custom bio"
  	 	 	 	},
  	 	 	 	"6": {
@@ -5072,15 +5072,15 @@
  	 	 	 	 	"eng": "Barcode decoration on profile"
  	 	 	 	},
  	 	 	 	"7": {
- 	 	 	 	 	"trans": "갱 모토를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 모토 작성 가능",
  	 	 	 	 	"eng": "Customize gang motto"
  	 	 	 	},
  	 	 	 	"8": {
- 	 	 	 	 	"trans": "갱 이미지를 사용자 정의하십시오",
+ 	 	 	 	 	"trans": "갱 이미지 업로드 가능",
  	 	 	 	 	"eng": "Customize gang image"
  	 	 	 	},
  	 	 	 	"9": {
- 	 	 	 	 	"trans": "향후 업데이트에 더 많이 올 것입니다",
+ 	 	 	 	 	"trans": "향후 업데이트시 기능 추가 예정",
  	 	 	 	 	"eng": "More coming in future update"
  	 	 	 	}
  	 	 	}
