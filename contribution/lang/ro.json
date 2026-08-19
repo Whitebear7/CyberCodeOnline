@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Unități Bonus"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Apasă pentru a copia"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Unități bonus gratuite"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Veți primi încă 10% mai multe unități cu achiziționarea PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Unități suplimentare pentru toate achizițiile PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL copiat în clipboard."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Șterge această notă?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Sigur?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Calibrarea (${percent}%) va fi implementată în câteva minute",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Calibrarea (${percent}%) va fi implementată în câteva minute",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Sărbători fericite tuturor!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Este cea mai minunată perioadă a anului din nou! În Shangri-La sărbătorim vacanța de iarnă cu un eveniment special!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Bucură-te de muzica de fundal festivă în timpul evenimentului!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "E din nou cea mai minunată perioadă a anului! În Shang-ri-la, sărbătorim vacanța de iarnă cu un eveniment special!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Vacanță de iarnă fericită!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Sărbători de iarnă fericite!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "Anulează"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Închide"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Confirmă"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Nivel de Donație deținut: [${owned}/${total}]",
+			"trans": "Niveluri de donație deținute: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Deținute: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "TERMINARE"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "EROARE DE SISTEM"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "RESURSE DOBÂNDITE"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "ÎNCHIDE"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Nu ai finalizat nicio chifteluță. Pass‑ul s-a consumat."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Transformă ${amount} ${fragmentName} într-un Cache aleatoriu de Echipament Epic, într-o singură mișcare",
+			"trans": "Fuzionează ${amount} Fragmente Epic din Căsuțe într-o Căsuță de Echipament Epic garantată",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Nu puteți utiliza acest articol, deoarece există un efect de stare care intră în conflict cu acesta",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Nu puteți utiliza acest articol, deoarece există un efect de stare care intră în conflict cu acesta"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Mergi mai departe"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "ITEME PRIMITE:"
+				"trans": "FRAGMENTE PRIMATE:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "OBIECTE PRIMITE:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Resurse insuficiente pentru fabricare"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Index de slot nevalid"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Trebuie să atingi nivelul ${level} pentru a activa acest mobilier",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Ai nevoie de nivelul ${level} pentru a activa această piesă de mobilă",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Selectează mobilier"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Trebuie să ai nivelul ${level} pentru a folosi acest mobilier",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Resurse insuficiente pentru tranzacție"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Rețetă invalidă de mobilier"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Primiți unitatea {0} ${unit}",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Primești ${unit} unitate",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Primești ${unit} Unit (${bonus} bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} unitate",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Nu puteți utiliza elementul în timpul luptelor de stradă, elementele sunt disponibile numai în timpul Dungeons"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Exploatarea de chat a fost folosită recent, iar exploatările de chat au un cooldown global de utilizare de ${minutes} minute",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "de negociere"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "de Brutalitate"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "de șansă de crit"
@@ -7120,8 +7212,8 @@
 			"trans": "de șansă de crit"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "de daune crit"
+			"eng": "of Crit Damage",
+			"trans": "din dăunarea critică"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Mentoratul tău este deja închis."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Sistemul a detectat posibile conturi asociate, de obicei prin același IP sau dispozitiv partajat. Acest cont nu poate selecta un Handler până când nu se mai înregistrează nicio conexiune timp de o anumită perioadă."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Contul tău este conectat la un alt cont, deci nu se poate alătura la programul de mentorat."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Adoptarea unui animal de companie este în pauză"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Ai nevoie de un apartament pentru a adopta un animal"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff-ul nu este activat"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Fără nume"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "sănătos"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Activează"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Trebuie să activezi mai întâi reînvierea animalului de companie"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Activează reînvierea animalului de companie"
+				"eng": "Activate pet revive",
+				"trans": "Activează resuscitarea animalului"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Nu puteți efectua această acțiune acum"
+				"eng": "You can't perform this action now",
+				"trans": "Nu poți efectua această acțiune acum"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Mulțumim pentru completarea chestionarului, recompensele au fost trimise în inbox-ul tău de obiecte, poți accesa inbox-ul din fila de inventar"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Nu poți efectua această acțiune în timpul unui efect de echipă"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "REINCEARCA CONEXIUNEA"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Precizia calibrării (legendare)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Precizie de calibrare (Epic)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Precizie de calibrare (epică)"
+			"trans": "Precizie de calibrare (Prestigiu)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Hoțul tehnologic va genera rar în temniță atunci când deschideți lăzi, vor scădea mai bine, inclusiv șanse mai mari de articole epice"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Dungeonul Gang va avea șansa de a genera o misiune Gang, implicând eliminarea inamicilor unor grupuri NPC specifice"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Token Dungeon adăugat. Poți folosi tokenul pentru a schimba obiecte la NPC-ul Weapon Smith. Se poate obține în misiunile Techno Thief și Gang"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Dungeon de bandă va avea șansa de a genera o căutare a bandelor, implicând uciderea inamicilor de bande specifice NPC"
+			"trans": "Au fost adăugate două rame noi pentru donatori"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} nu are suficient spațiu în inventar pentru ${itemName} ca să finalizeze schimbul.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Nu ai suficient spațiu în inventar pentru ${itemName} ca să finalizezi tranzacția.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} nu are suficient spațiu în inventarul lor pentru ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} nu are suficient spațiu în inventar pentru ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Nu puteți trimite invitații comerciale către acest jucător"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Jucătorul țintă nu poate participa la comerț"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Jucătorul țintă nu poate participa la tranzacții"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Nu aveți destui bani pentru a finaliza comerțul."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Nu aveți suficient spațiu în inventarul dvs. pentru ${itemName} pentru a finaliza comerțul.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Nu ai suficient spațiu în inventar pentru ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Nu poți trimite o invitație de tranzacție acestui jucător"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Apăsați lung pentru a vă întoarce în oraș"
+				"eng": "Long press to go back to city",
+				"trans": "Apasă lung pentru a te întoarce în oraș"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "inchide"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Nivelul dvs. este prea scăzut pentru acest articol",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Nivelul tău este prea scăzut pentru acest obiect"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Nu poți echipa acest obiect. Ai nevoie de nivelul ${level}",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Nivelul tău este prea scăzut pentru acest obiect, acesta necesită nivelul ${level} pentru a fi echipat",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Inamici din apropiere"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Poți apăsa lung butonul de înapoi pentru a reveni în oraș și a vizita diverse magazine și funcții"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "inchide"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,8 +19094,8 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Mic"
+					"eng": "Small",
+					"trans": "Mica"
 				},
 				"tiny": {
 					"eng": "Tiny",

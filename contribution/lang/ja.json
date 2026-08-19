@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "ボーナスユニット"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "タップでコピー"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "無料ボーナスユニット"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "PayPalで購入すると10％追加でUNITを入手できます"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal購入時に追加ユニットが付与されます"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URLをクリップボードにコピーしました。"
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "このメモを削除しますか？"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "よろしいですか？"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "較正（${percent}%）は数分後に展開されます",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "キャリブレーション（${percent}%）が展開されました",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "ハッピーホリデー！"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "楽しい季節がやってきました！ 特別な報酬やイベントでクリスマスをお祝いしましょう！"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "イベント中は, 華やかなBGMをお楽しみください！"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "また、一年でいちばんすばらしい季節がやってきました！シャングリラでは、冬の祝祭をスペシャルイベントでお祝いします！"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "クリスマス・セレブレーション"
+			"eng": "Happy Winter Holiday!",
+			"trans": "ハッピーウィンターホリデー！"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "キャンセル"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "閉じる"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "決定"
+			"eng": "Confirm",
+			"trans": "確認"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "フレーム所持数: [${owned}/${total}]",
+			"trans": "ドネーションティア所持数: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "所持数: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "終了"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "システムエラー"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "取得した資産"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "閉じる"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "ダンプリングを完了できませんでした。パスは消費されました。"
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "${amount}個の${fragmentName}を融合して、ランダムな英雄装備キャッシュ1つを獲得する",
+			"trans": "${amount}個のエピックキャッシュフラグメントを融合すると確実にエピック装備キャッシュ1つが入手できます",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "このアイテムと競合するステータス効果があるため, このアイテムを使用することはできません",
-			"vars": [
-				"minutes"
-			]
+			"trans": "このアイテムと競合するステータス効果があるため, このアイテムを使用することはできません"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "続行する"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "獲得アイテム:"
+				"trans": "取得フラグメント:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "入手アイテム"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "クラフトに必要なリソースが不足しています"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "無効なスロット番号"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "レベル${level}にならないと、この家具は起動できません",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "この家具を起動するにはレベル${level}が必要です",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "家具を選ぶ"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "この家具を使用するにはレベル${level}以上が必要です",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "取引に必要なリソースが不足しています"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "無効な家具レシピ"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "${unit} UNITを受け取る（${bonus}ボーナス）",
+				"eng": "Receive ${unit} Unit",
+				"trans": "${unit}ユニットを獲得",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "${unit}ユニットを受け取る（${bonus}ボーナス）",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} UNIT",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "路上での戦闘中にアイテムを使うことはできません. アイテムはダンジョン内での戦闘中のみ使用可能です"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "チャットエクスプロイトは直前に使用されています チャットエクスプロイトのグローバルデプロイメントクールダウンは${minutes}分です",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "交渉の"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "残虐の"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "クリティカルチャンスの"
@@ -7120,8 +7212,8 @@
 			"trans": "クリティカルチャンスの"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "残忍な"
+			"eng": "of Crit Damage",
+			"trans": "会心ダメージ"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "あなたのメンタシップは既に終了しています。"
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "システムがIPアドレスまたは共用デバイスによる他アカウントの関連を検出したため、一定期間接続が確認されなくなるまで、このアカウントではハンドラーを選択できません。"
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "このアカウントは別のアカウントと接続されているため、メンターシップに参加できません。"
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -12052,6 +12144,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "ペット譲渡会はクールダウン中です"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "ペットを引き取るにはアパートが必要です"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "バフが発動していません"
@@ -12165,6 +12261,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "無名"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "健康"
@@ -12233,6 +12333,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "発動"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12252,8 +12356,8 @@
 				"trans": "ペットを復活させるには, まずペット復活バフを起動する必要があります."
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "起動する"
+				"eng": "Activate pet revive",
+				"trans": "ペット蘇生を有効化"
 			}
 		},
 		"reviveButton": {
@@ -12344,8 +12448,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "パーティー中はこのアクションを実行することはできません"
+				"eng": "You can't perform this action now",
+				"trans": "現在この操作を実行できません"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12422,6 +12526,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "アンケートの回答ありがとうございました. 報酬はアイテム受信ボックスに送信されました. インベントリータブから受信ボックスにアクセスできます."
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "パーティバフ発動中はこのアクションを実行できません"
+				}
 			}
 		}
 	},
@@ -13894,6 +14006,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "再接続"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15412,8 +15528,12 @@
 			"trans": "キャリブレーション精度（伝説）"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "キャリブレーション精度（エピック）"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "キャリブレーション精度（英雄）"
+			"trans": "キャリブレーション精度（プレステージ）"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16118,8 +16238,16 @@
 			"trans": "ダンジョンで箱を開けるとテクノシーフがまれに出現し, より良いアイテム（英雄のアイテムの出現確率も高め）をドロップします."
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "ギャングダンジョンでは特定のNPCギャングの敵を倒すギャングクエストが発生する可能性がある"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "2つの新しい寄付フレームが追加されました."
+			"trans": "新しいドナーフレームを2種追加しました"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16229,6 +16357,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName}のインベントリに${itemName}を収める空きがないため取引を完了できません",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "${itemName}の取引を完了するには、インベントリに十分な空きがありません。",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16276,8 +16423,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} のインベントリには${itemName}を受け取るだけの空きがありません",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName}のインベントリに${itemName}を収納する空きがありません",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16292,8 +16439,8 @@
 				"trans": "このプレーヤーにトレードを提案することはできません"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "このプレイヤーにトレードを提案することはできません"
+				"eng": "Target player cannot participate in trade",
+				"trans": "対象のプレイヤーは取引に参加できません"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16318,11 +16465,19 @@
 				"trans": "トレードのためのビットコインが足りません."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "あなたのインベントリには${itemName}を受け取るだけの空きがありません",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "インベントリに${itemName}を収めるスペースがありません",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "このプレイヤーにはトレード招待を送信できません"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16533,8 +16688,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "長押しで中心街に戻る"
+				"eng": "Long press to go back to city",
+				"trans": "長押しでシティへ戻る"
 			}
 		},
 		"bank": {
@@ -17027,6 +17182,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "閉じる"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17649,15 +17808,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "このアイテムを装備するにはレベル${level}が必要です",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "あなたのレベルではこのアイテムを装備できません"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "レベル不足です. この装備にはレベル${level}が必要です.",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "レベルが低すぎてこのアイテムを装備できません レベル${level}以上が必要です",
 				"vars": [
 					"level"
 				]
@@ -17908,6 +18071,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "近くの敵"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "戻るボタンを長押しするとシティに戻って様々なショップや機能を利用できます"
 			}
 		},
 		"login": {
@@ -18759,6 +18928,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "閉じる"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -19133,8 +19308,8 @@
 					"trans": "普通"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "小さい"
+					"eng": "Small",
+					"trans": "小"
 				},
 				"tiny": {
 					"eng": "Tiny",

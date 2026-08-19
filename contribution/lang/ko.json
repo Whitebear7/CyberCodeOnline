@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "보너스 유닛"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "탭하여 복사"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "무료 보너스 유닛"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "페이팔 결제시 10% 더 많은 유닛을 추가로 받게됩니다"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal 결제시 추가 유닛 제공"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL이 클립보드에 복사되었습니다."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "이 글을 삭제할까요?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "정말 삭제하시겠습니까?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "교정 (${percent}%)이 몇 분 내로 배포됩니다",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "${percent}%교정이 배포되었습니다",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "즐거운 휴일 되세요, 여러분!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "즐거운 계절입니다! 특별한 보상과 축제 이벤트로 크리스마스를 기념하세요!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "이벤트 동안 축제 분위기의 배경 음악을 즐기세요!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "또다시 일 년 중 가장 환상적인 계절이 찾아왔습니다! 샹리라에서는 특별한 이벤트로 겨울 휴일을 축하합니다!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "크리스마스 기념 행사"
+			"eng": "Happy Winter Holiday!",
+			"trans": "행복한 윈터홀리데이!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "취소"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "닫기"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "확실한가요?"
+			"eng": "Confirm",
+			"trans": "확인"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "보유한 후원 타이틀: [${owned}/${total}]",
+			"trans": "보유한 기부 등급: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "보유: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "종료"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "시스템 오류"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "획득한 자산"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "닫기"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "아무런 성과가 없습니다."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "${amount}개의 ${fragmentName} 융합시 무작위 에픽 장비 캐시 1개 획득 보장",
+			"trans": "${amount}개의 에픽 캐시 조각을 융합하면 에픽 장비 캐시 1개 획득이 확정됩니다",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "이 아이템과 충돌하는 상태 효과가 있으므로 이 아이템을 사용할 수 없습니다",
-			"vars": [
-				"minutes"
-			]
+			"trans": "이 아이템과 충돌하는 상태 효과가 있으므로 이 아이템을 사용할 수 없습니다"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "계속하기"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "조각 획득:"
+				"trans": "수신된 파편:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "획득한 아이템:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "제작에 필요한 자원이 부족합니다"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "유효하지 않은 슬롯 인덱스"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "가구를 이용하려면 ${level} 레벨 이상이어야 합니다",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "이 가구를 활성화하려면 ${level}레벨 이상이어야 합니다",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "가구 선택"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "레벨 ${level}부터 이 가구를 사용할 수 있습니다",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "거래에 필요한 자원이 부족합니다"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "잘못된 가구 레시피"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "${unit} 유닛 받기",
+				"eng": "Receive ${unit} Unit",
+				"trans": "유니트 ${unit}개 수취",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "${unit} 유닛 획득 (보너스 ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} 유닛",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "길거리의 적과 전투시 아이템을 사용할 수 없으며, 아이템들은 오직 던전에서만 사용 가능합니다"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "채팅 익스플로잇이 최근에 사용되었습니다. 채팅 익스플로잇의 전역 배포 쿨다운은 ${minutes}분입니다",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "흥정의"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "잔혹함의"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "치명적인"
@@ -7120,8 +7212,8 @@
 			"trans": "치명적인"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "잔혹한"
+			"eng": "of Crit Damage",
+			"trans": "치명타 피해"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "해당 멘토링은 이미 종료되었습니다."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "시스템이 동일 IP 또는 공유 기기를 통해 연계된 계정을 감지했습니다. 이에 따라 일정 기간 동안 연결이 확인되지 않을 때까지 현재 계정에서는 핸들러를 선택할 수 없습니다."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "현재 계정이 다른 계정에 연결되어 있어 멘토십에 참가할 수 없습니다."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11922,6 +12014,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "애완동물 입양은 쿨타임 중입니다"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "반려동물 입양에는 아파트가 필요합니다"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "버프가 비활성화 상태입니다"
@@ -12035,6 +12131,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "무명"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "건강함"
@@ -12103,6 +12203,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "활성화"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12122,8 +12226,8 @@
 				"trans": "애완동물 부활을 먼저 활성화해야 합니다"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "활성화"
+				"eng": "Activate pet revive",
+				"trans": "펫 부활 활성화"
 			}
 		},
 		"reviveButton": {
@@ -12214,8 +12318,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "지금은 작업을 수행 할 수 없습니다"
+				"eng": "You can't perform this action now",
+				"trans": "현재 이 동작은 수행할 수 없습니다"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12292,6 +12396,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "설문 조사를 완료해 주셔서 감사합니다. 보상은 우편함으로 전송되었습니다. 인벤토리 탭에서 우편함에 접근할 수 있습니다."
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "파티 버프가 활성화된 상태에서는 이 작업을 수행할 수 없습니다"
+				}
 			}
 		}
 	},
@@ -13764,6 +13876,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "연결 재시도"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15282,8 +15398,12 @@
 			"trans": "교정 정확도 (전설)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "교정 정확도 (에픽)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "교정 정확도 (프레스티지)"
+			"trans": "교정 정밀도(프레스티지)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15988,8 +16108,16 @@
 			"trans": "기술자는 던전에서 상자를 열 때 낮은 확률로 생성됩니다. 그들은 더 높은 확률의 에픽 아이템을 포함한 더욱 좋은 노획물을 남깁니다."
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "갱 던전에서는 특정 NPC 갱의 적을 처치하는 갱 퀘스트가 확률적으로 발생한다"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "던전 토큰이 추가되었습니다 이 토큰은 무기 대장장이 NPC에게서 아이템을 교환하는 데 사용할 수 있으며 테크노 도둑과 갱 퀘스트에서 획득할 수 있습니다"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "새로운 후원자 프레임 두개 추가"
+			"trans": "신규 후원자 프레임 2종 추가됨"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16099,6 +16227,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName}의 인벤토리에 ${itemName}을 위한 공간이 부족하여 거래를 완료할 수 없습니다.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "인베토리 공간이 부족하여 ${itemName}의 거래를 완료할 수 없습니다",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16146,8 +16293,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName}은 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName}의 인벤토리에 ${itemName} 수납 용량이 부족합니다",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16162,7 +16309,7 @@
 				"trans": "이 플레이어에게 거래 초대를 보낼 수 없습니다"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
+				"eng": "Target player cannot participate in trade",
 				"trans": "대상 플레이어는 거래에 참여할 수 없습니다"
 			},
 			"tooFrequentlyInvite": {
@@ -16188,11 +16335,19 @@
 				"trans": "돈이 부족해 거래를 진행할 수 없습니다."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "당신은 인벤토리에 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "인벤토리의 ${itemName} 저장 공간이 부족합니다",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "이 플레이어에게는 거래 초대를 보낼 수 없습니다"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16403,8 +16558,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "길게 눌러 도시로 돌아가기"
+				"eng": "Long press to go back to city",
+				"trans": "길게 눌러 도시로 복귀하기"
 			}
 		},
 		"bank": {
@@ -16897,6 +17052,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "닫기"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17519,15 +17678,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "이 아이템을 사용하기에는 레벨이 너무 낮습니다. 해당 아이템을 착용하기 위해선 ${level}레벨 이상이어야 합니다.",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "현재 레벨로는 장착할 수 없습니다"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "레벨이 낮아서 이 아이템은 착용할 수 없습니다. 착용하려면 레벨 ${level}이 되어야 합니다",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "현재 레벨이 부족합니다. 이 아이템은 레벨 ${level} 이상에서 장착할 수 있습니다",
 				"vars": [
 					"level"
 				]
@@ -17778,6 +17941,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "주변의 적들"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "뒤로 가기 버튼을 길게 누르면 도시로 돌아가 다양한 상점과 기능을 이용할 수 있습니다"
 			}
 		},
 		"login": {
@@ -18629,6 +18798,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "닫기"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -19003,8 +19178,8 @@
 					"trans": "보통"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "작음"
+					"eng": "Small",
+					"trans": "작게"
 				},
 				"tiny": {
 					"eng": "Tiny",

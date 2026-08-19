@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonusní jednotky"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Klepnutím zkopírujete"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Bonusové jednotky zdarma"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Dostanete dalších 10% Jednotek navíc s PayPal nákupem"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Extra jednotky při všech nákupech přes PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Odkaz zkopírován do schránky."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Smazat tuto poznámku?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Opravdu si jistí?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibrace (${percent}%) bude nasazena do kilku minut",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibrace (${percent}%) bude spuštěna za pár minut",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Veselé svátky všem!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Je to opět nejkrásnější doba roku! V Shangri-La slavíme zimní dovolenou speciální událostí!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Užijte si sváteční hudbu na pozadí během akce!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Zase tu je nejkrásnější období roku! V Shang-ri-la oslavujeme zimní svátky speciální událostí!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Šťastná zimní dovolená!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Veselé zimní svátky!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "Zrušit"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Zavřít"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Potvrdit"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Vlastněný dárcovský level: [${owned}/${total}]",
+			"trans": "Vlastněné úrovně darování: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Vlastněno: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "UKONČIT"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Chyba systému"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ZÍSKANÁ AKTIVA"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "ZAVŘÍT"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Žádný knedlík nebyl dokončen. Pasek spotřebován."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Kombinuj ${amount} ${fragmentName} na 1 náhodnou epickou skříňku s vybavením",
+			"trans": "Slučte ${amount} Fragmentů Epické zásoby do 1 garantované Epické zásoby vybavení",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Tuto položku nemůžete použít, protože existuje stavový efekt, který s ní bude v rozporu",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Tuto položku nemůžete použít, protože existuje stavový efekt, který s ní bude v rozporu"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Pokračovat"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Získané předměty:"
+				"trans": "Přijaté fragmenty:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ZÍSKANÉ PŘEDMĚTY:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Nedostatek zdrojů pro výrobu"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Neplatný index slotu"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Pro aktivaci tohoto nábytku potřebujete být na úrovni ${level}",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Pro aktivaci tohoto nábytku potřebujete mít úroveň ${level}",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Vyberte si nábytek"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Tento nábytek lze použít až od úrovně ${level}",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Nedostatek zdrojů k obchodu"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Neplatný nábytkový recept"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Obdržíte ${unit} Jednotek (${bonus} navíc)",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Získejte ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Obdržíte ${unit} Unit (${bonus} jako bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Jednotek",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Tuto položku nelze použít během boje na ulicích, je k dispozici pouze v průběhu dungeonů"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Exploit chatu byl právě použit, globální ochlazovací doba nasazení exploitů chatu je ${minutes} minut",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "Smlouvání"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "krutosti"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "Kritické šance"
@@ -7120,8 +7212,8 @@
 			"trans": "Kritické šance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "Brutality"
+			"eng": "of Crit Damage",
+			"trans": "kritického poškození"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Mentorství je již uzavřeno."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Systém detekoval možná propojené účty, obvykle přes stejnou IP adresu nebo sdílené zařízení. Tento účet proto nemůže vybrat Handlera, dokud po určité době nezjistí, že k žádné vazbě nedochází."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Váš účet je propojen s jiným účtem, proto se nemůže zapojit do mentoringu."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Adopce zvířat je momentálně na cooldownu"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "K adopci mazlíčka potřebujete byt"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff není aktivován"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Bez jména"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Zdraví"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Aktivovat"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Nejprve musíš aktivovat oživení mazlíčka"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Aktivovat oživení mazlíčka"
+				"eng": "Activate pet revive",
+				"trans": "Aktivovat oživení mazlíka"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Tuto akci nemůžete provést"
+				"eng": "You can't perform this action now",
+				"trans": "Tuto akci nyní nelze provést"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Díky za vyplnění průzkumu, odměny byly odeslány do tvého inventáře, můžeš se k nim dostat záložkou inventáře"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Tuto akci nelze provést při aktivním party buffu"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "OPAKOVAT PŘIPOJENÍ"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Přesnost kalibrace (egendární)"
 		},
 		"upgradeChance4": {
-			"eng": "Calibration Precision (Prestige)",
+			"eng": "Calibration Precision (Epic)",
 			"trans": "Přesnost kalibrace (Epická)"
+		},
+		"upgradeChance5": {
+			"eng": "Calibration Precision (Prestige)",
+			"trans": "Přesnost kalibrace (Prestiž)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Techno Thief se při otevření bedny zřídka vynoří v dungeonu, spadnou lepší kořist, včetně vyšší šance na epické předměty"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Gangový dungeon má šanci vygenerovat gangový úkol, jehož součástí je likvidace nepřátel konkrétních NPC gangů"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Přidán Podzemní token, který lze vyměnit za předměty u NPC Zbraňového mistra. Tento předmět získáte od Technického zloděje i v gangových misích"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Gang Dungeon bude mít šanci vytvořit pátrání gangů a zahrnovat zabíjení nepřátel konkrétních gangů NPC"
+			"trans": "Přidány dva nové rámečky pro podporovatele"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} nemá dost místa v inventáři pro ${itemName}, aby bylo možné obchod dokončit.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Nemáte v inventáři dost volného místa na ${itemName} k dokončení obchodu.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} nemá ve svém inventáři dostatek místa za ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} nemá v inventáři dost volného místa na ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Na tento hráč nemůžete poslat obchodní pozvání"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Cílový hráč se nemůže účastnit obchodu"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Cílový hráč se nemůže zúčastnit obchodu"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Nemáte dost peněz na dokončení obchodu."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Pro dokončení obchodu nemáte dostatek místa ve svém inventáři za ${itemName}.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Nemáš v inventáři dost místa pro ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Nelze odeslat pozvánku na obchod tomuto hráči"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Dlouze podržte pro návrat do města"
+				"eng": "Long press to go back to city",
+				"trans": "Dlouze podržet pro návrat do města"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Zavřít"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Vaše úroveň je pro tuto položku příliš nízká",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Tvoje úroveň je příliš nízká pro tento předmět"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Nedostatečná úroveň. Vyžaduje úroveň ${level}",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Vaše úroveň je pro tento předmět příliš nízká, k jeho vybavení je potřeba úroveň ${level}",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Blízcí nepřátelé"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Můžete se dlouhým podržením tlačítka zpět vrátit do města a navštívit různé obchody a funkce"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Zavřít"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,8 +19094,8 @@
 					"trans": "Normální"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Malý"
+					"eng": "Small",
+					"trans": "Malé"
 				},
 				"tiny": {
 					"eng": "Tiny",

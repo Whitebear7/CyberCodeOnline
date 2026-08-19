@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus Booty"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Tap fer copy"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Free Bonus Doubloons"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Ye will recei'e additional 10% more Units wit paypal purchase"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "More Units on Every PayPal Plunder"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "The URL be copied to yer clipboard."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Scrub this note from yer logbook, matey?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Be ye sure?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Arr, Calibration (${percent}%) be deployed before long",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Aye, Calibration at ${percent}%, she's ready to plunder!",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Ahoy, happy holidays to ye all!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Ahoy, mateys! 'Tis the season to be jolly, aye! In Shang-ri-la, we be celebratin' the winter tides with a treasure of an event!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Ahoy, mateys! Lend an ear to the Christmas jig while the event be runnin'!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Ahoy, avast! The grandest time of year is upon us once more! In Shang-ri-la we celebrate the winter holiday with a special event!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Ahoy, 'tis the Season o' Frosty Booty!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Merry Winter Voyage!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "Avast!"
 		},
 		"close": {
-			"eng": "TERMINATE",
-			"trans": "Belay that!"
+			"eng": "Close",
+			"trans": "Belay"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "Aye, aye"
+			"eng": "Confirm",
+			"trans": "Aye"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Loot from the Givin' Chest: [${owned}/${total}]",
+			"trans": "Tribute Tiers Owned: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Plundered Frames: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "Shank It"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Arrr! Ship's Systems Be Broken!"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "PLUNDER GAINED"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "BILGE IT"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Ninguna de tus empanadillas quedó terminada, ¡compañero! Tu pase ya se ha consumido."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Batten down the hatches! Combine ${amount} ${fragmentName} to forge a random Epic Equipment Cache, matey!",
+			"trans": "Fuse ${amount} Epic Cache Fragments fer 1 certain Epic Equipment Cache",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Avast! That item's no good to ye now. Some foul magic's got ye tied up!",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Avast! That item's no good to ye now. Some foul magic's got ye tied up!"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Full sail ahead!"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Arrr! Loot Aboard!"
+				"trans": "LOOT HADDED:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "PLUNDER RECEIVED:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Yer lackin the resources fer craftin"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "That slot index ain't fit fer the job!"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Ye must reach level ${level} before ye can activate this piece o' furniture",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Ye must be at level ${level} to wake this furniture",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Choose Yer Furnishings"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Ye need be level ${level} to use this furniture",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Not enough plunder to trade"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "No good furniture recipe"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Recei'e ${unit} Unit",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Ye get ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Yer gettin' ${unit} Unit (${bonus} bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Pieces o' Eight",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Avast, ye can't be usin' yer gear in street brawls! Only in the dungeons, savvy?"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Arr, a chat exploit has been used too fresh, and all chat exploits share a global deployment cooldown of ${minutes} minutes",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "o' Bargainin'"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "o Brutality"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "o' Crit Chance"
@@ -7120,8 +7212,8 @@
 			"trans": "o' Crit Chance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "o' Crit Damage"
+			"eng": "of Crit Damage",
+			"trans": "o Crit Damage"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Yer mentorship be already locked down."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "The system flagged possible linked accounts, typically spotted via shared IP or device. Ye are barred from selecting a Handler till the network shows no connections for a spell."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Yer account be connected to another account, so it cannot join mentorship."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Avast! No adoptin' pets for ye right now. Adoption's on cooldown, savvy?"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Ye need a dry den to take in a beastie"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Shiver me timbers, the buff be dead!"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Nameless"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Shipshape"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Rouse"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Avast! Activate the pet revive afore tryin' that, savvy?"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Aye, Revive!"
+				"eng": "Activate pet revive",
+				"trans": "Revive Ye Pet"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Avast! Ye can't do that now!"
+				"eng": "You can't perform this action now",
+				"trans": "Ye cannot perform this action right now"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Ahoy, matey! Thanks fer swabbin' the deck on that survey! Yer booty's been sent to yer chest in the inventory, savvy?"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Aye, ye cannot do that while the party buff be active"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "TRY THE LINE AGAIN"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Legendary: Spot On!"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Calibration Trueness (Mighty)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Dead-Eye Calibration (Prestige Rank)"
+			"trans": "Rigging True (Renown)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Ahoy, mateys! The Techno Thief, scourge o' the digital seas, be sighted but seldom in the dungeon when ye bust open treasure chests. They yield richer plunder, includin' a fairer shake at legendary trinkets!"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "A gang dungeon may spawn a gang quest, where ye must cut down foes of certain NPC gangs"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Aye, a Dungeon token has been added to your stash. Ye may exchange it for items from the Weapon Smith NPC, and ye can earn this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Shiver me timbers! Two new frames for them what shares their booty!"
+			"trans": "Two fresh donor frames be added"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} has not got enough room in their hold fer ${itemName} to finish the trade.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Ye lack enough room in yer hold fer ${itemName} to finish the trade.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "\"${playerName} ain't got enough room in their hold for ${itemName} to finish the trade.\"",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} has no room in their inventory fer ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "No tradin' with that one, matey. They've clapped ye in irons!"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "That scallywag's not fit for tradin', matey!"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Yer targeted matey cannot join the trade"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Ye haven't enough Credits to make that trade, matey!"
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Avast! Yer inventory be crammed, matey. No room for the likes o' ${itemName} from that bargain.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Ye lack enough room in yer cargo hold fer ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Ye cannot send a trade invite to this player"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Long press t' go back t' city"
+				"eng": "Long press to go back to city",
+				"trans": "Press and hold to return to the city matey"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Shove Off"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Avast! Yer not seasoned enough for this gear",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Yer level be too low fer this item"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Ahoy! Yer not high enough level to be wearin' that, ye landlubber! Requires level ${level}, it does",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Yer level be too low fer this item, it requires level ${level} to equip",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Broadside Enemies"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Ye can press and hold the back button to return to the city and visit various shops and features"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Shove Off"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,8 +19094,8 @@
 					"trans": "The Usual"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Wee"
+					"eng": "Small",
+					"trans": "Smale"
 				},
 				"tiny": {
 					"eng": "Tiny",

@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "加贈單位"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "輕觸以複製"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "免費贈送點數"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "使用 PayPal 購買，你將會得到額外 10％ 的 Unit"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "所有 PayPal 付款皆享額外Unit"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "網址已複製至剪貼簿"
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "確定刪除此筆記？"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "你確定嗎？"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "校正(${percent}%)將於數分鐘內部署",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "校準增益（${percent}%）將在幾分鐘內部署。",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "大家假期快樂！"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "這是一年中最美好的時光！在香格里拉，我們正在舉行特別活動來慶祝冬季假期！"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "在活動期間享受節慶背景音樂！"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "又到了一年中最美好的時候！在香格里拉，我們正以特別活動歡慶冬季節日！"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "冬季快樂！"
+			"eng": "Happy Winter Holiday!",
+			"trans": "冬日佳節快樂"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "取消"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "關閉"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "確認"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "擁有的贊助稱號：[${owned}/${total}]",
+			"trans": "已擁有贊助等級:[${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "已擁有：[${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "終止"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "系統錯誤"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "已取得資產"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "關閉"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "未完成任何餃子，通行證已消耗。"
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "把 ${amount} 個 ${fragmentName} 融合成一個史詩快取記憶體",
+			"trans": "融合 ${amount} 片史詩快取碎片，必得 1 個史詩裝備快取",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "你不能使用此物品，因為與既存效應衝突",
-			"vars": [
-				"minutes"
-			]
+			"trans": "你不能使用此物品，因為與既存效應衝突"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "繼續"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "已獲得碎片："
+				"trans": "已接收碎片："
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "取得物品："
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "製作所需資源不足"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "無效的槽位索引"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "要解鎖這件家具，你得先到 ${level} 級",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "需達到等級 ${level} 才能啟用此家具",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "選擇家具"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "需要達到 ${level} 級才能使用此家具",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "資源不足，無法交易"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "無效的家具配方"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "收到 ${unit} 單位",
+				"eng": "Receive ${unit} Unit",
+				"trans": "獲得 ${unit} 單位",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "獲得 ${unit} 單位（${bonus} 加碼）",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit}單位",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "你不能在街頭戰鬥期間使用物品，物品僅在地下城時可用"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "聊天漏洞近期已被使用，全球部署冷卻時間為 ${minutes} 分鐘",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "討價還價"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "暴虐之"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "暴擊機率"
@@ -7120,7 +7212,7 @@
 			"trans": "暴擊機率"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
+			"eng": "of Crit Damage",
 			"trans": "暴擊傷害"
 		},
 		"criticalDamageWeapon": {
@@ -8930,8 +9022,8 @@
 				"trans": "你的導師契約已關閉。"
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "系統偵測到關聯帳號，通常來自相同 IP 或共用裝置。此帳號暫時無法選取指導員，須待連線紀錄清除並經過一段時間後方可恢復資格。"
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "您的帳號已連結至其他帳號，因此無法加入導師系統。"
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -12020,6 +12112,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "寵物領養冷卻中"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "需擁有公寓才能領養寵物"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "增益尚未啟動"
@@ -12133,6 +12229,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "未命名"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "健康"
@@ -12201,6 +12301,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "啟動"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12220,7 +12324,7 @@
 				"trans": "你需要先啟動寵物復活"
 			},
 			"title": {
-				"eng": "Activate",
+				"eng": "Activate pet revive",
 				"trans": "啟動寵物復活"
 			}
 		},
@@ -12312,8 +12416,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "你現在不能執行此操作"
+				"eng": "You can't perform this action now",
+				"trans": "目前無法執行此操作"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12390,6 +12494,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "感謝你完成問卷調查，獎勵已經寄送至你的物品收件箱，你可以從背包分頁進入收件箱。"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "隊伍增益期間無法執行此操作"
+				}
 			}
 		}
 	},
@@ -13862,6 +13974,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "重新連線"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15380,8 +15496,12 @@
 			"trans": "校準精確度（傳奇）"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "校準精準度（史詩）"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "校準精確度（史詩）"
+			"trans": "校準精度（威望）"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16086,8 +16206,16 @@
 			"trans": "當你打開地城箱子時，有機會遇到科技盜賊，它們會掉落更好的戰利品，包括有更高的機率掉落史詩道具"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "幫派地下城有機率觸發幫派任務，需擊殺特定 NPC 幫會的敵對目標"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "新增地下城代幣，可至武器匠NPC處兌換物品。此代幣可透過科技小偷與幫派任務取得。"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "公會地城將有機會產生公會任務，內容包含擊敗特定NPC幫派的敵人"
+			"trans": "新增兩款贊助者框架"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16197,6 +16325,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} 的背包沒有足夠空間放入 ${itemName}，無法完成交易。",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "背包空間不足，無法放入${itemName}以完成交易。",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16244,8 +16391,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName}的背包中沒有足夠的空間容納${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} 的物品欄空間不足，無法放入 ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16260,8 +16407,8 @@
 				"trans": "你不能傳送交易邀請給這個玩家"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "此玩家不能參與交易"
+				"eng": "Target player cannot participate in trade",
+				"trans": "目標玩家無法參與交易"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16286,11 +16433,19 @@
 				"trans": "你沒有足夠的錢來完成交易。"
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "你的背包沒有足夠的空間容納${itemName}",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "你的物品欄沒有足夠空間存放 ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "無法向此玩家傳送交易邀請"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16501,7 +16656,7 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"eng": "Long press to go back to city",
 				"trans": "長按返回城市"
 			}
 		},
@@ -16995,6 +17150,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "關閉"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17617,15 +17776,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "等級不足，無法使用此裝備",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "您的等級不足，無法裝備此物品"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "你需要達到${level}等才能裝備此物品。",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "你的等級不足，無法裝備此物品，需達到 ${level} 級才能裝備。",
 				"vars": [
 					"level"
 				]
@@ -17876,6 +18039,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "偵查附近敵人"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "你可長按返回鍵回到城市造訪各項商店與功能"
 			}
 		},
 		"login": {
@@ -18727,6 +18896,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "關閉"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -19101,7 +19276,7 @@
 					"trans": "一般"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "小"
 				},
 				"tiny": {

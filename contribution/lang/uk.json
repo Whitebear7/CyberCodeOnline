@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Бонусні одиниці"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Натисніть, щоб скопіювати"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Безкоштовні бонусні одиниці"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Ви отримаєте додаткові 10% Юнітів з покупкою через PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Додаткові одиниці при всіх покупках через PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Посилання скопійовано в буфер обміну."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Видалити цю нотатку?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Ви впевнені?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Калібрування (${percent}%) буде розгорнуто через кілька хвилин",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Калібрування (${percent}%) буде виконано за кілька хвилин",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Зі святами всіх!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Знову найпрекрасніша пора року! У Шангрі-Ла ми святкуємо зимове свято з спеціальною подією!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Насолоджуйтеся святковою фоновою музикою під час заходу!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Знову настала найкраща пора року! У Шангарілі ми святкуємо зимове свято спеціальною подією!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Щасливих Зимових свят!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Веселих зимових святок!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "Скасувати"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Закрити"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Підтвердити"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Рівень пожертви, який ви вже маєте: [${owned}/${total}]",
+			"trans": "Придбано рівнів пожертви: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "В наявності: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "ЗАВЕРШИТИ"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Системна помилка"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ОТРИМАНІ АКТИВИ"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "Закрити"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Жодного пельменя не зроблено. Твій пропуск зник."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Злиття ${amount} ${fragmentName} дає один випадковий епічний скарбничок із обладнанням",
+			"trans": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Ви не можете використовувати цей предмет, оскільки існує статус, який конфліктує з ним",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Ви не можете використовувати цей предмет, оскільки існує статус, який конфліктує з ним"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Продовжити"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Отримано предмети:"
+				"trans": "ОТРИМАНІ ФРАГМЕНТИ:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ОТРИМАНІ ПРЕДМЕТИ:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Недостатньо ресурсів для виготовлення"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Некоректний індекс слоту"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Для активації цього предмету меблів потрібен рівень ${level}",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Щоб активувати цей предмет меблів, потрібен рівень ${level}",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Оберіть меблі"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Для використання цих меблів потрібен рівень ${level}",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Не вистачає ресурсів для торгівлі"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Некоректний рецепт меблів"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Отримайте ${unit} Юнітів (${bonus} бонус)",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Receive ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Отримати ${unit} одиниць (бонус ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Юнітів",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Ви не можете використовувати цю річ під час вуличних боїв, доступно лише в підземеллях"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Чатовий експлойт щойно використано, глобальний кулдаун застосування чатових експлойтів становить ${minutes} хв",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "Торгування"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "Жорстокості"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "крит-шансу"
@@ -7120,8 +7212,8 @@
 			"trans": "крит-шансу"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "Брутальності"
+			"eng": "of Crit Damage",
+			"trans": "критичної шкоди"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Ваше наставництво вже закрито."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Система виявила можливі пов’язані акаунти, зазвичай через спільну IP-адресу або пристрій. Через це обліковий запис не може обрати наставника, доки зв'язок між ними не припиниться протягом певного часу."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Ваш обліковий запис вже прив'язаний до іншого облікового запису, тому не може приєднатися до наставництва."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -12014,6 +12106,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Прийняття тварин зараз недоступне, трохи почекайте"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Для утримання питомця потрібна квартира"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Баф не активовано"
@@ -12127,6 +12223,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Без імені"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "здоровий"
@@ -12195,6 +12295,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Активувати"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12214,8 +12318,8 @@
 				"trans": "Спочатку потрібно активувати відновлення домашнього улюбленця"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Активувати"
+				"eng": "Activate pet revive",
+				"trans": "Активувати відродження улюбленця"
 			}
 		},
 		"reviveButton": {
@@ -12306,8 +12410,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Ви не можете виконати цю дію зараз"
+				"eng": "You can't perform this action now",
+				"trans": "Зараз не можна виконати цю дію"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12384,6 +12488,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Дякуємо за заповнення опитування, винагорода відправлена до вашої скриньки з предметами, ви можете отримати доступ до скриньки зі вкладки інвентар"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Неможливо виконати цю дію під час групового бафа"
+				}
 			}
 		}
 	},
@@ -13856,6 +13968,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "ПОВТОРИТИ ПІДКЛЮЧЕННЯ"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15374,8 +15490,12 @@
 			"trans": "Підвищення Точності Калібрування (Легендарне)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Точність калібрування (Епік)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Підвищення Точності Калібрування (Престижне)"
+			"trans": "Точність калібрування (Престиж)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16080,8 +16200,16 @@
 			"trans": "Техно-злодій буде рідко з'являтисьь у підземеллі, коли ви відкриватимете ящики, вони давтимуть кращі речі, включаючи більші шанси на епічні предмети"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "У підземеллі банди буде шанс появи квесту на знищення ворогів конкретних банд неігрових персонажів"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Додано токен донжону, його можна обміняти на предмети у персонажа майстра зброї, його можна отримати від Технозлодія та у завданнях банди"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Додано дві нові донорські рамки"
+			"trans": "Додано дві нові рамки для донаторів"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16191,6 +16319,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} не має достатньо місця в інвентарі для ${itemName}, щоб завершити угоду.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Недостатньо місця в інвентарі для ${itemName}, щоб завершити угоду.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16238,8 +16385,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} не має достатньо місця в інвентарі на ${itemName} для завершення торгівлі.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "У гравця ${playerName} не вистачає місця в інвентарі для ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16254,8 +16401,8 @@
 				"trans": "Ви не можете надіслати запрошення на торгівлю цьому гравцеві"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Цей гравець не може брати участь у торгівлі"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Цільовий гравець не може брати участь у торгівлі"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16280,11 +16427,19 @@
 				"trans": "У вас не вистачає грошей, щоб завершити торгівлю."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "У вас не вистачає місця в інвентарі на ${itemName} для завершення торгівлі.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "В інвентарі не вистачає місця для ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Ви не можете надіслати запрошення на обмін цьому гравцеві"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16495,8 +16650,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Утримуйте, щоб повернутися до міста"
+				"eng": "Long press to go back to city",
+				"trans": "Утримуйте для повернення до міста"
 			}
 		},
 		"bank": {
@@ -16989,6 +17144,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Закрити"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17611,15 +17770,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Ваш рівень занизький для цієї речі",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Ваш рівень занадто низький для цього предмета"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Рівень замалий. Для цієї шмотки треба ${level} рівень",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Ваш рівень занадто низький для цього предмета, потрібен рівень ${level} для екіпірування",
 				"vars": [
 					"level"
 				]
@@ -17870,6 +18033,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Вороги поблизу"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Ви можете довго тримати кнопку назад для повернення до міста та відвідування різних магазинів і функцій"
 			}
 		},
 		"login": {
@@ -18721,6 +18890,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Закрити"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -19095,8 +19270,8 @@
 					"trans": "Нормальний"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Дрібний"
+					"eng": "Small",
+					"trans": "Малий"
 				},
 				"tiny": {
 					"eng": "Tiny",

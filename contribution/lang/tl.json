@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus na Units"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Pindutin para kopyahin"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Layang Bonus na Yunit"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Makakatanggap ka ng karagdagang 10% na higit pang mga yunit na may pagbili ng PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Karagdagang yunit sa lahat ng pagbili gamit ang PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Kopyado na ang URL sa clipboard."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Tanggalin ang tala na ito?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Sigurado ka ba?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Lalabas ang Kalibrasyon (${percent}%) sa loob ng ilang minuto",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Magkakaroon ng Calibration (${percent}%) sa loob ng ilang minuto",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Maligayang Piyesta sa lahat!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Ito ang pinaka -kahanga -hangang oras ng taon muli! Sa Shangri-La ipinagdiriwang namin ang holiday ng taglamig na may isang espesyal na kaganapan!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Tamasahin ang masayang musika sa likuran habang nagaganap ang kaganapan!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Ulit na ang pinakamagandang panahon ng taon! Sa Shang-ri-la ipinagdiriwang namin ang Pasko sa pamamagitan ng isang espesyal na aktibidad!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Maligayang Holiday ng Taglamig!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Masayang Pista ng Taglamig!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "Kanselahin"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Isara"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "Kumpirmahin"
+			"eng": "Confirm",
+			"trans": "Kumpirmahan"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Owned na Donation Tier: [${owned}/${total}]",
+			"trans": "Nakuhang Antas ng Donasyon: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Mayroon: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "HINTO"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "ERROR NG SISTEMA"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "MGA NAKUHANG YAMAN"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "ISARA"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Walang dumplings na natapos. Naubos ang pass."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Iugnay ang ${amount} na Epic Cache Fragments para makabuo ng 1 na Epic Equipment Cache—tiyak na galing, walang alinlangan",
+			"trans": "Gamitin ang ${amount} Epic Cache Fragments upang makakuha ng 1 na siguradong Epic Equipment Cache",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Hindi mo maaaring gamitin ang item na ito dahil mayroong isang epekto sa katayuan na salungat dito",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Hindi mo maaaring gamitin ang item na ito dahil mayroong isang epekto sa katayuan na salungat dito"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Patuloy"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Nakuha ang Mga Fragment"
+				"trans": "MGA PIRASONG NATANGGAP:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "MGA GAMIT NA NATANGGAP:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Hindi sapat ang mga materyales para sa paggawa"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Maling indeks ng slot"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Kailangan mong maging level ${level} para i-activate ang kasangkapang ito",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Kailangan mong umabot sa antas na ${level} para paganahin ang kagamitan na ito",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Pumili ng Kasangkapan"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Kailangan ng Level ${level} para gumamit nito",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Hindi sapat ang mga sangkap para sa pagpapalit"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Hindi wastong reseta ng muwebles"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Makatanggap ng ${unit} unit",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Makakuha ng ${unit} Yunit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Tanggapin ang ${unit} na Yunit (${bonus} na premyo)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} unit",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Hindi ka maaaring gumamit ng item sa panahon ng mga fights sa kalye, magagamit lamang ang mga item sa mga piitan"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Ginamit na lang ang exploit sa chat, at may pangkalahatang cooldown ng pagdeploy na ${minutes} minuto ang mga exploit sa chat",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "ng bargaining"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "ng Kagatapan"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "ng crit Chance"
@@ -7120,8 +7212,8 @@
 			"trans": "ng crit Chance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "ng pinsala sa crit"
+			"eng": "of Crit Damage",
+			"trans": "ng Kritikal na Pinsala"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Nakasara na ang iyong mentorship."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Na-detect ng system ang posibleng magkaugnay na account sa pamamagitan ng IP address o shared device kaya hindi pa pwedeng pumili ng Handler ang account na ito hangga't may nakikitang koneksyon pa."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Konektado ang iyong account sa ibang account, kaya hindi ito maaaring sumali sa mentorship."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -12026,6 +12118,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Nakapahinga muna ang pag-aampon ng alagang hayop"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Kailangan ng sariling unit para sa adopsyon ng alagang hayop"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Di pa naa-activate ang buff"
@@ -12139,6 +12235,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Walang Pangalan"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Malusog"
@@ -12207,6 +12307,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Gamitin"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12226,8 +12330,8 @@
 				"trans": "Kailangan mo munang i-activate ang pet revive"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "I-activate ang pagbuhay ng alagang hayop"
+				"eng": "Activate pet revive",
+				"trans": "Aktiwin ang pagsigla ng alaga"
 			}
 		},
 		"reviveButton": {
@@ -12318,8 +12422,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Hindi mo maaaring isagawa ang pagkilos na ito ngayon"
+				"eng": "You can't perform this action now",
+				"trans": "Hindi mo maaaring gawin ang aksyong ito ngayon"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12396,6 +12500,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Salamat sa pagtapos ng survey, naipadala na ang mga rewards sa iyong item inbox, maaari mong buksan ang inbox mula sa tab ng inventory"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Hindi mo ito maaaring gawin habang aktibo ang pagpapalakas ng grupo"
+				}
 			}
 		}
 	},
@@ -13868,6 +13980,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "MULING SUBUKAN ANG KONEKSYON"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15386,8 +15502,12 @@
 			"trans": "Pag -calibrate ng katumpakan (maalamat)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Presisyon ng Kalibrasyon (Epiko)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Pag -calibrate ng katumpakan (EPIC)"
+			"trans": "Katumpakan ng Kalibrasyon (Prestihiyo)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16092,8 +16212,16 @@
 			"trans": "Ang magnanakaw ng Techno ay bihirang mag -ungol sa piitan kapag binuksan mo ang mga crates, bumababa sila ng mas mahusay na pagnakawan, kabilang ang mas mataas na pagkakataon ng mga epikong item"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Ang Gang dungeon ay may pagkakataong lumitaw ang isang gang quest kung saan papatayin mo ang mga kalaban ng tiyak na NPC gangs"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Naidagdag ang Dungeon token, maaari mong gamitin upang magpalit ng mga item sa Weapon Smith NPC, at maaari mong kuhaan ang item na ito mula sa Techno Thief at Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Dinagdag ng dalawang bagong frame ng donator"
+			"trans": "Dalawang bagong frame ng mga tagapagtulak ang idinagdag"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16203,6 +16331,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "Hindi sapat ang espasyo sa imbakan ni ${playerName} para sa ${itemName} upang tapusin ang pagpapalit",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Hindi sapat ang espasyo sa iyong inventory para sa ${itemName} upang makumpleto ang kalakalan.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16250,8 +16397,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "Ang ${playerName} ay walang sapat na puwang sa kanilang imbentaryo para sa ${itemName} upang makumpleto ang kalakalan.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "Wala nang sapat na espasyo ang inventory ni ${playerName} para sa ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16266,8 +16413,8 @@
 				"trans": "Hindi ka maaaring magpadala ng paanyaya sa kalakalan sa manlalaro na ito"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Ang target na manlalaro ay hindi maaaring lumahok sa kalakalan"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Hindi maaaring makipagpalitan ang napiling manlalaro"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16292,11 +16439,19 @@
 				"trans": "Wala kang sapat na pera upang makumpleto ang kalakalan."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Wala kang sapat na puwang sa iyong imbentaryo para sa ${itemName} upang makumpleto ang kalakalan.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Wala kang sapat na espasyo sa inventory mo para sa ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Hindi ka makakapagpadala ng paanyaya sa pagpapalitan sa manlalarong ito"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16507,8 +16662,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Mahabang pindutin upang bumalik sa lungsod"
+				"eng": "Long press to go back to city",
+				"trans": "Hawakin nang matagal upang bumalik sa lungsod"
 			}
 		},
 		"bank": {
@@ -17001,6 +17156,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Isara"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17623,15 +17782,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Ang iyong antas ay masyadong mababa para sa item na ito",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Mababa ang iyong antas para sa bagay na ito"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Hindi mo pa kaya 'to. Kailangan level ${level} para ma-equip",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Masyadong mababa ang antas mo para sa kasangkapang ito, kailangan ng antas ${level} upang isuot ito",
 				"vars": [
 					"level"
 				]
@@ -17882,6 +18045,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Kalapit na mga kaaway"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Pindutin nang matagal ang pindutan ng pabalik para bumalik sa lungsod at bisitahin ang mga magkakaibang tindahan at serbisyo"
 			}
 		},
 		"login": {
@@ -18733,6 +18902,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Isara"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -19107,7 +19282,7 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Maliit"
 				},
 				"tiny": {

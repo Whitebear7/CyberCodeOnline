@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus Birimler"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Kopyalamak için dokun"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Ücretsiz Bonus Birimleri"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Paypal satın alma ile ek %10 daha fazla Birim alacaksınız"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal ile yapılan tüm alışverişlerde ekstra birimler"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL panoya kopyalandı."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Bu notu silmek ister misin?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Emin misin?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibrasyon (${percent}%) birkaç dakika içinde devreye alınacak",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibrasyon (${percent}%) birkaç dakika içinde uygulanacak",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Herkese mutlu tatiller!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Yine yılın en harika zamanı! Shangri-la'da kış tatilini özel bir etkinlikle kutluyoruz!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Etkinlik sırasında festivale uygun arka plan müziğinin tadını çıkarın!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Yılın en muhteşem zamanı yine geldi! Shang-ri-la'da kış tatilini özel bir etkinlikle kutluyoruz!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Mutlu kış tatili!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "İyi Kış Tatilleri!\n<"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "İptal"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Kapat"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Onayla"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Bağış Seviyesi Sahibi: [${owned}/${total}]",
+			"trans": "Sahip Olunan Bağış Kademesi: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Sahip Olunan: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "SONLANDIR"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Sistem Hatası"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "KAZANILAN VARLIKLAR"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "KAPAT"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Hiç mantı tamamlanmadı! Pas tüketildi."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "${amount} ${fragmentName} birleştirerek rastgele bir Epik Ekipman Kazanı kazanın",
+			"trans": "${amount} Epik Önbellek Parçacığını 1 garanti Epik Ekipman Önbelleğine dönüştür",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Bu öğeyi kullanamazsınız çünkü onunla çelişen bir durum etkisi vardır",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Bu öğeyi kullanamazsınız çünkü onunla çelişen bir durum etkisi vardır"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Devam Et"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
+				"trans": "ALINAN PARÇALAR:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
 				"trans": "ALINAN EŞYALAR:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Üretim için yeterli kaynak yok"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Geçersiz slot indeksi"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Mobilyayı açmak için en az ${level}. seviyede olmalısınız",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Bu mobilyayı etkinleştirmek için ${level} seviyesi gerekli",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Mobilya Seç"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Bu mobilyayı kullanabilmek için ${level}. seviyede olmanız gerekir",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Takas için yeterli kaynak yok"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Hatali mobilya tarifi"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "${unit} Birim al (${bonus} bonus)",
+				"eng": "Receive ${unit} Unit",
+				"trans": "${unit} Birim Al",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "${unit} Birim Al (${bonus} bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Birim",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Sokak kavgaları sırasında eşyayı kullanamazsınız, eşyalar sadece zindanlar sırasında kullanılabilir"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Sohbet hilesi kısa süre önce kullanıldı, sohbet hilelerinin küresel kullanım bekleme süresi ${minutes} dakikadır",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "Pazarlık"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "Vahşetin"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "kritik şansı"
@@ -7120,8 +7212,8 @@
 			"trans": "kritik şansı"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "Kritik hasarı"
+			"eng": "of Crit Damage",
+			"trans": "Kritik Hasarın"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Mentorluğun zaten kapalı."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Sistem, genellikle IP veya ortak cihaz üzerinden muhtemel bağlantılı hesaplar tespit etti. Bu nedenle belirli bir süre boyunca yeni bir bağlantı izlenimi oluşmadığı sürece bu hesabın Handler seçme yetkisi bulunmamaktadır."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Hesabın başka bir hesaba bağlı olduğundan mentorluğa katılamıyor."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Evcil hayvan sahiplenme işlemi şu anda beklemede, biraz sonra tekrar dene!"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Evcil hayvan sahiplenmek için bir daire gereklidir"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff aktif değil"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Adsız"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Sağlıklı"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Aktifleştir"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Önce evcil hayvanın yeniden canlanmasını etkinleştirmen gerekiyor"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Evcil hayvanın canlanmasını başlat"
+				"eng": "Activate pet revive",
+				"trans": "Evcil Hayvan Yeniden Canlandırmayı Etkinleştir"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Bu eylemi şimdi gerçekleştiremezsin"
+				"eng": "You can't perform this action now",
+				"trans": "Şu anda bu işlemi yapamazsın"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Anketi doldurduğun için teşekkürler, ödüller eşya kutuna gönderildi, kutuya envanter sekmesinden erişebilirsin"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Grup buffı aktifken bu işlemi yapamazsın"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "BAĞLANTIYI YENİDEN DENE\n<"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Kalibrasyon hassasiyeti (Efsanevi)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Kalibrasyon Hassasiyeti (Epik)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Kalibrasyon Hassasiyeti (Destansı)"
+			"trans": "Kalibrasyon Hassaslığı (Prestij)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Tekno Hırsızı, sandıkları açtığınızda nadiren zindanda ortaya çıkacak, daha yüksek destansı eşyalar şansı da dahil olmak üzere daha iyi yağma bırakıyorlar"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Çete zindanında, belirli NPC çetelerinin düşmanlarını öldürmeye dayalı bir çete görevi başlatma şansı olacak"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Zindan jetonu eklendi, Silah Ustası karakterinden eşya takası için kullanabilirsin, bu öğeyi Tekno Hırsız ve Çete Görevlerinden elde edebilirsin"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "İki yeni bağışçı çerçevesi eklendi"
+			"trans": "İki yeni bağışçı çerçevesi eklendi\n<"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "Takas tamamlanamıyor çünkü ${itemName} için ${playerName} adlı oyuncunun envanterinde yeterli alan yok.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Envanterinde ${itemName} için yeterli alan olmadığından ticareti tamamlayamıyorsun.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} envanterlerinde ${itemName} için yeterli alan yok",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} adlı oyuncunun envanterinde ${itemName} için yeterli boş yer yok",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Bu oyuncuya ticari davet gönderemezsiniz"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Hedef oyuncu ticarete katılamaz"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Hedef oyuncu takasa katılamıyor"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Ticareti tamamlamak için yeterli paranız yok."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Envanterinizde ${itemName} için yeterli alanınız yok",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Envanterinde ${itemName} için yeterli alan yok",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Bu oyuncuya takas daveti gönderemezsin"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Şehre geri dönmek için basılı tutun"
+				"eng": "Long press to go back to city",
+				"trans": "Uzun basarak şehre geri dön"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Kapat"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Bu eşya için seviyen yetersiz",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Bu eşya için seviyen çok düşük"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Bu ekipmanı kullanmak için seviyen yetersiz. Seviye ${level} gerekiyor",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Seviyeniz bu eşya için çok düşük, takması için gerekli seviye ${level}",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Yakındaki düşmanlar"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Geri tuşuna uzun basarak şehre dönüp çeşitli mağazaları ve özellikleri ziyaret edebilirsin"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Kapat"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,7 +19094,7 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Küçük"
 				},
 				"tiny": {

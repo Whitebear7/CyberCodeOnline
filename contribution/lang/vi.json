@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Đơn vị thưởng"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Chạm để sao chép"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Đơn Vị Thưởng Miễn Phí"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Bạn sẽ nhận được thêm 10% Unit khi thanh toán qua Paypal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Nhận thêm đơn vị khi mua qua PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Đã sao chép URL vào bảng nhớ tạm."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Xóa ghi chú này?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Bạn có chắc chắn không?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Hiệu chuẩn (${percent}%) sẽ được triển khai sau vài phút",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Việc hiệu chuẩn (${percent}%) sẽ được triển khai trong vài phút",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Chúc mọi người có kỳ nghỉ vui vẻ!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Thời gian tuyệt vời nhất trong năm đã tới rồi! Ở Shangri-La, chúng tôi đang kỷ niệm kỳ nghỉ đông với một sự kiện đặc biệt!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Hãy thưởng thức nhạc nền lễ hội trong suốt sự kiện nhé!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Lại là thời điểm tuyệt vời nhất trong năm! Tại Shang-ri-la chúng ta đang ăn mừng kỳ nghỉ đông bằng một sự kiện đặc biệt!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Kỳ nghỉ đông vui vẻ!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Chúc Mừng Kỳ Nghỉ Đông!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "Hủy"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Đóng"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Xác nhận"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Cấp Độ Ủng Hộ Đã Sở Hữu: [${owned}/${total}]",
+			"trans": "Bậc quyên góp đã sở hữu: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Đã sở hữu: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "CHẤM DỨT"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Lỗi hệ thống"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "TÀI SẢN ĐÃ THU THẬP"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "Đóng"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Không có bánh bao nào hoàn thành. Pass đã hết."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Kết hợp ${amount} ${fragmentName} thành 1 Hòm Đồ Thiết Bị Cực Phẩm ngẫu nhiên",
+			"trans": "Hợp nhất ${amount} Mảnh Kho Thượng hạng thành 1 Kho Trang bị Thượng hạng được đảm bảo",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Bạn không thể sử dụng vật phẩm này vì đang sở hữu hiệu ứng trạng thái xung đột",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Bạn không thể sử dụng vật phẩm này vì đang sở hữu hiệu ứng trạng thái xung đột"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "TIẾP TỤC"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Nhận được vật phẩm:"
+				"trans": "MẢNH ĐÃ NHẬN:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "VẬT PHẨM ĐÃ NHẬN:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Không đủ tài nguyên để chế tạo"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Chỉ số khe không hợp lệ"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Để sử dụng đồ nội thất này, bạn cần đạt cấp ${level}",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Bạn cần đạt cấp ${level} để kích hoạt nội thất này",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Chọn nội thất"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Bạn cần đạt cấp ${level} để sử dụng nội thất này",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Không đủ tài nguyên để giao dịch"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Công thức nội thất không hợp lệ"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Nhận ${unit} Unit (${bonus} tặng thêm)",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Nhận ${unit} Đơn vị",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Nhận ${unit} đơn vị (thưởng thêm ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Đơn vị",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Bạn không thể sử dụng vật phẩm trong các trận đánh đường phố, các vật phẩm chỉ khả dụng trong phó bản"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Exploit chat vừa được sử dụng gần đây, exploit chat có thời gian hồi chiêu triển khai toàn cục là ${minutes} phút",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "thương lượng"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "của sự tàn bạo"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "của crit cơ hội"
@@ -7120,8 +7212,8 @@
 			"trans": "của crit cơ hội"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "của sự tàn bạo"
+			"eng": "of Crit Damage",
+			"trans": "Sát thương chí mạng"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Hợp đồng kèm cặp của bạn đã kết thúc."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Hệ thống phát hiện tài khoản này có khả năng liên kết với tài khoản khác, thường qua IP hoặc thiết bị dùng chung. Do đó, tài khoản này không đủ điều kiện chọn Handler cho đến khi không còn ghi nhận bất kỳ kết nối nào trong một khoảng thời gian nhất định."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Tài khoản của bạn đang được liên kết với một tài khoản khác nên không thể tham gia chương trình hướng dẫn."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Việc nhận nuôi thú cưng đang trong thời gian chờ đợi"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Cần có căn hộ để nhận nuôi thú cưng"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff chưa được kích hoạt"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Chưa đặt tên"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Khỏe mạnh"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Kích hoạt"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,7 +12142,7 @@
 				"trans": "Bạn cần kích hoạt việc hồi sinh thú cưng trước đã nha"
 			},
 			"title": {
-				"eng": "Activate",
+				"eng": "Activate pet revive",
 				"trans": "Kích hoạt hồi sinh thú cưng"
 			}
 		},
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Bạn không thể thực hiện hành động này ngay bây giờ"
+				"eng": "You can't perform this action now",
+				"trans": "Không thể thực hiện thao tác này lúc này"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Cảm ơn bạn đã hoàn thành khảo sát, phần thưởng đã được gửi vào hộp đồ vật của bạn, bạn có thể truy cập hộp thư từ tab kho hàng"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Bạn không thể thực hiện hành động này khi buff của nhóm đang kích hoạt"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "THỬ LẠI KẾT NỐI"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Chính xác Hiệu chuẩn (Huyền thoại)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Độ Chính Xác Hiệu Chỉnh (Thần Thoại)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Chính xác Hiệu chuẩn (Sử thi)"
+			"trans": "Độ chính xác hiệu chuẩn (Thanh thế)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Techno Thief đôi khi sẽ sinh ra trong Hầm ngục khi bạn mở thùng, chúng thả những chiếc loot tốt hơn, bao gồm cả cơ hội cao hơn của các món đồ hoành tráng"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Hầm ngục băng đảng có cơ hội xuất hiện nhiệm vụ băng đảng, liên quan đến việc tiêu diệt kẻ thù của các băng đảng NPC nhất định"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Đã thêm Phiếu Địa Dị, bạn có thể dùng nó để đổi lấy vật phẩm tại NPC Thợ Rèn Vũ Khí và nhận phiếu này từ Nhiệm vụ Trộm Công Nghệ cùng Băng Đảng"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Đã thêm mã thông báo Dungeon, bạn có thể sử dụng nó để trao đổi các vật phẩm từ Weapon Smith NPC, bạn có thể có được mục này từ Techno Thief và Nhiệm vụ Tập đoàn"
+			"trans": "Đã thêm 2 khung nhà tài trợ mới"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} không đủ chỗ trong túi đồ cho ${itemName} để hoàn tất trao đổi.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Bạn không có đủ chỗ trống trong túi đồ cho ${itemName} để hoàn tất giao dịch.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} không có đủ không gian trong kho của họ cho ${itemName} để hoàn thành giao dịch",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "Túi đồ của ${playerName} không có đủ chỗ cho ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Bạn không thể gửi lời mời giao dịch cho người chơi này"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Bạn không thể gửi lời mời giao dịch cho người chơi này"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Người chơi mục tiêu không thể tham gia giao dịch"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Bạn không có đủ tiền để hoàn thành giao dịch."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Bạn không có đủ không gian trong kho của mình cho ${itemName} để hoàn thành giao dịch",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Kho đồ của bạn không đủ chỗ cho ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Không thể gửi lời mời giao dịch cho người chơi này"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Nhấn giữ để trở lại thành phố"
+				"eng": "Long press to go back to city",
+				"trans": "Nhấn giữ để quay về thành phố"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Đóng"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Cấp độ của bạn quá thấp để trang bị vật phẩm này",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Cấp độ của bạn quá thấp để trang bị vật phẩm này"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Bạn chưa đủ cấp để dùng món đồ này. Cần đạt cấp ${level} mới trang bị được",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Cấp độ của bạn quá thấp, cần cấp ${level} để trang bị vật phẩm này",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Kẻ Thù Lân Cận"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Bạn có thể nhấn giữ nút quay lại để trở về thành phố khám phá nhiều cửa hàng và tính năng"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Đóng"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,7 +19094,7 @@
 					"trans": "Bình thường"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Nhỏ"
 				},
 				"tiny": {

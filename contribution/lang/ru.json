@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Бонусные юниты"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Нажмите, чтобы скопировать"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Бесплатные бонусные единицы"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Ты получишь дополнительные 10% Юнитов, покупая через PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Бонусные единицы за все покупки через PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Ссылка скопирована в буфер обмена."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Удалить эту заметку?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Вы уверены?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Калибровка (${percent}%) будет запущена через несколько минут",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Калибровка (${percent}%) будет активирована через несколько минут",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Счастливых праздников всем!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Это самое замечательное время года! В Шанг-ри-Ла мы отмечаем зимние праздники специальным мероприятием!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Наслаждайтесь праздничной фоновой музыкой во время события!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Снова самое чудесное время года! В Шангри-ле мы отмечаем зимний праздник специальным событием!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Счастливых зимних праздников!!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Счастливого зимнего праздника!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1795,11 @@
 			"trans": "Отмена"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Закрыть"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Подтвердить"
 		},
 		"delete": {
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Уровень пожертвования: [${owned}/${total}] в наличии",
+			"trans": "Уровней доната в наличии: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "В наличии: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "ЗАВЕРШИТЬ"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Системная ошибка"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ПОЛУЧЕННЫЕ АКТИВЫ"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "ЗАКРЫТЬ"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Пельменей нет — пропуск потрачен."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Слей ${amount} ${fragmentName} в один случайный эпический сундук с снаряжением",
+			"trans": "Объедините ${amount} фрагментов Эпического кэша в 1 гарантированный Эпический кэш экипировки",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Вы не можете использовать этот элемент, потому что существует эффект статуса, который противоречит ему",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Вы не можете использовать этот элемент, потому что существует эффект статуса, который противоречит ему"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Продолжить"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Полученные предметы:"
+				"trans": "ПОЛУЧЕННЫЕ ФРАГМЕНТЫ:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ПОЛУЧЕННЫЕ ПРЕДМЕТЫ:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Недостаточно ресурсов для изготовления"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Неверный индекс слота"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Для активации этого предмета мебели нужен уровень ${level}",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Для активации этой мебели требуется уровень ${level}",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Выберите мебель"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Для использования этой мебели нужен уровень ${level}",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Недостаточно ресурсов для торговли"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Неверный рецепт мебели"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Получено ${unit} Юнит(ов) (${bonus} бонус(ов))",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Получить ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Получите ${unit} Unit (бонус ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Юнит(ов)",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Вы не можете использовать этот предмет во время уличных боев, он доступен только во время подземелья"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Эксплойт чата недавно был использован, глобальное время ожидания развертывания эксплойтов чата составляет ${minutes} мин",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "Переговоры"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "Жестокости"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "Критического шанса"
@@ -7120,8 +7212,8 @@
 			"trans": "Критического шанса"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "Жестокость"
+			"eng": "of Crit Damage",
+			"trans": "критического урона"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Ваше наставничество уже закрыто."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Система обнаружила возможные связанные аккаунты по общему IP или устройству. Выбор Хендлера для данного профиля временно недоступен до тех пор, пока система не перестанет фиксировать связь в течение определенного времени."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Ваш аккаунт уже привязан к другому аккаунту, поэтому он не может присоединиться к наставничеству."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Процесс усыновления питомца на паузе"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Для усыновления питомца нужна квартира"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Бафф не активирован"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Без имени"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Здоровье"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Активировать"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Сначала нужно активировать возрождение питомца"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Активировать возрождение питомца"
+				"eng": "Activate pet revive",
+				"trans": "Активировать воскрешение питомца"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Вы не можете выполнить это действие сейчас"
+				"eng": "You can't perform this action now",
+				"trans": "Сейчас нельзя выполнить это действие"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Спасибо за заполнение опроса, вознаграждение отправлено в ваш почтовый ящик предметов, вы можете получить доступ к нему из вкладки инвентаря"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Нельзя выполнить это действие во время группового буста"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "ПОВТОРИТЬ ПОДКЛЮЧЕНИЕ"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Точность калибровки (Легендарная)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Точность калибровки (Эпик)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Точность калибровки (Эпическая)"
+			"trans": "Точность калибровки (Престиж)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Techno Thief будет редко выскочить в Dungeon, когда вы откроете ящики, они падают лучшую добычу, включая более высокие шансы на эпические предметы"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "В данжах банд будет шанс на появление задания банды, связанного с устранением врагов конкретных группировок NPC"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Добавлен токен подземелья. Его можно использовать для обмена на предметы у NPC Кузнец оружия. Токен можно получить в заданиях техновора и банды"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Два новых кадрах -дончика добавлены"
+			"trans": "Добавлены две новые донатные рамки"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "У ${playerName} не хватает места в инвентаре для ${itemName}, чтобы завершить сделку.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Недостаточно места в инвентаре для ${itemName}, чтобы завершить сделку.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} не имеет достаточно места в их инвентаре для ${itemName}, чтобы завершить сделку.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "У ${playerName} недостаточно места в инвентаре для ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Вы не можете отправить торговое приглашение этому игроку"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Целевой игрок не может участвовать в торговле"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Целевой игрок не может участвовать в сделке"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "У вас недостаточно денег, чтобы завершить сделку."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "У вас не хватает места в вашем инвентаре для ${itemName}, чтобы завершить сделку.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Недостаточно места в инвентаре для ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Невозможно отправить приглашение на сделку этому игроку"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Зажмите, чтобы вернуться в город"
+				"eng": "Long press to go back to city",
+				"trans": "Удерживайте, чтобы вернуться в город"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Закрыть"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Ваш уровень слишком низкий для этого предмета",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Ваш уровень слишком низок для этого предмета"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Не хватает уровня! Для этого предмета нужен ${level} уровень",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Ваш уровень слишком низок для этого предмета. Для экипировки требуется уровень ${level}",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Враги поблизости"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Зажмите кнопку Назад надолго, чтобы вернуться в город и посетить разные магазины и возможности"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Закрыть"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,7 +19094,7 @@
 					"trans": "Обычный"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Маленький"
 				},
 				"tiny": {

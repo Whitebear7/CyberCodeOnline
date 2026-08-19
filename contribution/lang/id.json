@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus Unit"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Ketuk untuk menyalin"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Unit Bonus Gratis"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Kamu akan menerima tambahan 10% lebih banyak unit dengan pembelian PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Unit tambahan untuk semua pembelian PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL disalin ke papan klip."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Hapus catatan ini?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Anda Yakin?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibrasi (${percent}%) akan diterapkan dalam beberapa menit",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibrasi ${percent}% telah di deploy",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Selamat Liburan semuanya!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Ini adalah waktu yang paling indah tahun ini lagi! Di Shangri-La kami merayakan liburan musim dingin dengan acara khusus!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Nikmati musik latar meriah selama event berlangsung!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Waktu paling indah dalam setahun telah tiba kembali! Di Shang-ri-la, kami merayakan liburan musim dingin dengan acara spesial!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Selamat liburan musim dingin!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Selamat Libur Musim Dingin!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "Batal"
 		},
 		"close": {
-			"eng": "TERMINATE",
-			"trans": "TUTUP"
+			"eng": "Close",
+			"trans": "Tutup"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "Apakah kamu yakin?"
+			"eng": "Confirm",
+			"trans": "Konfirmasi"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Tingkatan Donasi yang Dimiliki: [${owned}/${total}]",
+			"trans": "Tingkat Donasi Dimiliki: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Dimiliki: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "AKHIRI"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "KESALAHAN SISTEM"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ASET YANG DIPEROLEH"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "TUTUP"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "TIDAK ADA DATA YANG DIAMANKAN"
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Gabungkan ${amount} ${fragmentName} jadi 1 Peti Peralatan Epik acak",
+			"trans": "Gabungkan ${amount} Fragmen Kontainer Epik menjadi 1 Kontainer Peralatan Epik yang dijamin",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Anda tidak dapat menggunakan item ini karena ada efek status yang bertentangan dengannya",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Anda tidak dapat menggunakan item ini karena ada efek status yang bertentangan dengannya"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Lanjut"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Item didapatkan"
+				"trans": "FRAGMEN DITERIMA:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ITEM YANG DITERIMA:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Sumber daya tidak cukup untuk membuat"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Indeks slot tidak valid"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Level minimal ${level} diperlukan untuk mengaktifkan furnitur ini",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Kamu perlu berlevel ${level} untuk mengaktifkan furnitur ini",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Pilih Perabotan"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Kamu perlu mencapai level ${level} untuk menggunakan furnitur ini",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Sumber daya tidak cukup untuk ditukarkan"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Resep Furnitur Tidak Valid"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Menerima unit ${unit}",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Dapatkan ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Dapatkan ${unit} Unit (${bonus} Bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Unit",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "Kamu tidak dapat menggunakan item di pertarungan jalanan, item hanya tersedia saat di dungeon"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Eksploit chat baru saja digunakan, eksploit chat memiliki cooldown penerapan global selama ${minutes} menit",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "dengan bargaining"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "dari Brutalitas"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "dengan Crit Chance"
@@ -7120,8 +7212,8 @@
 			"trans": "dengan Crit Chance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "dengan Brutalitas"
+			"eng": "of Crit Damage",
+			"trans": "dari Kerusakan Kritis"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Program bimbingan Anda telah berakhir."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Sistem mendeteksi adanya akun yang terhubung, biasanya melalui IP atau perangkat bersama. Akun ini tidak dapat memilih Handler hingga koneksi terputus dan tidak terdeteksi lagi untuk sementara waktu."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Akunmu terhubung ke akun lain sehingga tidak dapat mengikuti pendampingan"
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Adopsi hewan peliharaan lagi di cooldown nih, bro/sis"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Kamu membutuhkan apartemen untuk mengadopsi peliharaan"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff belum diaktifkan"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Tanpa Nama"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Sehat"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Aktifkan"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Kamu perlu mengaktifkan penyembuhan hewan peliharaan terlebih dahulu"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Aktifkan penyembuhan hewan peliharaan"
+				"eng": "Activate pet revive",
+				"trans": "Aktifkan Penghidupan Kembali Peliharaan"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Anda tidak dapat melakukan tindakan ini sekarang"
+				"eng": "You can't perform this action now",
+				"trans": "Tidak dapat melakukan aksi ini saat ini"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Makasih udah isi survei, reward-nya udah dikirim ke item inbox kamu, bisa diakses dari tab Penyimpanan ya"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Aksi ini tidak dapat dilakukan selama buff kelompok aktif"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "ULANGI KONEKSI"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Presisi Kalibrasi - Legendars"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Presisi Kalibrasi (Epik)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Presisi Kalibrasi - Prestige"
+			"trans": "Ketepatan Kalibrasi (Prestise)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Pencuri techno akan jarang muncul di ruang bawah tanah saat Anda membuka peti, mereka menjatuhkan rampasan yang lebih baik, termasuk kemungkinan lebih tinggi dari item epik"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Dungeon geng berpeluang memunculkan misi geng untuk membunuh musuh dari geng NPC tertentu"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Token Dungeon ditambahkan, kamu bisa menggunakannya untuk menukar item dari NPC Weapon Smith, item ini dapat diperoleh dari Techno Thief dan Misi Gang"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Dungeon geng akan memiliki kesempatan untuk menelurkan pencarian geng, yang melibatkan membunuh musuh geng NPC tertentu"
+			"trans": "Dua bingkai donatur baru ditambahkan"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} tidak memiliki ruang inventaris yang cukup untuk ${itemName} agar transaksi dapat diselesaikan.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Ruang inventaris kamu tidak cukup untuk ${itemName} guna menyelesaikan transaksi.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} tidak memiliki ruang yang cukup dalam Penyimpanan mereka untuk ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} tidak memiliki ruang yang cukup di inventarisnya untuk ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "Anda tidak dapat mengirim undangan perdagangan ke pemain ini"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Pemain target tidak dapat berpartisipasi dalam perdagangan"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Pemain target tidak dapat mengikuti pertukaran"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Anda tidak punya cukup uang untuk menyelesaikan perdagangan."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Anda tidak memiliki cukup ruang dalam Penyimpanan Anda seharga ${itemName} untuk menyelesaikan perdagangan.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Ruang di inventarismu tidak cukup untuk ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Kamu tidak dapat mengirim undangan dagang ke pemain ini"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Tekan lama untuk kembali ke kota"
+				"eng": "Long press to go back to city",
+				"trans": "Tekan dan tahan untuk kembali ke kota"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Tutup"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Level mu terlalu rendah untuk item ini",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Levelmu terlalu rendah untuk item ini"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Levelmu tidak mencukupi. Butuh level ${level} untuk memakai item ini",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Level kamu terlalu rendah untuk item ini. Item ini membutuhkan level ${level} untuk dipakai",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Musuh terdekat"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Kamu bisa tekan dan tahan tombol kembali untuk kembali ke kota dan mengunjungi berbagai toko serta fitur"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Tutup"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,7 +19094,7 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Kecil"
 				},
 				"tiny": {

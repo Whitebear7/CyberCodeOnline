@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus Eenheden"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Tik om te kopiëren"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Gratis bonusunits"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "U ontvangt nog eens 10% meer eenheden met PayPal-aankoop"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Extra eenheden bij alle PayPal-aankopen"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL gekopieerd naar het klembord."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Verwijder deze notitie?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Are you sure?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -1042,6 +1052,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibratie (${percent}%) wordt binnen enkele minuten ingezet",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibratie (${percent}%) zal over enkele minuten worden uitgevoerd",
 			"vars": [
@@ -1348,21 +1365,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Fijne Feestdagen iedereen!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Het is weer de mooiste tijd van het jaar! In Shangri-La vieren we de wintervakantie met een speciaal evenement!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Geniet van de feestelijke achtergrondmuziek tijdens het evenement!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Fijne wintervakantie!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Happy Winter Holiday!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1795,12 @@
 			"trans": "Annuleren"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Sluiten"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "Bevestig"
+			"eng": "Confirm",
+			"trans": "Confirm"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,9 +2485,17 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Donatie Niveau Bezeten: [${owned}/${total}]",
+			"trans": "Bezette donatieniveaus: [${owned}/${total}]",
+			"vars": [
+				"owned",
+				"total"
+			]
+		},
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Bezitten: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
@@ -3181,6 +3198,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "STOPPEN"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Systeemfout"
@@ -3201,6 +3222,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ACQUIRED ASSETS"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "DISMISS"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Geen dumplings afgerond. Pass verbruikt."
@@ -3820,8 +3849,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Combineer ${amount} ${fragmentName} tot 1 willekeurige Epic-uitrustingskist",
+			"trans": "Smelt ${amount} epische cachefragmenten samen tot 1 gegarandeerde epische uitrustingscache",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +3951,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "U kunt dit item niet gebruiken omdat er een statuseffect is dat ermee in strijd is",
-			"vars": [
-				"minutes"
-			]
+			"trans": "U kunt dit item niet gebruiken omdat er een statuseffect is dat ermee in strijd is"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -4029,9 +4064,23 @@
 				"eng": "CONTINUE",
 				"trans": "Doorgaan"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Ontvangen items:"
+				"trans": "FRAGMENTS RECEIVED:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "RECEIVED ITEMS:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Onvoldoende materialen om te craften"
+				}
 			}
 		}
 	},
@@ -4216,8 +4265,8 @@
 				"trans": "Ongeldige slotindex"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Om dit meubel te gebruiken heb je minimaal niveau ${level} nodig",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Je hebt niveau ${level} nodig om dit meubel te activeren",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4383,17 @@
 			"eng": "Select Furniture",
 			"trans": "Kies meubels"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Je hebt niveau ${level} nodig om dit meubel te gebruiken",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4477,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Onvoldoende hulpbronnen om te ruilen"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Ongeldig meubelrecept"
 				}
 			},
 			"tip": {
@@ -4958,11 +5028,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Ontvang ${unit} -eenheid",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Receive ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5043,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Receive ${unit} Unit (${bonus} bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} eenheid",
@@ -5156,6 +5233,17 @@
 				"localFightCantUseItem": {
 					"eng": "You cannot use item during street fights, items are only available during dungeons",
 					"trans": "U kunt geen item gebruiken tijdens straatgevechten, items zijn alleen beschikbaar tijdens Dungeons"
+				}
+			}
+		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Chatexploit is onlangs gebruikt en de globale cooldown voor het inzetten van chatexploits is ${minutes} minuten",
+					"vars": [
+						"minutes"
+					]
 				}
 			}
 		},
@@ -7111,6 +7199,10 @@
 			"eng": "of Bargaining",
 			"trans": "van onderhandelingen"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "of Brutality"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "van Crit Chance"
@@ -7120,8 +7212,8 @@
 			"trans": "van Crit Chance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "van Crit-schade"
+			"eng": "of Crit Damage",
+			"trans": "of Crit Damage"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8930,8 +9022,8 @@
 				"trans": "Je mentorschap is al gesloten."
 			},
 			"connectedAccount": {
-				"eng": "System detected possible connected accounts, usually via IP or shared device, so this account is not eligible to select a Handler until no connection is detected for some time.",
-				"trans": "Systeem detecteerde mogelijke gekoppelde accounts, meestal via IP of gedeeld apparaat. Dit account komt daarom niet in aanmerking om een Handler te selecteren totdat er enige tijd geen verbinding meer wordt gedetecteerd."
+				"eng": "Your account is connected to another account, so it cannot join mentorship.",
+				"trans": "Je account is gekoppeld aan een ander account en kan daarom niet deelnemen aan het mentorprogramma."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -11838,6 +11930,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Het adopteren van een huisdier is in afkoeling"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Je hebt een appartement nodig om een huisdier te adopteren"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff is niet geactiveerd"
@@ -11951,6 +12047,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Naamloos"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Gezond"
@@ -12019,6 +12119,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Activate"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12038,8 +12142,8 @@
 				"trans": "Je moet eerst de pet revive activeren"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Activeer huisdier herrijzen"
+				"eng": "Activate pet revive",
+				"trans": "Activate pet revive"
 			}
 		},
 		"reviveButton": {
@@ -12130,8 +12234,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Je kunt deze actie nu niet uitvoeren"
+				"eng": "You can't perform this action now",
+				"trans": "Deze actie kan nu niet worden uitgevoerd"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12208,6 +12312,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Bedankt voor het invullen van de enquête, de beloningen zijn verzonden naar je item-inbox. Je kunt de inbox openen via het inventaris-tabblad"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Je kunt deze actie niet uitvoeren tijdens een groepsbuff"
+				}
 			}
 		}
 	},
@@ -13680,6 +13792,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "RETRY CONNECTION"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15198,8 +15314,12 @@
 			"trans": "Kalibratie precisie (legendarisch)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Calibration Precision (Epic)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Kalibratie precisie (episch)"
+			"trans": "Calibration Precision (Prestige)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15904,8 +16024,16 @@
 			"trans": "Techno Thief zal zelden in kerker spawnen wanneer je kratten opent, ze laten een betere buit vallen, inclusief een grotere kans op epische items"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Gang Dungeon krijgt de kans om een bende -zoektocht te spawnen, waarbij vijanden van specifieke NPC -bendes worden gedood"
+			"trans": "Two new donator frames added"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16015,6 +16143,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} heeft niet genoeg ruimte in hun inventaris voor ${itemName} om de ruil te voltooien.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Je hebt niet genoeg ruimte in je inventaris voor ${itemName} om de ruil te voltooien.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16062,8 +16209,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} heeft niet genoeg ruimte in hun inventaris voor ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} heeft niet genoeg ruimte in de inventaris voor ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16078,8 +16225,8 @@
 				"trans": "U kunt geen handelsnodiging naar deze speler sturen"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Target -speler kan niet deelnemen aan de handel"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Deze speler kan niet deelnemen aan de ruil"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16104,11 +16251,19 @@
 				"trans": "Je hebt niet genoeg geld om de handel te voltooien."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Je hebt niet genoeg ruimte in je inventaris voor ${itemName}",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Niet genoeg ruimte in je inventaris voor ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Je kunt deze speler geen ruiluitnodiging sturen"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16319,8 +16474,8 @@
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Lang indrukken om terug naar de stad te gaan"
+				"eng": "Long press to go back to city",
+				"trans": "Long press to go back to city"
 			}
 		},
 		"bank": {
@@ -16813,6 +16968,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "close"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17435,15 +17594,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Uw niveau is te laag voor dit item",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Your level is too low for this item"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Nog niet geschikt! Dit item vereist level ${level}",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Your level is too low for this item, this item requires level ${level} to equip",
 				"vars": [
 					"level"
 				]
@@ -17694,6 +17857,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "In de buurt vijanden"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "You can long press the back button to go back to city to visit various shops and features"
 			}
 		},
 		"login": {
@@ -18545,6 +18714,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Sluiten"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18919,8 +19094,8 @@
 					"trans": "Normaal"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Klein"
+					"eng": "Small",
+					"trans": "Small"
 				},
 				"tiny": {
 					"eng": "Tiny",
