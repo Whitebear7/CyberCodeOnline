@@ -16,6 +16,12 @@ Please send your feedback to my Discord or email me directly.
 
 ## Updates
 
+### 0.1900
+
+- Improved `SLANC` with more natural conversations and clearer player replies.
+- Improved performance and presentation for animated NPCs and emblems.
+- Security patch.
+
 ### 0.1899
 
 - Improved translated chat so replies retain their context, player names, and formatting, with clearer reply indicators.
