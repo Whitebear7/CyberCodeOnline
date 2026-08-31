@@ -812,6 +812,26 @@
 			"trans": "Avast Ye! Spooky Character Art Contest!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Ye deposited ${amount} into yer bank.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Ye withdrew ${amount} from yer bank.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Mighty Stash Fusion Bundle"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "For the Taking"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Bundled loot be out of reach"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Chest o' Rare Gear"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Scouting the ${tierName} Class",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Behold the Portrait"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Sneak a Peek"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Yar Chat Frame"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Arrivin"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Message Course"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Other Matey"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Out to Sea"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Sailor Banner"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Mate Particulars"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Play the entrance show once more"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Short / one line"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Short preview message matey."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Long / Wrapping"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Arr this longer preview message tests how the frame naturally wraps across multiple lines without forced breaks."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Shadowed Scribes"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Nitebloom"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "Slip us yer email, and the ship's computer'll send ye a password reset, aye?"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Each token grants ye global access to Epic Cache Fusion fer 5 minutes."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Get 3 Equipment Exchange Access Tokens fer 30% off."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Ye may claim this once each week."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Save 30% on yer Epic Cache Fusion"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "What be this? Read the Epic Cache Fusion tutorial, matey."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "SEEK OUT THE NIGHTBLOOM FLORIST"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Get 3 Equipment Exchange Access Tokens fer 30% off."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Ye may claim this once each week."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Save 30% on yer Epic Cache Fusion"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Nitebloom Fete"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "September's Booty"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Nightbloom Feast Bounty"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Dead Eye Tower"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Plunder While Ye Sleep"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Bonus swag from yer AFK bot plundering!"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Ye’ll hear some fine, special melodies hummin’ during this event!"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Treasure from the Chat"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Rewards be yours if ye join the chat during the event, matey!"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Message Bluster"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Treasure Chest Booty"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Extra treasure from dungeon chests, matey!"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Beastie Bounty"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Yarrr, extra treasures from defeatin' monsters!"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Lighten yer load, mateys!"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Plunderin' Loot"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Booty from scavengin':"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "Cursed Core Crew"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "A Nightbloom access shard required to set one Precision Tower run underway. Found by dispatching the farm bot or cracking open dungeon chests during the Nightbloom Festival."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Nitebloom Passage Shard"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Chat Cheat'n Contraption [UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "A tradeable Chat Lottery booty that automatically knocks ${discountPercent}% off any Global Time Skip. It is spent the moment ye use it.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Parley Draw Skip Pass"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Token o' New Year"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "A potent floral draught that boosts AFK EXP an BTC haul by ${percent}% fer ${minutes} minutes.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Nightbloom Brew"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "A glowing flower petal found during the September event. Trade it with Vesper at the Nightbloom Florist fer goods."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Nitebloom Petal"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Chat Booty"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Dungeon Treasure Chests"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game} plunder",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Monsta Plunder"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Lootin"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Yer mentorship be already locked down."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Yer account be connected to another account, so it cannot join mentorship."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "The system spied another account linked by device history from any time or fresh IP activity so this account cannot pick a Handler"
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Ahoy! New Year's Bash!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Event Stash"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Hoist the Precision Tower, gather Nightbloom Petals, and barter with Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "September Doings"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Nitebloom Fete"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Dead Reckoning Tower. Petals. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "September Doings"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Nitebloom Fete"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11429,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Firework Swashbuckler"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightblooms be delicate. The systems that keep them alive be cruel.",
+					"Fetch me Nightbloom Petals. I'll trade ye something worth carrying.",
+					"Precision Tower is online. Keep yer stack clean, and do not chase a bad placement."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Nightbloom Petal Peddler"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12651,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Bearing Orders"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Dead Eye Tower"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "The September event be not active."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Quit and check yer gear afore ye use another shard"
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Do not retry until ye verify the run status"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "TOWER SYSTEM BE OFFLINE"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Make Tracks"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "BULLSEYE"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "FRAME SET TRUE"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "YER RANK ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "DECK ${tier} · FRAME MENDED",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Back to the Job"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "No plunder tier secured. The shard be spent."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "YER BEARING LOST"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "How High Ye Be"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "TOP"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "NEXT DECK ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "MEND ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "RANK ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "DEAD TRUE TOWER"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "TAP ANYWHAR TO PLANT IT"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "AT HAND"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "ALIGNMENT ORDERS"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "EVENT BE CLOSED"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "DEVOURS 1 SHARD"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Cut"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "Gangway Shard"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "September Doings"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "September event be dormant"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "YE NEED A SHARD"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TOWER BE OFFLINE"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Port"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Bring It Back"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Tap when the movin slab overlaps the tower."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Unsupported overhang be cut clean away, permanently shrinking later targets."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Every ${count} straight perfect placements restores some of yer lost surface.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Booty tiers be unlocked at heights ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "If ye miss the tower or leave too little surface then the run ends and yer highest tier reached is submitted"
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "YE NEED 1 SHARD"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "Hoist the Tower"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Dead Eye Tower"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "STARTIN THE TOWER"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Sharp Eye Tower Deck"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "TOWER BE SECURED"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Tower Booty"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Aye Tier ${tier} be confirmed at height ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "LOOT TIER SECURED"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "The 3D renderer stopped dead afore the run could be submitted"
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "RENDERER BE OFFLINE"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Mast Height"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Bullseye"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Finest Run"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Quit and check yer gear afore ye use another shard"
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "SUBMISSION BE UNKNOWN"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Heighth ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Yer highest tier reached be submitting. Do not close."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Deck ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "SEALIN TOWER DATA"
+			}
 		}
 	},
 	"priceTag": {
@@ -16470,6 +16988,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Set sail with Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google login be failed. Ye must update yer app to the latest version."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16479,91 +17001,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Doubloons"
+			"account": {
+				"eng": "Bank",
+				"trans": "Vault"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Arrr Arasaka continuity program"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Ye mark. Ye goods. Ye entry. Kept safe for all days to come."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Outlive the uncertain tides."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Yer own coin. Always at hand. Full command."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Claim yer morrow. Bank it today."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Arasaka Safe Bankin"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Sum"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "Yer ${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Shift yer ${currency} from the purse to the bank",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Purse → Vault"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Yer bank balance be empty"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Stow or take out yer ${currency} · Bank stash: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "The amount ye request be beyond yer bank balance."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "That be more coin than yer wallet holds."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Enter a proper whole sum."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Plunder All"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arrraska Coin Bank // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "On the Wire"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Pick"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Choose thy transaction"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Show ye an ad ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "Doubloon Dispenser"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Bid fer a deal"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Haul yer ${currency} from the bank to yer wallet",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Treasure Chest → Purse"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Put Doubloon"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Put yer Doubloons into bank"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Aye, this here be locked, and ye can't stash it away."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "How much would ye like t' put?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Fetch ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "How many item would ye like t' put in th' safe?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "How much would ye like t' take?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "How many item would ye like t' take from th' bank?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Stow ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Ye can't withdraw when no doubloon on ye."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Put Item"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Put yer items into ye safe"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Take Item"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Take yer items out from ye safe"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "UPGRADE YE SLOTS TO ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Increase th' max amount o' items ye can store in safe t' ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Sharpen the Blade"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Grow yer vault from ${current} → ${next} slots fer ${price} ${currency} outta yer wallet.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Upgradin' the Treasure Hold, Ahoy!"
+					"eng": "Upgrade vault?",
+					"trans": "Upgrade yer vault?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Stow"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Stow in vault"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} bays",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Vault be empty"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Press + to add yer plunder"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} hold slots used · Stow or fetch goods",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / heap",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Not enough hold room fer this haul"
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Your wallet be short on coin fer the storage fee"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Yer inventory be empty"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Stash Limit"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "No plunder fits in the remaining vault space."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Haul"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Tap a piece of loot to retrieve it. Retrieval be free."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Fetch chosen loot"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Complete yer current deed before ye retrieve yer loot."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "The chosen stacks be too many to fit. Turn off choosing lots at once to take a lesser sum."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Goods Hold"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Unlock yer loot afore ye stow it"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Refit the Vault"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Purse"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Take Doubloon"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Take yer Doubloons out of bank"
 			}
 		},
 		"basicInfo": {
@@ -17152,6 +17854,12 @@
 				"trans": "Only show dungeons me could've join"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Sound the crest"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17303,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Skipper"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "The Whole Booty o' Apps"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Orders"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17498,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "No matching loot"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Scour yer booty..."
@@ -17505,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "Booty Keys"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Me Slots: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17845,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Long press t' multi-select"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} picked",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -18839,6 +19574,16 @@
 					"trans": "Yarrr! Show the unaltered messages, matey!"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Show ye the English translation under yer own chat messages"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Show Me Mine Message Translation"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Skull & Crossbones Territory"
@@ -18926,12 +19671,18 @@
 				"trans": "Help wit' translatin tharr game"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "'Tis language pack be open source an' contributed by ourr players, tharr text may nay be fully translated an' could contain mistakes. Please feel free t' edit an' contribute from ourr Github parchment"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Arr this here community translation may be incomplete or full of mistakes."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "The Captain's Words"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Crew Translation"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19041,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Recei'e Global Buff Notification"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Tharr app will restart afterr sa'in"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "sa'e"
@@ -19061,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Skirmish Deck"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Experimental, Arrr!"
 				},
 				"general": {
 					"eng": "General",

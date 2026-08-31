@@ -812,6 +812,26 @@
 			"trans": "Ürkütücü karakter sanat yarışması!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Banka hesabınıza ${amount} yatırıldı.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Banka hesabınızdan ${amount} çekildi.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Destansı Önbellek Füzyon Paketi"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Özgür"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Paket Kullanılamıyor"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Nadir Ekipman Sandığı"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Önizleme: ${tierName} Tier\n    </",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Profilde Önizleme"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Önizle"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Sohbet Çerçevesi"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Gelen"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Mesaj Yönü"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Diğer Oyuncu"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Giden"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Oyuncu Pankartı"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Oyuncu Bilgileri"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Giriş animasyonunu yeniden oynat"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Kısa / tek satır"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Kısa önizleme mesajı."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Uzun / sarmalama"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Bu daha uzun önizleme mesajı, çerçevenin birden fazla satıra satır sonlarını zorlamadan doğal olarak sarmalanmasını nasıl ele aldığını denetler."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Kara Basın"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Gece Çiçeği"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "E -postanızı girin, sistem size bir sıfırlama şifre e -postası gönderecektir"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Her jeton Epik Önbellek Füzyonu için 5 dakikalık küresel erişim sağlar"
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "%30 indirimle 3 Ekipman Takası Erişim Jetonu al."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Her hafta bir kez kullanılabilir."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Destansı Önbellek Füzyonunda %30 tasarruf et"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Bu ne? Efsanevi Önbellek Füzyonu eğitimini oku."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "NIGHTBLOOM ÇİÇEKÇİYİ ZİYARET ET\n</tr"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "%30 indirimle 3 Ekipman Takası Erişim Jetonu al."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Her hafta bir kez kullanılabilir."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Destansı Önbellek Füzyonunda %30 tasarruf et"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Gece Çiçeği Festivali"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Eylül Bonusu"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Gece Çiçeği Festivali Bonusu"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Hassas Kule"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Pasif Tarım Kazançları"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "AFK bot tarımı bonus eşyaları:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Etkinlikte özel arka plan müzik çalınır"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Sohbet Ödülleri"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Etkinlikte sohbet yaparak kazandığınız ödüller:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Sohbet Efektleri"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Mağara Sandık Kazanımı"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Dungeon sandıklarımdan bonuslar:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Canavar Kazançları"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Canavarları yenince bonus eşyalar:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Azaltılmış katkı gereksinimleri:"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Çöpleme Ödülleri"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Çöplükten kazançlar:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "AI Çekirdek Küme"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "Bir Precision Tower denemesini başlatmak için gereken Nightbloom erişim parçası. Nightbloom Festivali sırasında üretim botunu devreye sokarak veya zindan sandıklarını açılarak bulunur."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Geceçiçeği Erişim Parçası"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Sohbet İstismarı Vericisi [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Takas edilebilen bir Sohbet Çekilişi ödülü, herhangi bir küresel zaman atlamasına otomatik olarak ${discountPercent}% indirim uygular ve kullanıldığında tüketilir.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Sohbet Çekilişi Atlama Kuponu"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Yeni Yıl Jetonu"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "${minutes} dakika boyunca AFK EXP ve BTC kazancını ${percent}% artıran yoğunlaştırılmış çiçek iksiri",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Geceçiçeği İksiri\n<"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "Eylül etkinliği sırasında bulunan ışıltılı bir çiçek yaprağı. Gece Çiçeği Çiçekçisinde Vesper ile eşya karşılığında değiştirin."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Geceçiçeği Taç Yaprağı"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Sohbet Ödülleri"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Zindan Sandıkları"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game} ödülleri",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Canavardan Düşenler"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Malzeme Toplama"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Mentorluğun zaten kapalı."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Hesabın başka bir hesaba bağlı olduğundan mentorluğa katılamıyor."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Sistem, cihaz geçmişinde herhangi bir zamanda veya son IP etkinliğinde bağlantılı başka bir hesap tespit etti ve bu nedenle bu hesap bir Mentör seçemez."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Yeni Yıl Etkinliği!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Etkinlik İçeriği\n<"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Hassasiyet Kulesini yükselt, Gece Çiçeği Taç Yapraklarını topla ve Vesper ile takas yap."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Eylül Etkinliği"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Gece Çiçeği Festivali"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Kesinlik Kulesi. Taç Yaprakları. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Eylül Etkinliği"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Gece Çiçeği Festivali"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11429,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Piroteknik Teknisyen"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Geceçiçekleri kırılgandır. Onları hayatta tutan sistemler öyle değil.",
+					"Bana Gece Çiçeği Taçyapraklarını getir. Sana taşımaya değer bir şey takas ederim.",
+					"Hassas Kule çevrimiçi. Yığın temiz, kötü bir yerleşim peşine düşme."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Gece Çiçekçisi"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12651,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Hizalama Protokolü"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Hassas Kule"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "Eylül etkinliği aktif değil."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Başka bir parça kullanmadan önce çıkış yap ve envanterini kontrol et"
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Çalışma durumu doğrulanana kadar yeniden denemeyin"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "KULE SİSTEMİ ÇEVRİM DIŞI\n</t"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Çıkış"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "MÜKEMMEL"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "YAPI ONARILDI"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "SEVİYE ${tier}\n<",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "KATMAN ${tier} · YAPI GERİ YÜKLENDİ\n</",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Etkinliğe Dön"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Ödül kademesi elde edilemedi. Parça harcandı."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ALIGNMENT LOST"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "YÜKSEKLİK\n<"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MAKS"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "SONRAKİ ${height}\n<",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "GERİ YÜKLE ${progress}/${required}\n<",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "SEVİYE ${tier}/${tierCount}\n<",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "HASSAS KULE"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "YERLEŞTİRMEK İÇİN HER YERE DOKUN\n</t"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "KULLANILABİLİR\n</"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "HİZALAMA PROTOKOLÜ\n<"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "ETKINLIK KAPALI"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "1 PARÇA HARCAR"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Kes"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "GİRİŞ PARÇASI\n</"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Eylül Etkinliği"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Eylül etkinliği devre dışı"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "PARÇA GEREKLİ\n<"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "KULE ÇEVRİMDIŞI\n<"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Yer"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Geri Yükleme"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Hareketli blok kuleyle çakıştığında dokun."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Desteklenmeyen sarkma kesilir, sonraki hedefler kalıcı olarak küçülür."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Her ${count} ardışık kusursuz yerleştirmede kayıp yüzeyin bir kısmı geri kazanılır.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Ödül kademeleri ${heights} yüksekliklerinde açılır.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Kuleyi ıskalamak veya çok az yüzey bırakmak denemeyi sonlandırır ve ulaşılan en yüksek katmanı gönderir."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "1 PARÇA GEREKLİ\n<"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "KULEYI BASLAT"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Hassas Kule"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "KULE BAŞLATILIYOR"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Hassas Kule Oyun Alanı"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "KULE GÜVENCE ALTINDA"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Kule Ödülleri"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "${height} yüksekliğinde ${tier}. seviye onaylandı.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "ÖDÜL KADEMESİ SAĞLANDI\n<"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "3B render motoru deneme gönderilemeden önce durdu."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "ÇİZİCİ ÇEVRİMDIŞI\n</tr"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Yükseklik"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Mükemmel"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "En Uzun Seri"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Başka bir parça kullanmadan önce çıkış yap ve envanterini kontrol et"
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "GÖNDERİM BİLİNMİYOR\n</tr"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Yükseklik ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Ulaşılan en yüksek kademe gönderiliyor. Kapatmayın."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Kademe ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "KULE VERİSİ GÜVENLİĞE ALINIYOR\n</t"
+			}
 		}
 	},
 	"priceTag": {
@@ -16470,6 +16988,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Google ile Devam Et"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google girişi başarısız oldu. Lütfen uygulamayı son sürüme güncelleyin."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16479,91 +17001,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Bakiye"
+			"account": {
+				"eng": "Bank",
+				"trans": "Banka"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Arasaka Süreklilik Programı"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Kimlik. Varlıklar. Erişim. Her yarında güvende."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Belirsizliği aş."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Özel varlıklar. Kesintisiz erişim. Tam kontrol."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Yarının sahibi ol. Bugün güvenceye al."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Arasaka Güvenli Bankacılık"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Tutar"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "${currency} tutarını cüzdandan bankaya aktar",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Cüzdan → Banka"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Hesap bakiyeniz sıfır"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "${currency} yatır veya çek · Banka: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Tutar banka bakiyenizi aşıyor."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Tutar cüzdan bakiyenizi aşıyor."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Geçerli bir tam tutar girin."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Maksimum"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka Finans // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Çevrimiçi"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Seç"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "İşlem seçin\n<"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "${number} numaralı reklamı göster",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "Nakit Otomatı"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "İşlem Talebi\n<"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Bankadan cüzdanına ${currency} aktar",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Bankadan Cüzdana"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Para Yatır"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Bitcoinleri bankaya yatır"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Bu öğe kilitlenir ve saklanamaz."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Ne kadar yatırmak istersiniz?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "${itemName} Çek",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Kasaya kaç adet koymak istersiniz?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Ne kadar çekmek istersiniz?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Kasadan kaç adet almak istersiniz?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "${itemName} Depola",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Bakiyeniz olmadığı için para çekimi yapamazsınız."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Eşya Depola"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Eşyaları kasaya koy"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Eşyayı üzerine al"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Eşyaları kasadan al"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "Stoğu ${upgradeToSlot}'e yükseltin",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Kasada depolayabileceğiniz maksimum stok miktarını ${upgradeToSlot} yapın",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Güncelleme"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "${current} → ${next} yuvayı cüzdandan ${price} ${currency} karşılığında genişlet.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Yükseltme Kasası"
+					"eng": "Upgrade vault?",
+					"trans": "Kasayı yükselt?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Ekle"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Kasaya Ekle"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} slot",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Kasa boş"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "+ ile eşya ekle"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} slot kullanıldı · Eşya sakla veya al",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / yığın",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Bu çekme işlemi için yeterli envanter kapasitesi yok."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Cüzdan bakiyeniz depolama ücreti için yeterli değil."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Envanterin boş"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Maksimum Kapasite"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Kalan kasa kapasitesine sığacak envanter öğesi yok."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Getir"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Bir öğeyi almak için üzerine dokun. Çekim ücretsizdir."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Seçilenleri Al"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Eşyaları almadan önce mevcut işlemi tamamla."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Seçili yığınlar sığmıyor. Daha az miktarda seçim yapmak için çoklu seçimi kapatın."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Eşya Kasası"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Depolamadan önce öğenin kilidini açın"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Kasayı Yükselt"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Cüzdan"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Para Çek"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Bitcoin'leri bankadan çek"
 			}
 		},
 		"basicInfo": {
@@ -17152,6 +17854,12 @@
 				"trans": "Sadece katılabileceğim zindanları göster"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Rozet sesini çal"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17303,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Yönetici"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Tüm Uygulamalar"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Komut"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17498,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Eşleşen öğe yok"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Eşyaları ara..."
@@ -17505,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "Gizli Anahtarlar"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Yuvalar: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17845,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Çoklu seçim için basılı tutun"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} öğe seçildi",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -18839,6 +19574,16 @@
 					"trans": "Orijinal Sohbet Mesajını Göster"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Kendi sohbet mesajlarının altında İngilizce çeviriyi göster\n<"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Kendi Mesajlarımın Çevirisini Göster"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Tehlikeli Bölge"
@@ -18926,12 +19671,18 @@
 				"trans": "Oyunun çevirisine yardım edin"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Bu dil paketi açık kaynaklıdır ve oyuncularımızın katkılarıyla oluşturulmaktadır. Metinler tamamen çevrilmemiş veya hatalı çevrilmis olabilir. Github sayfamızı ziyaret ederek çevirilere katkıda bulunabilirsiniz"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Bu topluluk çevirisi eksik veya hatalı olabilir."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Dil"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Topluluk Çevirisi"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19041,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Global Takviye Bildirimleri Al"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Uygulama kayıttan sonra yeniden başlatılacak"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "Ayarları Kaydet"
@@ -19061,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Savaş"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Deneysel"
 				},
 				"general": {
 					"eng": "General",

@@ -812,6 +812,26 @@
 			"trans": "Spooky Permance Art Competition!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Зачислено ${amount} на ваш банковский счёт.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "С вашего банковского счета снято ${amount}.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Эпический набор слияния кэша"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Бесплатно"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Набор недоступен"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Редкое оборудование ящик"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Просмотр ${tierName} ранга",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Предпросмотр в профиле"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Предпросмотр"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Рамка чата"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Входящие"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Направление сообщения"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Другой игрок"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Исходящие"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Баннер игрока"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Данные игрока"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Повторить анимацию появления"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Короткое сообщение / одна строка"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Краткое сообщение предпросмотра."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Длинный / перенос"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Это более длинное сообщение в превью проверяет, как рамка обрабатывает естественный перенос на несколько строк без принудительных разрывов."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Чёрная пресса"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Ночной цветок"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "Введите вашу электронную почту и система отправит вам электронное письмо для сброса пароля"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Каждый токен активирует глобальный доступ к Эпическому слиянию кэша на 5 минут."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Получите 3 токена доступа к обмену снаряжением со скидкой 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Доступно раз в неделю."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Скидка 30% на Эпическое слияние кэша"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Что это? Прочти руководство по слиянию эпического кэша."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "ПОСЕТЬ ФЛОРИСТА НОЧНОЕ ЦВЕТЕНИЕ"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Получите 3 токена доступа к обмену снаряжением со скидкой 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Доступно раз в неделю."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Скидка 30% на Эпическое слияние кэша"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Фестиваль Ночного Цветения"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Сентябрьский бонус"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Бонус фестиваля Ночного цветения"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Башня точности"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "AFK-добыча при фарме"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Дополнительные награды за AFK-фарм:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Во время события играет особый саундтрек"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Бонусы за чат"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Награды за общение во время события:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Эффекты чата"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Подземельные сундуки с добычей"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Бонусные предметы из сундуков подземелий:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Дропы монстров"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Бонусы за победу над монстрами:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Сниженные требования к вкладу:"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Собирательские находки"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Бонусы за сбор предметов:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "Кластер ИИ ядер"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "Осколок доступа к Найтеблум, необходимый для запуска одного прогона Башни Точности. Находится при развертывании фермерского бота или открытии сундуков подземелий во время фестиваля Найтеблум."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Осколок доступа Ночного цветка"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Модификатор чата [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Награда лотереи чата, которую можно обменять. Она автоматически применяет скидку ${discountPercent}% на любой глобальный пропуск времени и расходуется при использовании.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Купон на пропуск в лотерею чата"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Токен Нового года"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "Концентрированный цветочный настой, увеличивающий получаемый опыт и BTC во время AFK на ${percent}% в течение ${minutes} минут.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Настой Ночного Цвета"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "Светящийся лепесток, найденный во время сентябрьского события. Обменяйте его у Веспера в цветочной лавке Ночное Цветение на предметы."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Лепесток ночного цветка"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Награды чата"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Сундуки подземелий"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Награды ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Дроп с монстров"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Сбор лома"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Ваше наставничество уже закрыто."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Ваш аккаунт уже привязан к другому аккаунту, поэтому он не может присоединиться к наставничеству."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Система обнаружила другой аккаунт, ранее связанный с этим устройством или имевший недавнюю активность IP, поэтому этот аккаунт не может выбрать Хэндлера."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Новогоднее событие!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Контент события"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Возведите Башню Точности, соберите лепестки Ночного Цветка и торгуйте с Веспером."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Событие сентября"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Фестиваль Ночного Цветения"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Башня точности. Лепестки. Веспер."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Событие сентября"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Фестиваль Ночного Цветения"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11429,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Техник по фейерверкам"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Ночные цветы хрупки. Системы жизнеобеспечения не таковы.",
+					"Принеси мне лепестки ночного цветка. Я отдам тебе что-то стоящее.",
+					"Башня точности в сети. Стек чистый, не гонись за плохой расстановкой."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Ночной Флорист"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Веспер"
 			}
 		},
 		"party": {
@@ -12651,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Протокол выравнивания"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Башня точности"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "Сентябрьское событие не активно."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Выйдите и проверьте инвентарь перед использованием другого шарда."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Не повторяйте попытку, пока не подтверждён статус выполнения"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "СИСТЕМА БАШНИ ОТКЛЮЧЕНА"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Выход"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "ИДЕАЛЬНО"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "СТРУКТУРА ВОССТАНОВЛЕНА"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "УРОВЕНЬ ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "УРОВЕНЬ ${tier} · СТРУКТУРА ВОССТАНОВЛЕНА",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Вернуться к событию"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Уровень награды не получен. Осколок израсходован."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ПОТЕРЯ ВЫРАВНИВАНИЯ"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "ВЫСОТА"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "МАКС"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "ДАЛЬШЕ ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "ВОССТАНОВИТЬ ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "УРОВЕНЬ ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "Башня точности"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "НАЖМИТЕ В ЛЮБОМ МЕСТЕ ДЛЯ РАЗМЕЩЕНИЯ"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "Доступно"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "ПРОТОКОЛ ВЫРАВНИВАНИЯ"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "СОБЫТИЕ ЗАКРЫТО"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "ПОТРЕБЛЯЕТ 1 ОСКОЛОК"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Клип"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "Осколок записи"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Событие сентября"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Сентябрьское событие неактивно"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "ТРЕБУЕТСЯ ОСКОЛОК"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "БАШНЯ ВНЕ СЕТИ"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Место"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Восстановление"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Нажимай, когда движущаяся плита перекроет башню."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Свес без опоры срезается, навсегда уменьшая последующие цели."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Каждые ${count} подряд безупречных размещений восстанавливают часть утраченной поверхности.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Уровни наград открываются на высотах ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Если вы промахнетесь по башне или оставите слишком мало поверхности, попытка завершится и будет засчитан наивысший достигнутый уровень."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "Требуется 1 осколок"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "СТАРТ БАШНИ"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Башня точности"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "ИНИЦИАЛИЗАЦИЯ БАШНИ"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Игровое поле Башни точности"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "БАШНЯ ПОД КОНТРОЛЕМ"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Награды башни"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Уровень ${tier} подтверждён на высоте ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "УРОВЕНЬ НАГРАДЫ ЗАКРЕПЛЁН"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "Трёхмерный рендерер остановился до отправки прогона."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "РЕНДЕРЕР НЕДОСТУПЕН"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Высота"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Идеально"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Лучшая серия"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Выйдите и проверьте инвентарь перед использованием другого шарда."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "ОТПРАВКА НЕИЗВЕСТНА"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Высота ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Отправляем максимальный достигнутый уровень. Не закрывайте."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Уровень ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "ЗАЩИТА ДАННЫХ БАШНИ"
+			}
 		}
 	},
 	"priceTag": {
@@ -16470,6 +16988,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Войти через Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Не удалось войти в Google. Обновите приложение до последней версии."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16479,91 +17001,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "баланс"
+			"account": {
+				"eng": "Bank",
+				"trans": "Банк"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Программа непрерывности Арасаки"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Личность. Активы. Доступ. Сохранены в каждом завтрашнем дне."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Переживи неопределенность."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Личные активы. Постоянный доступ. Полный контроль."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Сделай завтра своим. Зафиксируй его сегодня."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Безопасный банкинг Арасака"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Сумма"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Переместить ${currency} из кошелька в банк",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Кошелёк → Банк"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Счет пуст"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Пополнение или снятие ${currency} · Банк: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Сумма превышает остаток на вашем счёте."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Сумма превышает ваш баланс кошелька."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Введите корректную целую сумму."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Максимум"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Финансы Арасаки // АТМ-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "В сети"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Выбрать"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Выберите операцию"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Показать рекламу ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "Банкомат"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Заявка на операцию"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Переведите ${currency} из банка в кошелёк",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Банк → Кошелёк"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Внести на счет"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Положить BTC в банк"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Этот предмет заблокирован и не может храниться."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Сколько вы хотите внести?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Получить ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Сколько вы хотите положить в хранилище?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Сколько вы хотите вывести?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Сколько вы хотите вывести из банка?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Положить в хранилище ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Вы не можете вывести средства, когда ваш баланс пуст."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Положить в ячейку"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Поместить предметы в хранилище за 100 BTC"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Забрать из ячейки"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Взять предметы из хранилища"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "Увеличить количество слотов до ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Увеличь максимальное количество предметов, которые вы можете хранить, до ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Обновление"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Увеличьте количество слотов с ${current} до ${next} за ${price} ${currency} из вашего кошелька.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Обновление хранилища"
+					"eng": "Upgrade vault?",
+					"trans": "Улучшить сейф?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Добавить"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Добавить в хранилище"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} ячеек",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Хранилище пусто"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Используйте +, чтобы добавить предметы"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "Занято ${used} / ${size} слотов · Хранить или забирать предметы",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / стопка",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Недостаточно места в инвентаре для этого извлечения."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Недостаточно средств на кошельке для платы за хранение."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Ваш инвентарь пуст"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Максимальная ёмкость"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Ни один предмет из инвентаря не помещается в доступный объём хранилища."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Получить"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Нажмите на предмет, чтобы извлечь его. Извлечение бесплатно."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Получить выбранное"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Завершите текущее действие перед извлечением предметов."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Выбранные стопки не помещаются. Отключите мультивыбор, чтобы выбрать меньшее количество."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Хранилище предметов"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Разблокируйте предмет, прежде чем положить его в хранилище."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Улучшить хранилище"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Кошелёк"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Снять со счета"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Вывести BTC из банка"
 			}
 		},
 		"basicInfo": {
@@ -17152,6 +17854,12 @@
 				"trans": "Показать только подземелья, к которым я могу присоединиться"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Воспроизвести звук эмблемы"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17303,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Админ"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Все Приложения"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Команда"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17498,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Совпадающих предметов нет"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Найти предметы…"
@@ -17505,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "ключи шифрования"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Слоты: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17845,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Зажмите для выбора нескольких предметов"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "Выбрано ${count}",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -18839,6 +19574,16 @@
 					"trans": "Показать оригинальное сообщение в чате"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Показывать английский перевод под вашими сообщениями в чате"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Показывать перевод моих сообщений"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Опасная зона"
@@ -18926,12 +19671,18 @@
 				"trans": "Помочь с переводом игры"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Данный перевод находится в открытом доступе и добавлен нашими игроками, текст может быть переведен не полностью и может содержать ошибки. Пожалуйста, не стесняйтесь редактировать и вносить свой вклад с нашей страницы Github"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Этот перевод сообщества может быть неполным или содержать ошибки."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Язык"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Перевод сообщества"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19041,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Получать уведомления глобальных баффов"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Приложение перезапустится автоматически после сохранения"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "сохранить"
@@ -19061,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Бой"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Экспериментальный"
 				},
 				"general": {
 					"eng": "General",
@@ -19606,7 +20349,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "Запустите задачу перед выходом из игры, чтобы сбор ресурсов и прокачка продолжались в фоновом режиме."
+				"trans": "Запусти задание перед выходом, чтобы продолжать собирать ресурсы и повышать уровень в фоновом режиме."
 			}
 		},
 		"animation": {
@@ -19616,7 +20359,7 @@
 			},
 			"autotask": {
 				"eng": "AUTOTASK",
-				"trans": "Автозадача"
+				"trans": "АВТОЗАДАЧА"
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
@@ -19624,15 +20367,15 @@
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "ЛФГ Заброшенный завод, нужен хилер."
+				"trans": "Ищу группу на заброшенную фабрику, нужен хилер."
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "Инв, есть аптечки."
+				"trans": "Инв, у меня аптечки."
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "Глобальный бафф активирован Каэлем"
+				"trans": "Глобальный бафф активирован Кейлом"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19644,7 +20387,7 @@
 			},
 			"reverse_engineering": {
 				"eng": "REVERSE_ENGINEERING",
-				"trans": "Реверс-инжиниринг"
+				"trans": "РЕВЕРС-ИНЖИНИРИНГ"
 			},
 			"system": {
 				"eng": "System:",
@@ -19652,11 +20395,11 @@
 			},
 			"waiting": {
 				"eng": "WAITING FOR ORDERS...",
-				"trans": "ОЖИДАНИЕ ПРИКАЗОВ..."
+				"trans": "ОЖИДАНИЕ ПРИКАЗА..."
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "Прибыль получена"
+				"trans": "УСТУПКА ПОЛУЧЕНА"
 			}
 		},
 		"cta": {
@@ -19672,11 +20415,11 @@
 		"economy": {
 			"headline": {
 				"eng": "Player-Driven Economy",
-				"trans": "Экономика, управляемая игроками"
+				"trans": "Экономика под контролем игроков"
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "На этом рынке всё создано и продаётся такими же реальными игроками, как и вы."
+				"trans": "Каждый предмет на рынке создаётся и торгуется реальными игроками, такими как вы."
 			}
 		},
 		"error": {
@@ -19696,11 +20439,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "Никакого Pay-to-win"
+				"trans": "Без оплаты за победу"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "Все премиум-баффы действуют на весь сервер. Когда кто-то поддерживает игру, всё сообщество получает выгоду и развивается вместе."
+				"trans": "Все премиальные бонусы распространяются глобально по всему серверу. Когда кто-то поддерживает игру, от этого выигрывает и развивается всё сообщество."
 			}
 		},
 		"loading": {
@@ -19716,11 +20459,11 @@
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "/// Соединение установлено"
+				"trans": "// Соединение установлено"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "Системная_инициализация_01"
+				"trans": "Сист.Иниц_Последов.01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

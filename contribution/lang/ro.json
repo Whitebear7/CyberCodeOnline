@@ -812,6 +812,26 @@
 			"trans": "Competiție de artă personaje înfricoșătoare!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Ai depus ${amount} în banca ta.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Ai retras ${amount} din contul tău bancar.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Pachet Epic de Fuziune Cache"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Liber"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Pachet indisponibil"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Crate de echipamente rare"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Previzualizare ${tierName} Nivel",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Previzualizare pe Profil"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Previzualizare"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Cadru de chat"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Primite"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Direcția mesajului"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Alt jucător"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Ieșire"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Banderola jucătorului"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Detalii jucător"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Redă animarea de intrare"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Scurt / o linie"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Mesaj scurt de previzualizare"
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Lung / înfășurat"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Acest mesaj de previzualizare mai lung verifică cum gestionează cadrul împărțirea naturală a textului pe mai multe linii, fără întreruperi forțate."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Presă Neagră"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Floarea Noaptea"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "Introduceți e -mailul, sistemul vă va trimite un e -mail de resetare a parolei"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Fiecare jeton activează accesul global la Epic Cache Fusion timp de 5 minute."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Primești 3 jetonuri de acces la schimbul de echipament cu o reducere de 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Disponibil o dată pe săptămână."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Reducere de 30% la Epic Cache Fusion"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Ce e asta? Citește tutorialul de fuziune a cache-ului epic."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "VIZITEAZĂ FLORARIA NIGHTBLOOM"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Primești 3 jetonuri de acces la schimbul de echipament cu o reducere de 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Disponibil o dată pe săptămână."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Reducere de 30% la Epic Cache Fusion"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Festivalul Nightbloom"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Bonusul din Septembrie"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Bonus pentru Festivalul Nightbloom"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Turnul Preciziei"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Drops de Farming în Modul AFK"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Obiecte bonus din farming-ul AFK:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Sună muzica specială de fundal în timpul evenimentului"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Răsplăți din Chat"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Premii pentru discuții în cadrul evenimentului:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Efecte de chat"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Obiecte din Cofre de Dungeon"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Bonusuri din coferele de dungeon:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Loot de la Monștri"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Obiecte bonus de la învingerea monstruilor:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Cerințe de contribuție reduse:"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Butin de Căutare"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Obiecte bonus de la scavengere:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "AI Core cluster"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "Fragment de acces Nightbloom necesar pentru o singură rulare în Turnul Precision. Se găsește prin activarea robotului de recoltare sau deschiderea cutiilor din dante în timpul Festivalului Nightbloom."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Fragment de Acces Floarea Noptii"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Exploatarea expulsului de chat [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Recompensă tranzacționabilă din Loteria Chat, care aplică automat o reducere de ${discountPercent}% la orice Global Time Skip. Se consumă la utilizare.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Cupon de Salt pentru Loteria din Chat"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Biletul de An Nou"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "O infuzie florală concentrată care crește EXP și BTC câștigate în AFK cu ${percent}% timp de ${minutes} minute.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Infuzia Florii de Noapte"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "O petala luminoasa de floare gasita in timpul evenimentului din septembrie. Schimba-o cu Vesper de la Floraria Noapteflor in schimbul unor obiecte."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Petala Florii de Noapte"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Recompense în chat"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Cufere din dungeon"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Recompense din ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Dropuri de monștri"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Răcogire"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Mentoratul tău este deja închis."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Contul tău este conectat la un alt cont, deci nu se poate alătura la programul de mentorat."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Sistemul a detectat alt cont legat prin istoricul dispozitivului în orice moment sau prin activitate IP recentă, deci acest cont nu poate selecta un Handler."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Eveniment de Anul Nou!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Conținut eveniment"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Construiește Turnul Preciziei, culege Petalele Nightbloom și negociază cu Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Evenimentul din septembrie"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festivalul Nightbloom"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Turnul Preciziei. Pétalele. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Evenimentul din septembrie"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festivalul Nightbloom"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11429,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Tehnician de artificii"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightblooms sunt delicate. Sistemele care le mențin în viață nu sunt.",
+					"Aduce-mi petale de Noctiflor. Îți dau în schimb ceva demn de purtat.",
+					"Turnul de precizie este online. Stivește curat și nu forța un plasament prost."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Floristul Florii Nopții"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12651,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Protocol de aliniere"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Turnul Preciziei"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "Evenimentul din septembrie nu este activ."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Ieși și verifică-ți inventarul înainte de a folosi un alt fragment."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Nu reîncepe până nu este verificată starea execuției"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "SISTEMUL TURNULUI DECONECTAT"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Ieșire"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "PERFECT"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "Structură restaurată"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "NIVEL ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "NIVEL ${tier} · STRUCTURĂ RESTAURATĂ",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Înapoi la eveniment"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Niciun nivel de recompense obținut. Fragment consumat."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ALINIARE PIERDUTĂ"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "Înălțime"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MAX"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "URMĂTORUL ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "RESTAUREAZĂ ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "NIVEL ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "TURNUL PRECIZIEI"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "ATINGE ORIUNDE PENTRU A PLASA"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "DISPONIBIL"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "PROTOCOL DE ALINIERE"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "EVENIMENT ÎNCHIS"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "CONSUMĂ 1 FRAGMENT"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Tăietură"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "Fragment de acces"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Evenimentul din septembrie"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Evenimentul din septembrie inactiv"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "AI NEVOIE DE UN FRAGMENT"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TURN DECONECTAT"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Loc"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Restaurează"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Atinge când placa mobilă suprapune turnul."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Extensia nesuportată este tăiată, micșorând permanent țintele ulterioare."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "La fiecare ${count} plasări perfecte consecutive se recuperează o parte din suprafața pierdută.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Nivelurile de recompense se deblochează la înălțimile ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Dacă ratezi turnul sau lași prea puțină suprafață, runda se încheie și se trimite cel mai înalt nivel atins."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "1 FRAGMENT NECESAR"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "PORNEȘTE TURNUL"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Turnul Preciziei"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "INIȚIALIZARE TURN"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Câmpul de joc al Turnului de precizie"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "TURN SECURIZAT"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Recompensele Turnului"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Nivelul ${tier} confirmat la înălțimea ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "NIVEL DE RECOMPENSĂ SECURIZAT"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "Rendererul 3D s-a oprit înainte ca runda să poată fi trimisă."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "MOTOR GRAFIC DECONECTAT"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Înălțime"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Perfect"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Cel mai bun șir consecutiv"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Ieși și verifică-ți inventarul înainte de a folosi un alt fragment."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "TRIMITERE NECUNOSCUTĂ"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Înălțime ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Se trimite cel mai înalt nivel atins. Nu închide."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Nivel ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "SECURIZAREA DATELOR TURNULUI"
+			}
 		}
 	},
 	"priceTag": {
@@ -16470,6 +16988,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Continuă cu Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Autentificarea cu Google a eșuat. Vă rugăm să actualizați aplicația la ultima versiune."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16479,91 +17001,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "echilibru"
+			"account": {
+				"eng": "Bank",
+				"trans": "Bancă"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Programul de continuitate al Arasaka"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identitate. Active. Acces. Se păstrează prin orice mâine."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Supraviețuiește incertitudinii."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Bunuri private. Acces permanent. Control deplin."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Deține viitorul. Asigură-l azi."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Bancă securizată Arasaka"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Suma"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Transferă ${currency} din portofel în bancă",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Portofel → Bancă"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Contul bancar este gol"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Depune sau ridică ${currency}, sold bancar: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Suma depășește soldul contului tău."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Suma depășește soldul portofelului."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Introduceți o sumă validă, fără zecimi."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Maxim"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Finanțele Arasaka // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Online"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Alege"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Selectează tranzacția"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Afișează reclama ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "Bancomat"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Solicitare de tranzacție"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Transferă ${currency} de la bancă în portofel",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Bancă → Portofel"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Depozit"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Puneți Bitcoins în bancă"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Acest articol este blocat și nu poate fi stocat."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Cât de mult doriți să depuneți?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Ridică ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Câți doriți să puneți în seif?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Cât de mult doriți să vă retrageți?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Câți doriți să vă retrageți de la bancă?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Depozitează ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Nu vă puteți retrage când nu aveți un echilibru."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Depuneți articolul"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Puneți elementele în seiful dvs."
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Retrage articolul"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Luați articolele din seiful dvs."
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "Upgrade la sloturi ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Creșteți cantitatea maximă de elemente pe care le puteți stoca în seif la ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Modernizare"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Extinde sloturile seifului de la ${current} la ${next} pentru ${price} ${currency} din portofelul tău.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Actualizați Vault"
+					"eng": "Upgrade vault?",
+					"trans": "Actualizezi seiful?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Adaugă"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Adaugă în seif"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} sloturi",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Cofra gol"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Folosește + pentru a adăuga obiecte"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} locuri ocupate · Depune sau retrage obiecte",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / stivă",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Capacitate insuficientă a inventarului pentru această extragere."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Sold insuficient în portofel pentru taxa de stocare."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Inventarul este gol"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Capacitate maximă"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Niciun obiect din inventar nu încăpează în spațiul disponibil al seifului."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Recuperează"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Atinge un obiect pentru a-l recupera. Recuperarea este gratuită."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Retrage selecția"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Finalizează acțiunea curentă înainte de a-ți recupera articolele."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Stivele selectate nu încap. Dezactivează selecția multiplă pentru a alege o cantitate mai mică."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Seif cu obiecte"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Deblochează un obiect înainte de a-l stoca."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Îmbunătățește seiful"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Portofel"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Retrage"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Luați Bitcoins din bancă"
 			}
 		},
 		"basicInfo": {
@@ -17152,6 +17854,12 @@
 				"trans": "Doar arată dungeons mă pot alătura"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Redă sunetul emblemei"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17303,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Administrare"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Toate aplicațiile"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Comandă"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17498,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Niciun articol corespunzător"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Caută articole..."
@@ -17505,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "cheile secrete"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Sloturi: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17845,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Apăsați lung pentru multi-selectat"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} selectate",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -18839,6 +19574,16 @@
 					"trans": "Afișează mesajul original"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Afișează traducerea în limba engleză sub mesajele tale din chat"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Afișează traducerea mesajelor mele"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Pericol"
@@ -18926,12 +19671,18 @@
 				"trans": "Ajută la traducerea jocului"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Aceast pachet de limbi este open source și a fost realizat prin contribuițiile jucătorilor noștrii. Textul poate să nu fie tradus în totalitate sau poate să conțină greșeli. Simțiti-vă liberi să editați și să contribuiți în cadrul paginii noastre Github."
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Această traducere realizată de comunitate poate fi incompletă sau poate conține erori."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Limbă"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Traducere comunitară"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19041,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Primește Notificări legate de Bonusuri Globale"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Aplicația se va auto restarta după salvarea datelor"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "salvare"
@@ -19061,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Combat"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Experimental"
 				},
 				"general": {
 					"eng": "General",

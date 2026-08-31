@@ -812,6 +812,26 @@
 			"trans": "Cuộc thi nghệ thuật nhân vật ma quái!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Đã gửi ${amount} vào ngân hàng của bạn.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Đã rút ${amount} khỏi ngân hàng của bạn.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Gói Dung Hợp Kho Dữ Liệu Sử Thi"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Miễn phí"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Gói không khả dụng"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Thùng thiết bị hiếm"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Đang xem trước ${tierName} tầng",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Xem trước trên hồ sơ"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Xem trước"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Khung Chat"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Đang đến"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Hướng tin nhắn"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Người chơi khác"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Gửi đi"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Ảnh bìa người chơi"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Thông tin người chơi"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Phát lại hiệu ứng xuất hiện"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Ngắn / một dòng"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Tin nhắn xem trước ngắn gọn."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Dài / Xuống dòng"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Tin nhắn xem trước dài hơn này kiểm tra cách khung xử lý xuống dòng tự nhiên trên nhiều dòng mà không bị ngắt gượng ép."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Báo Đen"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Hoa Đêm"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "Nhập email của bạn, hệ thống sẽ gửi email reset mật khẩu cho bạn"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Mỗi token kích hoạt quyền truy cập toàn cục vào Epic Cache Fusion trong 5 phút."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Nhận 3 Phiếu Truy Cập Trao Đổi Thiết Bị giảm giá 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Có thể dùng một lần mỗi tuần"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Giảm 30% cho Hợp Nhất Epic Cache"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Đây là gì? Đọc hướng dẫn hợp nhất kho dự trữ vĩ đại."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "GHÉ TIỆM HOA ĐÊM NỞ"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Nhận 3 Phiếu Truy Cập Trao Đổi Thiết Bị giảm giá 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Có thể dùng một lần mỗi tuần"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Giảm 30% cho Hợp Nhất Epic Cache"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Lễ Hội Hoa Đêm"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Thưởng tháng Chín"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Phần Thưởng Lễ Hội Hoa Đêm"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Tháp Chuẩn Xác"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Quà AFK"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Nhận được vật phẩm thưởng khi chơi AFK:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Bài nhạc nền đặc biệt phát trong sự kiện này"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Thưởng Chat"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Quà tặng từ cuộc trò chuyện trong sự kiện:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Hiệu ứng trò chuyện"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Trả thưởng từ rương hang động"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Quà tặng đặc biệt từ rương ngầm:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Loot từ quái vật"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Được thưởng nhiều vật phẩm khi tiêu diệt quái vật:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Giảm yêu cầu đóng góp:"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Trả thưởng tìm kiếm"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Bonus đồ từ việc săn trộm:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "Cụm lõi AI"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "Mảnh truy cập Nightbloom cần để khởi tạo một lượt Precision Tower. Có được bằng cách triển khai robot nông nghiệp hoặc mở rương hầm ngục trong Lễ hội Nightbloom."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Mảnh Truy Cập Bông Đêm"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Sóng Chuyển đổi Chat [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Phần thưởng xổ số trò chuyện có thể giao dịch, tự động giảm giá ${discountPercent}% cho mọi lượt Bỏ Qua Thời Gian Toàn Cầu và sẽ bị tiêu thụ sau khi sử dụng.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Phiếu Bỏ Qua Xổ Số Chat"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Thẻ Năm Mới"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "Một tinh chất hoa cô đặc giúp tăng ${percent}% EXP và BTC thu được khi vắng mặt, hiệu lực kéo dài ${minutes} phút.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Dạ Hoa Trích Dịch"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "Một cánh hoa phát sáng được tìm thấy trong sự kiện tháng Chín. Trao đổi với Vesper tại Tiệm Hoa Đêm Rực để nhận vật phẩm."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Cánh Hoa Đêm"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Phần thưởng chat"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Rương hầm ngục"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Phần thưởng ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Vật phẩm từ quái"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Thu nhặt"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Hợp đồng kèm cặp của bạn đã kết thúc."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Tài khoản của bạn đang được liên kết với một tài khoản khác nên không thể tham gia chương trình hướng dẫn."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Hệ thống phát hiện một tài khoản khác từng được liên kết qua lịch sử thiết bị ở bất kỳ thời điểm nào hoặc hoạt động IP gần đây, nên tài khoản này không thể chọn Người Quản Lý."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Sự Kiện Năm Mới!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Nội dung sự kiện"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Xây dựng Tháp Chính Xác, thu thập Cánh Hoa Đêm Tỏa và giao dịch với Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Sự kiện Tháng 9"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Lễ Hội Hoa Đêm"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Tháp Chính Xác. Cánh Hoa. Chạng Vạng."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Sự kiện Tháng 9"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Lễ Hội Hoa Đêm"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11429,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Kỹ thuật viên pháo hoa"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightbloom thật mong manh. Hệ thống duy trì sự sống của chúng thì không.",
+					"Mang Cánh hoa Nightbloom đến cho ta. Ta sẽ đổi cho ngươi thứ đáng giá để mang theo.",
+					"Tháp Precision đã trực tuyến. Giữ stack gọn, đừng ép vào vị trí đặt sai."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Tiệm Hoa Đêm"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12651,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Giao thức căn chỉnh"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Tháp Chuẩn Xác"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "Sự kiện Tháng 9 không còn hoạt động."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Thoát ra và kiểm tra túi đồ của bạn trước khi sử dụng một mảnh khác."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Không thử lại trước khi xác minh trạng thái chạy"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "HỆ THỐNG THÁP NGOÀI TUYẾN"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Thoát"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "CHUẨN"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "ĐÃ KHÔI PHỤC CẤU TRÚC"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "HẠNG ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "CẤP ${tier} · CẤU TRÚC ĐÃ KHÔI PHỤC",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Quay lại sự kiện"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Chưa đạt cấp phần thưởng nào. Mảnh đã tiêu hao."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "Mất định hướng"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "ĐỘ CAO"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "TỐI ĐA"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "TIẾP THEO ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "KHÔI PHỤC ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "CẤP ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "THÁP CHÍNH XÁC"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "CHẠM VÀO BẤT KỲ ĐÂU ĐỂ ĐẶT"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "KHẢ DỤNG"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "GIAO THỨC CĂN CHỈNH"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "SỰ KIỆN ĐÃ KẾT THÚC"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "DÙNG 1 TINH THỂ"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Cắt"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "MẢNH BẢN GHI"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Sự kiện Tháng 9"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Sự kiện Tháng Chín không hoạt động"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "CẦN MẢNH VỠ"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "THÁP NGOẠI TUYẾN"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Địa điểm"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Khôi phục"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Chạm khi tấm trượt di chuyển trùng với tháp."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Phần nhô ra không có điểm tựa sẽ bị cắt bỏ, thu nhỏ vĩnh viễn các mục tiêu tiếp theo."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Cứ mỗi ${count} lần đặt hoàn hảo liên tiếp sẽ khôi phục một phần bề mặt đã mất.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Các cấp phần thưởng sẽ mở khóa ở các độ cao ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Bỏ lỡ tháp hoặc để lại quá ít bề mặt sẽ kết thúc lượt chơi và ghi nhận tầng cao nhất đạt được."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "CẦN 1 MẢNH"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "BẮT ĐẦU THÁP"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Tháp Chuẩn Xác"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "ĐANG KHỞI TẠO THÁP"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Vùng chơi Tháp Chính Xác"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "Đã bảo vệ tháp"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Phần Thưởng Tháp"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Đã xác nhận cấp ${tier} tại độ cao ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "ĐÃ KHÓA BẬC THƯỞNG"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "Trình render 3D đã dừng trước khi lượt chạy được gửi đi."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "TRÌNH HIỂN THỊ ĐANG TẮT"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Chiều cao"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Hoàn hảo"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Chuỗi tốt nhất"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Thoát ra và kiểm tra túi đồ của bạn trước khi sử dụng một mảnh khác."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "GỬI KHÔNG XÁC ĐỊNH"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Độ cao ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Đang gửi cấp cao nhất đã đạt. Vui lòng không đóng."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Hạng ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "ĐANG BẢO MẬT DỮ LIỆU THÁP"
+			}
 		}
 	},
 	"priceTag": {
@@ -16470,6 +16988,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Tiếp tục bằng Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Đăng nhập bằng Google thất bại. Vui lòng cập nhật ứng dụng lên phiên bản mới nhất."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16479,91 +17001,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Số dư"
+			"account": {
+				"eng": "Bank",
+				"trans": "Ngân hàng"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Chương trình duy trì hoạt động của Arasaka"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Danh tính. Tài sản. Quyền truy cập. Được bảo toàn xuyên suốt mọi ngày mai."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Vượt lên mọi bất ổn"
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Tài sản riêng. Truy cập liên tục. Kiểm soát tuyệt đối."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Sở hữu ngày mai. Bảo mật ngay hôm nay."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Ngân hàng bảo mật Arasaka"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Số tiền"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Chuyển ${currency} từ ví sang ngân hàng",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Ví → Ngân hàng"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Số dư ngân hàng đã cạn"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Gửi hoặc rút ${currency} · Ngân hàng: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Số tiền vượt quá số dư tài khoản ngân hàng của bạn."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Số tiền vượt quá số dư ví của bạn."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Nhập số tiền nguyên hợp lệ."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Tối đa"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka Tài Chính // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Trực tuyến"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Chọn"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Chọn giao dịch"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Xem quảng cáo ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Yêu cầu giao dịch"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Chuyển ${currency} từ ngân hàng sang ví",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Ngân hàng → Ví"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Gửi tiền"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Gửi Bitcoin vào ngân hàng"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Mục này bị khóa và không thể lưu trữ."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Bạn muốn gửi bao nhiêu tiền?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Rút ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Bạn muốn đặt bao nhiêu trong kho?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Bạn muốn rút bao nhiêu tiền?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Bạn muốn rút bao nhiêu từ ngân hàng?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Lưu trữ ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Bạn không thể rút tiền khi không đủ số dư."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Gửi Vật Phẩm"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Đặt vật phẩm vào kho"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Lấy vật phẩm"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Lấy vật phẩm từ kho"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "NÂNG CẤP LÊN ${upgradeToSlot} CHỖ",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Tăng số lượng vật phẩm tối đa bạn có thể lưu trữ trong kho lên ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Nâng cấp"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Mở rộng số ô từ ${current} lên ${next}, chi phí ${price} ${currency} từ ví của bạn.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Nâng cấp kho tiền"
+					"eng": "Upgrade vault?",
+					"trans": "Nâng cấp két sắt?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Thêm"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Thêm vào kho"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} ô",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Két trống"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Nhấn + để thêm vật phẩm"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} ô đã dùng · Lưu hoặc rút vật phẩm",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / chồng",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Không đủ sức chứa kho cho lần rút này."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Số dư ví không đủ để thanh toán phí lưu trữ."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Kho của bạn đang trống"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Dung lượng tối đa"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Không có vật phẩm nào trong túi đồ vừa với sức chứa còn trống của két."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Rút"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Chạm vào một vật phẩm để rút. Rút miễn phí."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Lấy mục đã chọn"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Hoàn tất thao tác hiện tại trước khi rút vật phẩm."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Các chồng vật phẩm đã chọn không vừa. Tắt chế độ chọn nhiều để chọn số lượng nhỏ hơn."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Kho đồ"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Mở khóa vật phẩm trước khi lưu trữ."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Nâng cấp két sắt"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Ví"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Rút tiền"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Rút Bitcoin từ ngân hàng"
 			}
 		},
 		"basicInfo": {
@@ -17152,6 +17854,12 @@
 				"trans": "Chỉ hiển thị Ngục tối có thể tham gia"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Phát âm thanh huy hiệu"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17303,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Quản trị"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Tất Cả Ứng Dụng"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Lệnh"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17498,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Không có vật phẩm phù hợp"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Tìm kiếm vật phẩm..."
@@ -17505,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "Chìa khóa"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Ô: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17845,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Nhấn giữ để chọn nhiều vật phẩm"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "Đã chọn ${count}",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -18839,6 +19574,16 @@
 					"trans": "Hiển thị tin nhắn trò chuyện gốc"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Hiển thị bản dịch tiếng Anh bên dưới tin nhắn chat của bạn"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Hiển thị bản dịch tin nhắn của tôi"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Khu Vực Nguy Hiểm"
@@ -18926,12 +19671,18 @@
 				"trans": "Trợ giúp dịch trò chơi"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Gói ngôn ngữ này là mã nguồn mở được đóng góp bởi người chơi, có thể không được dịch đầy đủ và còn sai sót. Vui lòng chỉnh sửa và đóng góp từ trang Github của chúng tôi"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Bản dịch cộng đồng này có thể chưa đầy đủ hoặc có sai sót."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Ngôn ngữ"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Bản dịch cộng đồng"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19041,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Nhận thông báo về Buff Thế giới"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Ứng dụng sẽ tự khởi động lại sau khi lưu thay đổi"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "Áp dụng"
@@ -19061,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Chiến đấu"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Thử nghiệm"
 				},
 				"general": {
 					"eng": "General",
@@ -19606,7 +20349,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "Khởi chạy nhiệm vụ trước khi thoát game để tiếp tục thu thập tài nguyên và thăng cấp tự động."
+				"trans": "Bắt đầu một nhiệm vụ trước khi đăng xuất để tiếp tục thu thập tài nguyên và tăng cấp trong nền."
 			}
 		},
 		"animation": {
@@ -19616,19 +20359,19 @@
 			},
 			"autotask": {
 				"eng": "AUTOTASK",
-				"trans": "TÁC VỤ TỰ ĐỘNG"
+				"trans": "NHIỆM VỤ TỰ ĐỘNG"
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
-				"trans": "THỰC THI: MUA"
+				"trans": "THỰC HIỆN: MUA"
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "Tìm team Nhà máy bỏ hoang, cần healer."
+				"trans": "Tìm team nhà máy bỏ hoang, cần người hồi máu."
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "Inv, có túi cứu thương đây."
+				"trans": "Inv, tôi đã có hộp cấp cứu."
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
@@ -19644,7 +20387,7 @@
 			},
 			"reverse_engineering": {
 				"eng": "REVERSE_ENGINEERING",
-				"trans": "KỸ THUẬT ĐẢO NGƯỢC"
+				"trans": "PHÂN TÍCH NGƯỢC"
 			},
 			"system": {
 				"eng": "System:",
@@ -19652,11 +20395,11 @@
 			},
 			"waiting": {
 				"eng": "WAITING FOR ORDERS...",
-				"trans": "Đang chờ lệnh..."
+				"trans": "ĐANG CHỜ LỆNH..."
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "Đã thu được lợi nhuận"
+				"trans": "ĐÃ THU THẬP SẢN LƯỢNG"
 			}
 		},
 		"cta": {
@@ -19666,17 +20409,17 @@
 			},
 			"next": {
 				"eng": "Next",
-				"trans": "Tiếp theo"
+				"trans": "Tiếp tục"
 			}
 		},
 		"economy": {
 			"headline": {
 				"eng": "Player-Driven Economy",
-				"trans": "Nền kinh tế do người chơi dẫn dắt"
+				"trans": "Nền Kinh Tế Do Người Chơi Điều Khiển"
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "Mọi vật phẩm trên thị trường đều do chính những người chơi như bạn chế tạo và giao dịch."
+				"trans": "Mọi vật phẩm trên thị trường đều do những người chơi thực thụ như bạn chế tác và trao đổi."
 			}
 		},
 		"error": {
@@ -19696,11 +20439,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "Tuyệt đối không Pay-to-win"
+				"trans": "Không Mua Chiến Thắng"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "Tất cả các buff cao cấp đều được chia sẻ trên toàn server. Khi có người ủng hộ trò chơi, toàn bộ cộng đồng sẽ cùng hưởng lợi và phát triển."
+				"trans": "Tất cả buff cao cấp đều được chia sẻ chung trên toàn máy chủ. Khi có người ủng hộ trò chơi, toàn bộ cộng đồng cùng hưởng lợi và phát triển."
 			}
 		},
 		"loading": {
@@ -19716,11 +20459,11 @@
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "// Đã xác lập kết nối"
+				"trans": "// Đã kết nối"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "Hệ thống.Khởi tạo_Trình tự.01"
+				"trans": "Chuỗi Khởi Tạo Hệ Thống 01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

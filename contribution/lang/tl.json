@@ -812,6 +812,26 @@
 			"trans": "Spooky Character Art Competition!"
 		}
 	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Naipon na ang ${amount} sa iyong bangko.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Inilabas mo ang ${amount} mula sa iyong bangko.",
+				"vars": [
+					"amount"
+				]
+			}
+		}
+	},
 	"basicInfo": {
 		"nameInvalid": {
 			"eng": "name length must be greater then 4, less then or equal to 16 and only contains English characters, numbers or '_'",
@@ -982,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Epic Cache Fusion Bundle"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Libre"
@@ -995,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Hindi available ang bundle"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Bihirang kagamitan crate"
-			}
 		},
 		"retro": {
 			"name": {
@@ -2501,16 +2521,9 @@
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Pinalipad ang ${tierName} Tier",
-			"vars": [
-				"tierName"
-			]
-		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Preview sa Profile"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Tingnan"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2870,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Balangkas ng Usapan"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Papasok"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Direksyon ng mensahe"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Ibang Manlalaro"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Palabas"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Banner ng Player"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Detalye ng Manlalaro"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Ulitin ang animasyon ng pagpasok"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Maikli / isang linya"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Maikling pagsusuring mensahe."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Mahaba / Paglulubid"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Ang mas mahabang mensahe na ito para sa preview ay sinusuri kung paano tinutuguan ng frame ang natural na paglalamat sa maraming linya nang walang napipilit na pagputol."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3078,6 +3141,10 @@
 		"donation55": {
 			"eng": "Black Press",
 			"trans": "Itim na Pressa"
+		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Nightbloom"
 		},
 		"donation6": {
 			"eng": "Prestige",
@@ -4010,6 +4077,46 @@
 			"trans": "Ipasok ang iyong email, ang system ay magpapadala ng isang email na I -reset ang password sa iyo"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Bawat token ay nagpapagana ng akses na pangdaigdig sa Epic Cache Fusion para sa 5 minuto."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Makakuha ng 3 na Access Token para sa Pagpapalit ng Kagamitan na may 30% discount"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Maaari itong gamitin isang beses sanlinggo."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Bawas ng 30% sa Epikong Pagkakaisa ng Imbakan"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Ano ito? Basahin ang tutorial ng Epic Cache Fusion."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "PUNTAHAN ANG TAGA BULAKLAK NA SI NIGHTBLOOM"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Makakuha ng 3 na Access Token para sa Pagpapalit ng Kagamitan na may 30% discount"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Maaari itong gamitin isang beses sanlinggo."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Bawas ng 30% sa Epikong Pagkakaisa ng Imbakan"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4581,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Nightbloom Festival"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Setyembre Bonus"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Nightbloom Festival Bonus"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
 			}
 		},
 		"summer": {
@@ -4628,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "AFK Drop"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Mga bonus na item mula sa AFK bot farming:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Espesyal na background music sa event na ito!"
@@ -4656,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Premyo sa Chat"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Rewards sa pag-chat sa event:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Mga Epekto sa Chat"
@@ -4675,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Mga Lathal ng Dungeon"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Ekstrang gamit galing sa mga chest sa dungeon:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4707,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Loot ng Halimaw"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Bonus na mga item mula sa pagpatay sa mga monster:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Nabawasan ang mga kinakailangan sa kontribusyon:"
@@ -4722,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Mga Drop sa Paghuhukay"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Dagdag na mga item mula sa paghuhukay"
 		},
 		"skipDiscount": {
 			"description": {
@@ -5331,6 +5426,16 @@
 				"trans": "AI Core Cluster"
 			}
 		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Nightbloom Access Shard"
+			}
+		},
 		"alloyFrame": {
 			"desc": {
 				"eng": "Reinforced metal framework component for furniture assembly.",
@@ -5612,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Chat Exploit Transmitter [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Chat Lottery Skip Voucher"
 			}
 		},
 		"chocoBerry": {
@@ -6431,6 +6549,30 @@
 				"trans": "Token ng Bagong Taon"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Nightbloom Infusion"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Nightbloom Petal"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7167,6 +7309,31 @@
 				"vars": [
 					"tier"
 				]
+			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Mga Gantimpala sa Chat"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Mga Kahon ng Dungeon"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Mga Gantimpala ng ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Mga Drop ng Monster"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Pangangalap"
 			}
 		}
 	},
@@ -9022,8 +9189,8 @@
 				"trans": "Nakasara na ang iyong mentorship."
 			},
 			"connectedAccount": {
-				"eng": "Your account is connected to another account, so it cannot join mentorship.",
-				"trans": "Konektado ang iyong account sa ibang account, kaya hindi ito maaaring sumali sa mentorship."
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Natuklasan ng sistema ang isa pang akawnt na may koneksyon sa kasaysayan ng device sa anumang panahon o sa kamakailang aktibidad ng IP kaya hindi maaari itong pumili ng Tagapangasiwa."
 			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
@@ -10974,6 +11141,40 @@
 			"trans": "Bagong Taon na Kaganapan!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Nilalaman ng Kaganapan"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Ipataas ang Precision Tower, kumpilaan ang mga Nightbloom Petals, at magpakambal kay Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Kaganapan ng Setyembre"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Pista ng Gabing Bulaklak"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Tore ng Presisyon. Mga Talulot. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Kaganapan ng Setyembre"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Pista ng Gabing Bulaklak"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11480,6 +11681,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Teknikong Pambato"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Nightbloom Florist"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12839,6 +13062,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Alignment Protocol"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "The September event is not active."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Exit and verify your inventory before using another shard."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Do not retry until run status is verified"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "TOWER SYSTEM OFFLINE"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Exit"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "PERFECT"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "STRUCTURE RESTORED"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "TIER ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "TIER ${tier} · STRUCTURE RESTORED",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Return to Event"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "No reward tier secured. Shard consumed."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ALIGNMENT LOST"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "HEIGHT"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MAX"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "NEXT ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "RESTORE ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "TIER ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "PRECISION TOWER"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "TAP ANYWHERE TO PLACE"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "AVAILABLE"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "ALIGNMENT PROTOCOL"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "EVENT CLOSED"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "CONSUMES 1 SHARD"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Cut"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "ENTRY SHARD"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "September Event"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "September event inactive"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "NEED SHARD"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TOWER OFFLINE"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Place"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Restore"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Tap when the moving slab overlaps the tower."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Unsupported overhang is cut away, permanently shrinking later targets."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Reward tiers unlock at heights ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "1 SHARD REQUIRED"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "START TOWER"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "INITIALIZING TOWER"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Precision Tower playfield"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "TOWER SECURED"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Tower Rewards"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Tier ${tier} confirmed at height ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "REWARD TIER SECURED"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "The 3D renderer stopped before the run could be submitted."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "RENDERER OFFLINE"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Height"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Perfect"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Best Streak"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Exit and verify your inventory before using another shard."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "SUBMISSION UNKNOWN"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Height ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Submitting the highest tier reached. Do not close."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Tier ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "SECURING TOWER DATA"
+			}
 		}
 	},
 	"priceTag": {
@@ -16658,6 +17176,10 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Magpatuloy gamit ang Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google login failed. please update the app to the latest version."
 			}
 		},
 		"backToPreviusLoc": {
@@ -16667,91 +17189,271 @@
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Natitira"
+			"account": {
+				"eng": "Bank",
+				"trans": "Bank"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Arasaka continuity program"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identity. Assets. Access. Preserved across every tomorrow."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Outlive uncertainty."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Private assets. Continuous access. Total control."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Own tomorrow. Secure it today."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Arasaka secure banking"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Halaga"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Ilipat ang ${currency} mula sa cartera patungong bangko",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Bolsa → Bangko"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Walang laman ang balanse ng bangko"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Lumalampas ang halaga sa iyong balanse ng bangko."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Ang halaga ay lampas sa balanse ng iyong wallet."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Ilagay ang wastong buong halaga"
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Buong Halaga"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka financial // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Online"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Piliin"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Pumili ng transaksyon"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Show advertisement ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Hiling ng Transaksyon"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Ilipat ang ${currency} mula sa bangko papunta sa wallet",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Bangko → Pitaka"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Mag deposito"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Ilagay ang Bitcoins sa bangko"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Ang item na ito ay naka -lock at hindi maiimbak."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Magkano ang gusto mong i-deposito?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Kunin ang ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Ilan ang nais mong ilagay sa vault?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Magkano ang gusto mong kuhanin?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Ilan ang nais mong kuhain mula sa bangko?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Iimbak ang ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Hindi ka makakapag-withdraw kapag wala kang balance."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "I-deposito ang aytem"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Ilagay ang mga aytem sa iyong vault"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Kunin ang aytem"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Kumuha ng mga item mula sa iyong vault"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "Mag -upgrade sa ${upgradeToSlot} na mga puwang",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Dagdagan ang pinakamataas na halaga ng mga item na maaari mong maiimbak sa vault sa ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Mag -upgrade"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Palawakin ang mga slot mula ${current} hanggang ${next} sa halagang ${price} ${currency} mula sa iyong wallet.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "I -upgrade ang vault"
+					"eng": "Upgrade vault?",
+					"trans": "Paunlarin ang bunke?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Idagdag"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Idagdag sa baul"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} puwang",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Baul ay walang laman"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Gamitin ang + upang magdagdag ng mga bagay"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} slots used · Store or retrieve items",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} kada stack",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Hindi sapat ang kapasidad ng imbentaryo para sa pagkuha na ito."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Not enough wallet balance for the storage fee."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Ang imbakan mo ay walang laman"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Pinakamataas na kapasidad"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Wala sa mga bagay mo ang kasya sa natitirang espasyo ng vault."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Kumuha"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Pindutin ang isang bagay para maikuha ito. Libre ang pagkuha."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Kunin ang napili"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Tapusin muna ang kasalukuyang aksyon mo bago kunin ang mga item."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Hindi naaangkop ang mga napiling tumpok. Itigil ang maramihang pagpili upang pumili ng mas kaunting halaga."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Item vault"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Unlock an item before storing it."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Pataasin ang Vault"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Wallet"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Kuhanin"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Alisin ang mga Bitcoins sa bangko"
 			}
 		},
 		"basicInfo": {
@@ -17340,6 +18042,12 @@
 				"trans": "Ipakita lamang ang mga dungeon na maaari kong sumali"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Play emblem audio"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17491,9 +18199,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Admin"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Lahat ng mga app"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Command"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17686,6 +18402,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "No matching items"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Hanapin ang mga item..."
@@ -17693,6 +18413,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "mga lihim na susi"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Slots: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -18033,6 +18761,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Pindutin nang matagal upang pumili ng marami"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} selected",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -19027,6 +19762,16 @@
 					"trans": "Ipakita ang Orihinal na Mensahe sa Chat"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Iipakita ang Ingles na pagsasalin sa ilalim ng iyong sariling mga mensahe sa chat"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Ipakita ang Salin ng Aking Mensahe"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Mapanganib na lugar"
@@ -19114,12 +19859,18 @@
 				"trans": "Tulong sa pagsasalin ng laro"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "This language pack is open-source and contributed to by our players. The text may not be fully translated and may contain mistakes. Please feel free to edit and contribute from our Github page"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "This community translation may be incomplete or contain mistakes."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Wika"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Community Translation"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19229,10 +19980,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Makatanggap ng pandaigdigang abiso sa buff"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "The app will restart after saving"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "i -save"
@@ -19249,10 +19996,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Labanan"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Eksperimental"
 				},
 				"general": {
 					"eng": "General",
