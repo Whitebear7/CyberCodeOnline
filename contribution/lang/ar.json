@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "وحدات إضافية"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "انقر للنسخ"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "وحدات مكافأة مجانية"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "سوف تتلقى وحدات إضافية بنسبة 10٪ مع شراء PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "وحدات إضافية مع جميع مشتريات باي بال"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "تم نسخ الرابط إلى الحافظة"
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "هل تريد حذف هذه الملاحظة؟"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "هل أنت متأكد؟"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "مسابقة فنون الفنية الشديدة!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "تم إيداع ${amount} في حسابك البنكي.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "تم سحب ${amount} من حسابك البنكي.",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "حزمة دمج الكاش الملحمية"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "حر"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "الحزمة غير متاحة"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "قفص المعدات النادرة"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "ستُنشر المعايرة (${percent}%) خلال بضع دقائق",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "سيتم تنفيذ عملية المعايرة (${percent}%) خلال بضع دقائق",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "عطلات سعيدة للجميع!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "إنه أروع وقت في العام مرة أخرى! في Shangri-la نحتفل بالعطلة الشتوية مع حدث خاص!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "استمتع بموسيقى الخلفية الاحتفالية خلال الحدث!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "عاد أجمل وقت في العام! نحتفل في شانغري لا بالإجازة الشتوية بحدث خاص!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "عطلة شتوية سعيدة!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "أعياد شتوية سعيدة!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1815,11 @@
 			"trans": "إلغاء"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "إغلاق"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "تأكيد"
 		},
 		"delete": {
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "المستوى التبرع: [${owned}/${total}]",
+			"trans": "فئة التبرع المملوكة: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "جاري معاينة مستوى ${tierName}",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "المملوك: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "معاينة على الملف الشخصي"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "معاينة"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "إطار الدردشة"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "وارد"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "اتجاه الرسالة"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "لاعب آخر"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "الصادرة"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "لافتة اللاعب"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "تفاصيل اللاعب"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "إعادة تشغيل حركة الدخول"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "قصير أو سطر واحد"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "رسالة معاينة قصيرة."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "طويلة / التفاف"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "تتحقق هذه الرسالة المعاينة الأطول من كيفية تعامل الإطار مع التفاف النص الطبيعي عبر عدة أسطر دون قطع قسري."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "الصحافة السوداء"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "زهر الليل"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "هيبة"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "إنهاء"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "خطأ في النظام"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "الأصول المكتسبة"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "إغلاق"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "لم تُكمل أي ديمبلينغ. تم استهلاك الباسو."
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "ادمج ${amount} من ${fragmentName} للحصول على خزنة معدات نادرة عشوائية",
+			"trans": "ادمج ${amount} من شظايا المخزّن الأسطوري لصنع مخزّن عتاد أسطوري واحد مضمون",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "لا يمكنك استخدام هذا العنصر لأن هناك تأثير الحالة الذي يتعارض معه",
-			"vars": [
-				"minutes"
-			]
+			"trans": "لا يمكنك استخدام هذا العنصر لأن هناك تأثير الحالة الذي يتعارض معه"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "أدخل بريدك الإلكتروني ، سيقوم النظام بإرسال بريد إلكتروني لإعادة تعيين كلمة المرور إليك"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Each token activates global access to Epic Cache Fusion for 5 minutes."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Get 3 Equipment Exchange Access Tokens at 30% off."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Available once a week."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Save 30% on Epic Cache Fusion"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "What is this? Read the Epic Cache Fusion tutorial."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "VISIT NIGHTBLOOM FLORIST"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Get 3 Equipment Exchange Access Tokens at 30% off."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "متاح مرة كل أسبوع."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Save 30% on Epic Cache Fusion"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "استمر"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
+				"trans": "الشظايا المستلمة:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
 				"trans": "العناصر المستلمة:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "الموارد غير كافية للتصنيع"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "فهرس الفتحة غير صالح"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "تحتاج إلى مستوى ${level} لتشغيل هذا الأثاث",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "يجب أن يكون مستواك ${level} لتفعيل هذا الأثاث",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "اختَر الأثاث"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "تحتاج إلى بلوغ المستوى ${level} لاستخدام هذا الأثاث",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "الموارد غير كافية لإتمام الصفقة"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "وصفة أثاث غير صالحة"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "مهرجان إزهار الليل"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "مكافأة سبتمبر"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "مكافأة مهرجان الزهر الليلي"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "برج الدقة"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "النِّتَاج أثناء الغياب"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "غنائم إضافية من بوتات الزراعة التلقائية:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "موسيقى تصويرية حصرية للحدث"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "مكافآت الشات"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "جوائز الدردشة أثناء الفعالية:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "تأثيرات الدردشة"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "النُّصُب من صناديق المَحْفَظَة"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "جوائز إضافية في صناديق الزنزانة:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "غنائم الوحوش"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "غنائم إضافية من الوحوش:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "متطلبات المساهمة المخفضة:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "غنائم التنقيب"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "مكافآت إضافية من البحث"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "تلقي وحدة {0}",
+				"eng": "Receive ${unit} Unit",
+				"trans": "استلام ${unit} وحدة",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "احصل على ${unit} من الوحدات (مكافأة ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "{0} وحدة",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "تم استخدام استغلال الدردشة مؤخرًا، وفترة الانتظار العالمية للنشر مدتها ${minutes}",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "منظمة العفو الدولية المجموعة الأساسية"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Nightbloom Access Shard"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "دردشة استغلال الارسال [UWU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Chat Lottery Skip Voucher"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "رمز السنة الجديدة"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Nightbloom Infusion"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "بتلة زهرة متوهجة وُجدت خلال حدث سبتمبر. استبدلها بمقتنيات لدى فيسبر في محل زهور نايتبلوم."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "بتلة زهرة الليل"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Chat rewards"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Dungeon chests"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game} rewards",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Monster drops"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Scavenging"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "من المفاوضة"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "من الوحشية"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "من فرصة احترافية"
@@ -7120,8 +7379,8 @@
 			"trans": "من فرصة احترافية"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "من الضرر النقدي"
+			"eng": "of Crit Damage",
+			"trans": "من ضرر الضربات الحاسمة"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "لديك بالفعل مُوجِّهًا."
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "إرشادك مُغلق بالفعل."
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "اكتشف النظام حسابًا آخر مرتبطًا بسجل الجهاز في أي وقت سابق أو بنشاط IP حديث، لذا لا يمكن لهذا الحساب اختيار الوكيل."
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "اختارك ${runnerName} ليكون المشرف الخاص به. ستُكتمل عملية الإرشاد عندما يبلغ المستوى ${completionLevel} ويجتاز التحقق من النظام.",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "اختيار هذا المعاجل غير مؤهل."
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "تعذر العثور على المرشد المحدد."
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "لم يعد حسابك مؤهلا للانضمام إلى الإرشاد"
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "مستواك غير مؤهل لاختيار المعالج."
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "فعالية السنة الجديدة!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "محتوى الحدث"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "ارفع برج الدقة، واجمع بتلات زهرة الليل، وتاجر مع فيسبر."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "فعالية سبتمبر"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "مهرجان إزهار الليل"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "برج الإتقان. البتلات. الغسق."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "فعالية سبتمبر"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "مهرجان إزهار الليل"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11317,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "فني الألعاب النارية"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"زهرات الليل هشة، لكن الأنظمة التي تبقيها حية ليست كذلك.",
+					"جيبني بتلات الزهرة الليلية. سأُبدلك بشيءٍ يستحقّ أن تحمله.",
+					"برج الدقة متصل. حافظ على المكدس نظيفًا، ولا تلاحق موضعًا خاطئًا."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "مزهرية نايتبلوم"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "فسبر"
 			}
 		},
 		"party": {
@@ -11818,6 +12153,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "عملية تبني الحيوانات الأليفة في وضع الانتظار"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "تحتاج إلى شقة لتبني حيوان أليف"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "الباف ما اتفعلش"
@@ -11931,6 +12270,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "بدون اسم"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "صحي"
@@ -11999,6 +12342,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "تفعيل"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12018,8 +12365,8 @@
 				"trans": "لازم تشغل إحياء الحيوان الألي أول شي"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "تنشيط إحياء الحيوان الأليف"
+				"eng": "Activate pet revive",
+				"trans": "تفعيل إحياء الأليف"
 			}
 		},
 		"reviveButton": {
@@ -12110,7 +12457,7 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
+				"eng": "You can't perform this action now",
 				"trans": "لا يمكنك تنفيذ هذا الإجراء الآن"
 			},
 			"deleteAccountTooEarly": {
@@ -12188,6 +12535,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "شكرًا لاستكمال الاستبيان، تم إرسال المكافآت إلى صندوق العناصر الخاص بك، يمكنك الوصول إلى الصندوق من علامة التبويب الخاصة بالمخزون"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "لا يمكنك تنفيذ هذا الإجراء أثناء تفعيل تعزيز الفريق"
+				}
 			}
 		}
 	},
@@ -12519,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "بروتوكول المحاذاة"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "برج الدقة"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "فعالية سبتمبر غير مفعّلة."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "اخرج وتحقق من محتويات مخزونك قبل استخدام شظية أخرى."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "لا تُعد المحاولة حتى يتم التحقق من حالة التشغيل"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "نظام البرج غير متصل"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "خروج"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "مثالي"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "تمت استعادة البنية"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "المستوى ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "المستوى ${tier} · تمت استعادة البنية",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "العودة إلى الحدث"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "لم يتم تأمين أي مستوى مكافأة. تم استهلاك الشظية."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "فقدان المحاذاة"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "الارتفاع"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "الحد الأقصى"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "التالي ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "استعادة ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "المستوى ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "برج الدقة"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "انقر في أي مكان لوضعه"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "AVAILABLE"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "بروتوكول المحاذاة"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "الحدث مغلق"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "CONSUMES 1 SHARD"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "اللقطة"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "شظية الدخول"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "فعالية سبتمبر"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "حدث سبتمبر غير مفعّل"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "تحتاج إلى شظية"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TOWER OFFLINE"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "المكان"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "استعادة"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "اضغط عندما تتداخل الكتلة المتحركة مع البرج."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "يُقصّ الجزء البارز غير المدعوم، مما يقلّل حجم الأهداف اللاحقة بشكل دائم."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "كل ${count} من التركيبات المثالية المتتالية تعيد جزءًا من السطح المفقود.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "تُفتح مستويات المكافآت عند الارتفاعات ${heights}",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "فشل إصابة البرج أو ترك مساحة سطحية ضئيلة ينهي الجولة ويسجل أعلى مستوى تم بلوغه."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "1 SHARD REQUIRED"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "ابدأ البرج"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "برج الدقة"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "جارٍ تهيئة البرج"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "حقل اللعب لبرج الدقة"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "تم تأمين البرج"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "مكافآت البرج"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "تم تأكيد المستوى ${tier} عند الارتفاع ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "مستوى المكافأة مؤمّن"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "توقف المُصيِّر ثلاثي الأبعاد قبل تقديم المحاولة."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "وحدة العرض غير متصلة"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "الارتفاع"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "مثالي"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "أفضل سلسلة"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "اخرج وتحقق من محتويات مخزونك قبل استخدام شظية أخرى."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "حالة الإرسال غير معروفة"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "الارتفاع ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "جارٍ إرسال أعلى مستوى تم الوصول إليه. لا تغلق."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "المستوى ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "جارٍ تأمين بيانات البرج"
+			}
 		}
 	},
 	"priceTag": {
@@ -13660,6 +14310,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "إعادة محاولة الاتصال"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15178,8 +15832,12 @@
 			"trans": "الدقة المعايرة (الأسطوري)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "دقة المعايرة (ملحمية)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "الدقة المعايرة (ملحمة)"
+			"trans": "دقة المعايرة (النخبة)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15884,8 +16542,16 @@
 			"trans": "نادراً ما يفرخ Techno Thief في Dungeon عندما تفتح الصناديق ، فإنهم يسقطون نهبًا أفضل ، بما في ذلك فرصة أعلى للعناصر الملحمية"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "متاهة العصابة لديها فرصة لإطلاق مهمة عصابات، تتطلب القضاء على أعداء عصابات حاسوبية محددة"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "تمت إضافة رمز المغارة، ويمكنك استخدامه لتبادل العناصر مع حداد الأسلحة، كما يمكنك الحصول على هذا العنصر من اللص التقني ومهام العصابة"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "تمت إضافة إطارين جديدين للمهرجان"
+			"trans": "تمت إضافة إطارين جديدين للمانحين"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -15995,6 +16661,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "لا يوجد لدى ${playerName} مساحة كافية في المخزون لاستلام ${itemName} وإتمام الصفقة.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "ليس لديك مساحة كافية في الحقيبة لإضافة ${itemName} وإتمام الصفقة.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16042,8 +16727,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} لا يوجد لديه مساحة كافية في مخزونهم مقابل ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "لا توجد مساحة كافية في مخزون ${playerName} لإضافة ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16058,8 +16743,8 @@
 				"trans": "لا يمكنك إرسال دعوة تجارية لهذا اللاعب"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "لا يمكن للاعب المستهدف المشاركة في التجارة"
+				"eng": "Target player cannot participate in trade",
+				"trans": "لا يمكن للاعب المستهدف المشاركة في الصفقة"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16084,11 +16769,19 @@
 				"trans": "ليس لديك ما يكفي من المال لإكمال التجارة."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "ليس لديك مساحة كافية في مخزونك مقابل ${itemName}",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "المساحة غير كافية في حقيبتك لإضافة ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "لا يمكنك إرسال دعوة تجارة إلى هذا اللاعب"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16295,100 +16988,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "متابعة مع جوجل"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "تعذر تسجيل الدخول باستخدام Google. حدّث التطبيق إلى أحدث إصدار."
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "الصحافة الطويلة للعودة إلى المدينة"
+				"eng": "Long press to go back to city",
+				"trans": "اضغط مطولاً للعودة إلى المدينة"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "الرصيد"
+			"account": {
+				"eng": "Bank",
+				"trans": "Bank"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Arasaka continuity program"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identity. Assets. Access. Preserved across every tomorrow."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Outlive uncertainty."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Private assets. Continuous access. Total control."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Own tomorrow. Secure it today."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Arasaka secure banking"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "المبلغ"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "نقل ${currency} من المحفظة إلى البنك",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "المحفظة ← البنك"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "رصيد البنك فارغ"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "المبلغ يتجاوز رصيدك البنكي."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "المبلغ يتجاوز رصيد محفظتك."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "أدخل مبلغًا صحيحًا بدون كسور"
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "الحد الأقصى"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka financial // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Online"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "اختر"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "اختر العملية"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Show advertisement ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "طلب المعاملة"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "انقل ${currency} من البنك إلى المحفظة",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "من البنك إلى المحفظة"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "الوديعة"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "وضع البيتكوين في البنك"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "هذا العنصر مغلق ولا يمكن تخزينه."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "كم تود ان تدفع عربون؟"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Retrieve ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "كم تريد أن تضع في قبو؟"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "كم تريد الانسحاب؟"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "كم تريد الانسحاب من البنك؟"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Store ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "لا يمكنك السحب عندما لا يكون لديك رصيد."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "إيداع البند"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "وضع العناصر في قبو الخاص بك"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "سحب البند"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "خذ العناصر من قبو الخاص بك"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "الترقية إلى فتحات ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "زيادة كمية الأقصى من العناصر التي يمكنك تخزينها في قبو إلى ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "تطوير"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "ترقية قبو"
+					"eng": "Upgrade vault?",
+					"trans": "Upgrade vault?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Add"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "أضف إلى الخزنة"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} من أصل ${size}",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "الخزنة فارغة"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "استخدم + لإضافة العناصر"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} slots used · Store or retrieve items",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} لكل رصّة",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Not enough inventory capacity for this retrieval."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Not enough wallet balance for the storage fee."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "مخزونك فارغ"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "الحد الأقصى للسعة"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "No inventory item fits the available vault capacity."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Retrieve"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "اضغط على عنصر لاسترداده. الاسترداد مجاني."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "استرداد المحدد"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "أنهِ إجرائك الجاري قبل استرداد العناصر."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Item vault"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Unlock an item before storing it."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "ترقية الخزينة"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Wallet"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "ينسحب"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "تأخذ بيتكوين من البنك"
 			}
 		},
 		"basicInfo": {
@@ -16793,6 +17670,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "إغلاق"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -16973,6 +17854,12 @@
 				"trans": "تظهر فقط الأبراج المحصنة يمكنني الانضمام"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "تشغيل صوت الشارة"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17124,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "الإدارة"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "كل التطبيقات"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "أمر"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17319,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "No matching items"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "ابحث عن العناصر..."
@@ -17326,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "مفاتيح سرية"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Slots: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17415,15 +18322,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "مستواك منخفض جدا لهذا البند",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "مستواك غير كافٍ لهذا العنصر"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "مستواك الحالي أقل من المطلوب لاستخدام هذا العنصر. يتطلب العنصر مستوى ${level}",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "مستواك منخفض جداً لهذا العنصر، يتطلب هذا العنصر المستوى ${level} للتجهيز",
 				"vars": [
 					"level"
 				]
@@ -17662,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "اضغط لفترة طويلة إلى متعدد الاختيار"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "تم تحديد ${count}",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17674,6 +18592,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "الأعداء القريبة"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "اضغط مطولا على زر الرجوع للعودة إلى المدينة وزيارة المتاجر والميزات المختلفة"
 			}
 		},
 		"login": {
@@ -18525,6 +19449,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "إغلاق"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18644,6 +19574,16 @@
 					"trans": "إظهار الرسالة الأصلية"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "عرض الترجمة الإنجليزية أسفل رسائل دردشتك"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "عرض ترجمة الرسائل الخاصة بي"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "خطر"
@@ -18731,12 +19671,18 @@
 				"trans": "مساعدة في ترجمة اللعبة"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "حزمة اللغة هذه مفتوحة المصدر ويساهم بها لاعبونا، وقد لا تتم ترجمة النص بالكامل وقد تحتوي على أخطاء.  لا تتردد في التعديل والمساهمة من صفحة جيثب الخاصة بنا"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "قد تكون هذه الترجمة المجتمعية غير مكتملة أو تحتوي على أخطاء."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "لغة"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "الترجمة المجتمعية"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -18846,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "تلقي إشعار الاتحاد العالمي"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "سيتم إعادة تشغيل التطبيق ذاتيًا بعد الحفظ"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "حفظ"
@@ -18866,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "معركة"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "تجريبي"
 				},
 				"general": {
 					"eng": "General",
@@ -18899,7 +19837,7 @@
 					"trans": "طبيعي"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "صغير"
 				},
 				"tiny": {

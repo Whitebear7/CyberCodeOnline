@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonusové jednotky"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Ťukni na kopírovanie"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Bezplatné bonusové jednotky"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Pri nákupe PayPal dostanete ďalších 10% viac jednotiek"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Extra jednotky pri každom nákupe cez PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "Odkaz bol skopírovaný do schránky."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Zmazať túto poznámku?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Naoisto?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "Spooky Character Art Competition!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Na váš bankový účet bolo vložené ${amount}.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Vybrali ste ${amount} z vašej banky.",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Epic Cache Fusion Bundle"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "zadarmo"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Balíček nie je dostupný"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Prepravka vzácnych zariadení"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibrácia (${percent}%) bude nasadená za pár minút",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibrácia (${percent}%) bude nasadená o pár minút",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Šťastné sviatky všetkým!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Je to opäť najkrajšie obdobie roka! V Shangri-La oslavujeme zimnú dovolenku špeciálnou udalosťou!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Užite si sviatočnú hudbu na pozadí počas podujatia!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Opäť je tu najkrajší čas v roku! V Shang-ri-la oslavujeme zimné sviatky špeciálnou udalosťou!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Šťastná zimná dovolenka!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Vesele zimné sviatky!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1815,11 @@
 			"trans": "Zrušiť"
 		},
 		"close": {
-			"eng": "TERMINATE",
-			"trans": "Zatvoriť"
+			"eng": "Close",
+			"trans": "Zavrieť"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Potvrdiť"
 		},
 		"delete": {
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Tier darovania vlastnený: [${owned}/${total}]",
+			"trans": "Vlastnené úrovne darovania: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Náhľad ${tierName} Stupňa",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Vlastnené: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Náhľad na profil"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Náhľad"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Rám chatu"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Prichádzajúce"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Smer správy"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Iný hráč"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Odchod"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Hráčsky bannér"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Podrobnosti hráča"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Prehrať vstupnú animáciu"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Krátka / jeden riadok"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Short preview message."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Dlhé / zalomenie"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Tento dlhší ukážkový text overuje, ako rámec spracováva prirodzené zalámanie na viaceré riadky bez nútených zlomov."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "Čierna tlač"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Nightbloom"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "Prestíž"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "Ukončiť"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "Chyba systému"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ZÍSKANÉ AKTÍVA"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "ZAVRIEŤ"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "Neboli dokončené žiadne knedle. Pass spotrebovaný."
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Zlúč ${amount} kusov ${fragmentName} a získaj 1 náhodný epický skrýš na vybavenie",
+			"trans": "Spojte ${amount} fragmentov epickej skrini na 1 zaručenú epickú výbavovú skriňu",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Túto položku nemôžete použiť, pretože existuje stavový efekt, ktorý s ňou je v rozpore",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Túto položku nemôžete použiť, pretože existuje stavový efekt, ktorý s ňou je v rozpore"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "Zadajte svoj e -mail, systém vám pošle e -mail s resetovým heslom"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Každý token povolí globálny prístup k Epic Cache Fusion na 5 minút."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Získaš 3 prístupové tokeny na výmenu vybavenia o 30 % lacnejšie."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Dostupné raz do týždňa."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Ušetrite 30 % na Epic Cache Fusion"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Čo to je? Prečítajte si tutoriál k fúzii Epic Cache."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "NAVŠTÍV KVETINÁRSTVO NOČNÉ KVITNUTIE"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Získaš 3 prístupové tokeny na výmenu vybavenia o 30 % lacnejšie."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Dostupné raz do týždňa."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Ušetrite 30 % na Epic Cache Fusion"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "Pokračuj"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Prijaté predmety:"
+				"trans": "PRIJATÉ FRAGMENTY:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ZÍSKANÉ PREDMETY:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Nedostatok zdrojov na výrobu"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "Neplatný index slotu"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Musíš mať úroveň ${level}, aby si mohol aktivovať tento nábytok",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Na aktiváciu tohto nábytku potrebujete dosiahnuť úroveň ${level}",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "Vyberte nábytok"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Na použitie tohto nábytku je potrebná úroveň ${level}",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Nedostatok zdrojov na obchodovanie"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Neplatný recept na nábytok"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Nightbloom Festival"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "September Bonus"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Nightbloom Festival Bonus"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Úlovky z AFK farmenia"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Bonusové droppy z AFK farmenia cez bota"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Počas podujatia hrá exkluzívna hudba na pozadí"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Chatové bonusy"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Odmeny za chat počas akcie:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Chat Efekty"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Výhry z kôšov v peklo"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Bonusové predmety z truhlíc v podzemí:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Úlovky z Príšer"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Extra odmeny za porazenie príšer:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Znížené požiadavky na príspevky:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Úlovky zo zberu"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Extra odmeny z hľadania:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Prijímať ${unit} jednotku",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Prijmete ${unit} Jednotky",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Získate ${unit} jednotiek (s bonusom ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} jednotka",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Tento chat exploit bol nedávno použitý, globálny čas čakania na nasadenie chat exploitov je ${minutes} minút",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "Klaster jadra AI"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Prístupový fragment Nočného kvetu"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Využívate vysielač [uwu]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Obchodovateľná odmena z Chatovej lotérie, ktorá automaticky aplikuje ${discountPercent}% zľavu na ľubovoľný Globálny preskok času. Po použití sa spotrebuje.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Poukaz na preskok chat lotérie"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "Novoročný token"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "Koncentrovaná kvetová infúzia, ktorá zvýši zisk AFK EXP aj BTC o ${percent}% na ${minutes} minút.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Infúzia nočného kvetu"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Nightbloom Petal"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Odmeny za chat"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Truhly v krypte"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Odmeny z ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Predmety z potvor"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Zber"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "vyjednávanie"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "krutosti"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "kritická šanca"
@@ -7120,7 +7379,7 @@
 			"trans": "kritická šanca"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
+			"eng": "of Crit Damage",
 			"trans": "kritického poškodenia"
 		},
 		"criticalDamageWeapon": {
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "Už máte handlera."
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "Vaše mentorstvo je už uzavreté."
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Systém zistil iný účet, ktorý bol kedykoľvek prepojený pomocou histórie zariadenia alebo nedávnej IP aktivity, preto tento účet nemôže vybrať správcu."
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName} ťa vybral za svojho handléra. Mentorstvo sa dokončí po dosiahnutí úrovne ${completionLevel} a úspešnom prekonaní systémovej verifikácie.",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "\\nTento výber handlera nie je platný.\\n"
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "Vybraný Handler sa nenašiel."
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "Váš účet už nespĺňa podmienky na účasť v mentorstve."
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "Vaša úroveň nespĺňa požiadavky na výber Handlerom."
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "Novoročný event!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Obsah udalosti"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Zdvihni Vežu presnosti, zbieraj Nočnocvetové lístky a obchoduj s Vesperom."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Septembrová udalosť"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival nočného rozkvitu"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Veža presnosti. Lístky. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Septembrová udalosť"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival nočného rozkvitu"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11368,6 +11681,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Technik ohňostroja"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Nightbloom Florist"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -12006,6 +12341,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Adopcia zvierat je momentálne na odpočinku"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Pre adopciu zvieraťa potrebujete byt"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff nie je aktivovaný"
@@ -12119,6 +12458,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Bez mena"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Zdravý"
@@ -12187,6 +12530,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Aktivovať"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12206,8 +12553,8 @@
 				"trans": "Najprv musíš aktivovať obnovenie domáceho miláčika"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Aktivovať obnovenie domáceho maznáčika"
+				"eng": "Activate pet revive",
+				"trans": "Aktivuj oživenie zvieraťa"
 			}
 		},
 		"reviveButton": {
@@ -12298,8 +12645,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Túto akciu teraz nemôžete vykonať"
+				"eng": "You can't perform this action now",
+				"trans": "Túto akciu momentálne nemôžete vykonať"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12376,6 +12723,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Ďakujeme za vyplnenie prieskumu, odmeny boli odoslané do tvojej položkovej schránky, ktorú môžeš nájsť v záložke inventára"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Túto akciu počas posilnenia skupiny nemôžete vykonať"
+				}
 			}
 		}
 	},
@@ -12707,6 +13062,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Alignment Protocol"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "The September event is not active."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Exit and verify your inventory before using another shard."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Do not retry until run status is verified"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "TOWER SYSTEM OFFLINE"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Exit"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "PERFECT"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "STRUCTURE RESTORED"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "TIER ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "TIER ${tier} · STRUCTURE RESTORED",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Return to Event"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "No reward tier secured. Shard consumed."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ALIGNMENT LOST"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "HEIGHT"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MAX"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "NEXT ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "RESTORE ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "TIER ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "PRECISION TOWER"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "TAP ANYWHERE TO PLACE"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "DOSTUPNÉ"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "ALIGNMENT PROTOCOL"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "EVENT CLOSED"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "SPOTREBUJE 1 ÚTRŽOK"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Cut"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "ENTRY SHARD"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "September Event"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "September event inactive"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "NEED SHARD"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "VEŽA MIMO PREVÁDZKY"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Place"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Restore"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Tap when the moving slab overlaps the tower."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Unsupported overhang is cut away, permanently shrinking later targets."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Reward tiers unlock at heights ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "POTREBNÝ 1 FRAGMENT"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "START TOWER"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Precision Tower"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "INITIALIZING TOWER"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Precision Tower playfield"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "TOWER SECURED"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Tower Rewards"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Tier ${tier} confirmed at height ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "REWARD TIER SECURED"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "The 3D renderer stopped before the run could be submitted."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "RENDERER OFFLINE"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Height"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Perfect"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Best Streak"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Exit and verify your inventory before using another shard."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "SUBMISSION UNKNOWN"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Height ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Submitting the highest tier reached. Do not close."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Tier ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "SECURING TOWER DATA"
+			}
 		}
 	},
 	"priceTag": {
@@ -13848,6 +14498,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "SKÚSIŤ PRIPOJENIE ZNOVA"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15366,8 +16020,12 @@
 			"trans": "Kalibračná presnosť (legendárna)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Presnosť kalibrácie (Epická)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Kalibračná presnosť (EPIC)"
+			"trans": "Presnosť kalibrácie (Prestiž)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16072,8 +16730,16 @@
 			"trans": "Techno -zlodej sa pri otváraní prepraviek zriedka v Dungeone pustí"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Gangové podzemie bude mať šancu vygenerovať gangovú úlohu, ktorá zahŕňa zabitie nepriateľov konkrétnych NPC band"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Gang Dungeon bude mať šancu splodiť gangovú úlohu, ktorá zahŕňa zabíjanie nepriateľov konkrétnych gangov NPC"
+			"trans": "Pridali sa dva nové dárové rámy"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16183,6 +16849,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "Na dokončenie obchodu nemá ${playerName} vo svojom inventári dostatok miesta na ${itemName}.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Nemáte v inventári dostatok voľného miesta pre položku ${itemName} na dokončenie obchodu.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16230,8 +16915,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} nemá vo svojom inventári dostatok miesta na dokončenie obchodu ${itemName}.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} nemá dostatok voľného miesta v inventári pre ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16246,8 +16931,8 @@
 				"trans": "Na tohto hráča nemôžete posielať pozvánku na obchod"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Cieľový hráč sa nemôže zúčastniť na obchode"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Cieľový hráč sa nemôže zapojiť do obchodu"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16272,11 +16957,19 @@
 				"trans": "Nemáte dosť peňazí na dokončenie obchodu."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Vo svojom inventári nemáte dostatok miesta na dokončenie obchodu ${itemName}.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "V tvojom inventári nie je dostatok miesta na položku ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Nie je možné odoslať obchodnú pozvánku tomuto hráčovi"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16483,100 +17176,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Prihlásiť sa cez Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google login failed. please update the app to the latest version."
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Podržte a vráťte sa do mesta"
+				"eng": "Long press to go back to city",
+				"trans": "Dlhšie podržať pre návrat do mesta"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "vyváženie"
+			"account": {
+				"eng": "Bank",
+				"trans": "Banka"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Program kontinuity Arasaka"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identita. Aktíva. Prístup. Zachované pre každé zajtra."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Preži neistotu."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Súkromné aktíva. Neprerušený prístup. Plná kontrola."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Zajtra ti patrí. Zabezpeč si ho dnes."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Bezpečná banka Arasaka"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Suma"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "Účet ${account}: k dispozícii ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Presuňte ${currency} z peňaženky do banky",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Peňaženka → banka"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Pohybový stav je nulový"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Vklad alebo výber ${currency} · Banka: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Zadaná suma presahuje váš zostatok na účte."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Suma presahuje váš zostatok v peňaženke."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Zadajte platnú celočíselnú sumu."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Maximum"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka Financial // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Online"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Vybrať"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Vyberte transakciu"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Zobraziť reklamu ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "BANKOMAT"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Žiadosť o transakciu"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Presunúť ${currency} z banky do peňaženky",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Banka → Peňaženka"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Záloha"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Vložte bitcoiny do banky"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Táto položka je uzamknutá a nemôže sa uložiť."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Koľko by ste chceli uložiť?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Vybrať ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Koľko by ste chceli vložiť do trezoru?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Koľko by ste chceli stiahnuť?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Koľko by ste chceli vybrať z banky?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Uloženie ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Nemôžeš vibrať, nemáš balanc."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Vkladová položka"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Vložte položky do svojho trezoru"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Odvolanie položky"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Vyberte veci z trezoru"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "Inovácia na ${upgradeToSlot} sloty",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Zvýš maximálne množstvo položiek, ktoré môžeš uložiť v trezore na ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Upgrade"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Zväčšenie počtu slotov z ${current} na ${next} za ${price} ${currency} z vašej peňaženky.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Vylepšenie trezoru"
+					"eng": "Upgrade vault?",
+					"trans": "Vylepšiť trezor?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Pridať"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Pridať do trezoru"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} sloty",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Trezor je prázdny"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Použite + na pridanie predmetov"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} obsadených slotov · Uloženie alebo vybranie predmetov",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / stoh",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Na tento odber nestačí kapacita inventára."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Zostatok v peňaženke nestačí na poplatok za úložisko."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Váš inventár je prázdny"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Maximálna kapacita"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Žiadny predmet z inventára sa nezmestí do dostupnej kapacity trezoru."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Vyzdvihnúť"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Klepnite na položku pre jej vyzdvihnutie. Vyzdvihnutie je bezplatné."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Prevziať vybrané"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Dokončite aktuálnu akciu pred výberom položiek."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Vybrané balíky sa nezmestia. Vypnite hromadný výber a vyberte menšie množstvo."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Trezor s predmetmi"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Odomknite položku pred jej uložením."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Vylepši trezor"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Peňaženka"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Vyberať"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Vyberte bitcoiny z banky"
 			}
 		},
 		"basicInfo": {
@@ -16981,6 +17858,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Zavrieť"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17161,6 +18042,12 @@
 				"trans": "Iba ukážte dungeóny, ktoré sa môžem pripojiť"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Play emblem audio"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17312,9 +18199,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Admin"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Všetky aplikácie"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Command"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17507,6 +18402,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Žiadne zhodné položky"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Hľadajte položky..."
@@ -17514,6 +18413,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "tajné kľúče"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Sloty: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17603,15 +18510,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Vaša úroveň je pre túto položku príliš nízka",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Tvoja úroveň je príliš nízka na tento predmet"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Na túto položku máš príliš nízku úroveň. Potrebuješ úroveň ${level}, aby si ju mohol/mohla používať",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Tvoja úroveň je príliš nízka pre vybavenie tejto položky. Vyžaduje sa úroveň ${level}",
 				"vars": [
 					"level"
 				]
@@ -17850,6 +18761,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Podržťe na viacnásobné výbery"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} selected",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17862,6 +18780,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Neďaleký nepriateľ"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Dlhým podržaním tlačidla Späť sa vrátiš do mesta a navštíviš rôzne obchody a funkcie"
 			}
 		},
 		"login": {
@@ -18713,6 +19637,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Zavrieť"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18832,6 +19762,16 @@
 					"trans": "Zobraziť pôvodnú správu"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Zobrazuje anglický preklad pod vašimi vlastnými správami v čate"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Zobraziť preklad mojich správ"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Nebezpečná zóna"
@@ -18919,12 +19859,18 @@
 				"trans": "Pomoc s prekladom hry"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Tento jazykový balíček je open source a prispela k nemu komunita. Text nemusí byť úplne preložený a môže obsahovať chyby. Neváhajte upravovať a prispievať z našej stránky Githubu"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "This community translation may be incomplete or contain mistakes."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Jazyk"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Community Translation"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19034,10 +19980,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Dostávať globálne upozornenie"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Apolikácia sa rešetuje po uložení"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "uložiť"
@@ -19054,10 +19996,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Boj"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Experimentálny"
 				},
 				"general": {
 					"eng": "General",
@@ -19087,8 +20025,8 @@
 					"trans": "Normálny"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Malý"
+					"eng": "Small",
+					"trans": "Malé"
 				},
 				"tiny": {
 					"eng": "Tiny",

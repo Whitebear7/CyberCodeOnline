@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "额外点数"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "点击复制"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "免费奖励点数"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "若您使用PayPal购买，则会额外获赠10%单位"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal购买赠送额外单位"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "网址已复制到剪贴板"
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "删除此笔记？"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "确定吗？"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "怪异的角色艺术比赛！"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "已成功将${amount}存入你的银行账户",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "已成功从您的银行账户提取 ${amount}。",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "史诗缓存融合礼包"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "免费"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "组合包不可用"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "稀有装备箱"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "校准（${percent}%）将于数分钟后上线",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "校准（${percent}%）将在几分钟内部署。",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "节日快乐，大家！"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "这是一年中最美好的时光！ 在香格里拉，我们正在举行特别活动来庆祝冬季假期！"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "在活动期间尽情享受节日背景音乐吧！"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "又是一年最美好的时节！在香格里拉，我们将举办特别活动，共庆冬日佳节！"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "冬季快乐！"
+			"eng": "Happy Winter Holiday!",
+			"trans": "冬日节日快乐！"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1815,11 @@
 			"trans": "取消"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "关闭"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "确认"
 		},
 		"delete": {
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "已拥有的捐赠档位：[${owned}/${total}]",
+			"trans": "已拥有捐赠档位: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "正在预览 ${tierName} 层级",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "已拥有：[${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "个人资料预览"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "预览"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "聊天框"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "待到账"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "消息方向"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "其他玩家"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "转出"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "玩家横幅"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "玩家详情"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "重播入场动画"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "短 / 一行"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "短预览消息"
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "长文本/换行"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "此较长预览消息用于检查文本框在多行内如何自然换行而不强制断行。"
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "黑色传媒"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "夜绽"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "至尊"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "终止"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "系统错误"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "已获资产"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "关闭"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "没有完成饺子，通行证已消耗。"
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "用 ${amount} 个 ${fragmentName} 熔铸出1个随机史诗级装备宝箱",
+			"trans": "将 ${amount} 个史诗宝箱碎片融合为 1 个必得史诗装备宝箱",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "您不能使用此项目，因为存在状态效应与之冲突",
-			"vars": [
-				"minutes"
-			]
+			"trans": "您不能使用此项目，因为存在状态效应与之冲突"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "输入您的电子邮件，系统将向您发送重置密码电子邮件"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "每枚令牌可开启5分钟的史诗级缓存融合全球访问权限"
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "以7折获取3枚装备兑换访问令牌"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "每周限领一次"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "史诗缓存融合立省30%"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "这是什么？查看史诗缓存融合教程。"
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "前往夜绽花店"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "以7折获取3枚装备兑换访问令牌"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "每周限领一次"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "史诗缓存融合立省30%"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "继续行动"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "收到物品："
+				"trans": "已获取碎片："
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "获得物品："
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "资源不足无法制作"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "槽位索引无效"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "你需要达到等级 ${level} 才能激活这件家具。",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "需达到 ${level} 级才能激活该家具",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "选择家具"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "需达到 ${level} 级才能使用此家具",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "交易所需资源不足"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "无效家具配方"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "夜绽节"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "九月奖金"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "夜绽祭典奖励"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "精准之塔"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "离线收益"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "挂机时的额外奖励："
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "活动时段有专属BGM"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "聊天奖励"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "活动内聊天送奖励！"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "聊天效果"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "地牢宝箱奖励"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "地城宝箱额外掉落："
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "怪物掉落"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "击杀怪物可获取奖励"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "减少贡献要求："
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "探索掉落"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "从清理行动中获得的奖励物品："
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "收到${unit}单位",
+				"eng": "Receive ${unit} Unit",
+				"trans": "获得 ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "获得${unit}点（含${bonus}赠送）",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit}单位",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "聊天漏洞近期已被使用，所有聊天漏洞的全局部署冷却为${minutes}分钟。",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "AI芯片组"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "开启一次精准塔挑战所需的夜绽接入碎片 在夜绽节期间可通过部署农场机器人或打开地牢宝箱获取"
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "夜绽接入碎片"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "聊天漏洞发信装置[UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "可交易的聊天抽奖奖励，可使任意全球时间跳跃自动享受${discountPercent}%折扣，使用即消耗。",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "聊天抽奖跳过券"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "新年代币"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "高浓度花香萃取液可在${minutes}分钟内将AFK经验与BTC获取量提升${percent}%",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "夜绽精华液"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "九月活动期间获得的发光花瓣可在夜绽花店的薇斯珀处兑换物品"
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "夜绽花瓣"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "聊天奖励"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "副本宝箱"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game}奖励",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "怪物掉落"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "搜刮"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "讨价还价"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "之残暴"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "暴击率"
@@ -7120,7 +7379,7 @@
 			"trans": "暴击率"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
+			"eng": "of Crit Damage",
 			"trans": "暴击伤害"
 		},
 		"criticalDamageWeapon": {
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "你已有联络人。"
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "您的指导已关闭。"
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "系统检测到其他账户曾通过设备历史或近期IP活动关联，因此当前账户无法选择导师"
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName}已指定你担任其导师。待该成员等级达到${completionLevel}且通过系统核验，本次指导任务即可正式完成。",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "该联络人选择不符合条件"
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "未找到所选引导者。"
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "您的账号已不符合加入导师系统的资格。"
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "您的等级不符合选择代理人的条件。"
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "新年狂欢"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "活动内容"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "升起精准塔，收集夜绽花瓣，并与薇斯珀交易。"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9月活动"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "夜绽节"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "精准塔 花瓣 晚祷"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9月活动"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "夜绽节"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11368,6 +11681,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "烟花技师"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"夜绽很脆弱，维持其存活的系统却不然。",
+					"给我带来夜绽花瓣。我会用值得你带走的东西跟你换。",
+					"精准塔已上线。保持堆叠整洁，别硬追失误的落点。"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "夜绽花匠"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "维斯珀"
 			}
 		},
 		"party": {
@@ -12006,6 +12341,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "领养宠物正在冷却中"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "需拥有公寓才能领养宠物"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "增益未激活"
@@ -12119,6 +12458,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "未命名"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "健康"
@@ -12187,6 +12530,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "激活"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12206,8 +12553,8 @@
 				"trans": "你需要先激活宠物复活"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "激活宠物复活"
+				"eng": "Activate pet revive",
+				"trans": "启用宠物复活"
 			}
 		},
 		"reviveButton": {
@@ -12298,8 +12645,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "你现在不能执行此操作"
+				"eng": "You can't perform this action now",
+				"trans": "当前无法执行此操作"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12376,6 +12723,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "感谢您完成调查，奖励已发送至您的物品收件箱，您可以从库存选项卡访问收件箱。"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "队伍增益期间无法执行此操作"
+				}
 			}
 		}
 	},
@@ -12707,6 +13062,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "校准协议"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "精准之塔"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "9月活动尚未开启。"
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "请先退出并检查物品栏再使用另一个碎片"
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "请确认运行状态后再重试"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "塔系统离线"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "退出"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "完美"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "结构已恢复"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "等级 ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "第${tier}层 结构已恢复",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "返回活动"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "未获得奖励档位 碎片已消耗"
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "同步失败"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "高度"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "最大"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "下一层 ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "恢复 ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "层级 ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "精准塔"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "点击任意位置放置"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "可用"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "校准协议"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "活动已关闭"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "消耗 1 枚碎片"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "切"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "入口碎片"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "9月活动"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "九月活动未激活"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "需要碎片"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "塔体离线"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "地点"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "恢复"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "移动石板与塔重叠时点击"
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "无支撑的悬挑部分将被切除，后续目标将永久缩小"
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "连续 ${count} 次完美放置可恢复部分丢失的表面",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "达到高度 ${heights} 时解锁奖励等级",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "未命中塔或剩余接触面过少会结束本局并提交已达到的最高层数"
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "需要 1 个碎片"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "启动高塔"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "精准之塔"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "塔初始化中"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "精准塔游戏区"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "塔已掌控"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "高塔奖励"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "已在高度 ${height} 确认第 ${tier} 层",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "奖励层级已锁定"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "3D渲染器在提交本次运行前已停止"
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "渲染器离线"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "高度"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "完美"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "最高连胜"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "请先退出并检查物品栏再使用另一个碎片"
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "提交状态未知"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "高度 ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "正在提交已达到的最高层级。请勿关闭。"
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "等级 ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "正在保护塔数据"
+			}
 		}
 	},
 	"priceTag": {
@@ -13848,6 +14498,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "重新连接"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15366,8 +16020,12 @@
 			"trans": "校准精度（传奇）"
 		},
 		"upgradeChance4": {
-			"eng": "Calibration Precision (Prestige)",
+			"eng": "Calibration Precision (Epic)",
 			"trans": "校准精度（史诗）"
+		},
+		"upgradeChance5": {
+			"eng": "Calibration Precision (Prestige)",
+			"trans": "校准精度（威望）"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16072,8 +16730,16 @@
 			"trans": "当您打开板条箱时，Techno Thief很少会在地牢中产生，它们会掉落更好的战利品，包括更高的Epic物品的机会"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "帮派副本有一定几率触发帮派任务并需消灭特定NPC帮派的敌人"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "已添加地牢代币，可在军械师NPC处兑换道具，并可通过科技窃贼和帮派任务获取该代币。"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "添加了地牢令牌，您可以使用它从武器史密斯NPC交换物品，您可以从Techno Thief和Gang Quests获取此物品"
+			"trans": "新增两款捐赠者边框"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16183,6 +16849,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} 的物品栏空间不足，无法完成 ${itemName} 的交易。",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "你的背包空间不足，无法容纳 ${itemName} 以完成交易。",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16230,8 +16915,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName}在其库存中没有足够的空间容纳${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName}的背包空间不足，无法存放${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16246,8 +16931,8 @@
 				"trans": "您不能将交易邀请发送给这个玩家"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "您不能将交易邀请发送给这个玩家"
+				"eng": "Target player cannot participate in trade",
+				"trans": "目标玩家无法参与交易"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16272,11 +16957,19 @@
 				"trans": "您没有足够的钱来完成交易。"
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "您的库存中没有足够的空间容纳${itemName}",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "你的背包空间不足以容纳 ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "无法向该玩家发送交易邀请"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16483,100 +17176,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "使用 Google 登录"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google登录失败，请将应用更新至最新版本。"
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "长按返回香格里拉市中心"
+				"eng": "Long press to go back to city",
+				"trans": "长按返回城市"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "余额"
+			"account": {
+				"eng": "Bank",
+				"trans": "银行"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "荒坂持续保障计划"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "身份。资产。权限。跨越每个明日，恒久留存。"
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "超越不确定"
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "私人资产 随时存取 全面掌控"
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "掌控明天，今日守护。"
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "荒坂安全银行"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "金额"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "将 ${currency} 从钱包存入银行",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "钱包→银行"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "银行账户余额为零"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "存款或取款 ${currency} · 银行账户：${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "取款金额超出账户余额"
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "该金额超出您的钱包余额。"
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "请输入有效整数金额"
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "最大"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "荒坂金融 // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "线上"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "选择"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "选择交易"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "显示广告${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "自动取款机"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "交易请求"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "将 ${currency} 从银行转至钱包",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "银行至钱包"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "存入"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "将比特币存入银行"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "此项目已锁定，无法存储。"
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "您想要存入多少比特币？"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "取出 ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "您想把多少件物品放在金库里？"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "您想要取出多少比特币？"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "您想要从金库里取出多少件物品？"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "存入${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "当您没有余额时您不能取钱。"
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "存入物品"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "将物品存入您的金库中"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "取出物品"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "将物品从您的金库中取出"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "升级到${upgradeToSlot}插槽",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "增加您可以存储在金库中的最大物品数到${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "升级"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "花费钱包中的 ${price} ${currency}，将保险库槽位由 ${current} 扩容至 ${next}。",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "升级保险库"
+					"eng": "Upgrade vault?",
+					"trans": "升级保险库？"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "添加"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "放入保险箱"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} 个槽位",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "金库为空"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "使用 + 添加物品"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} 格已用 · 存放或取出物品",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency}/堆",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "背包容量不足，无法完成此次提取。"
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "钱包余额不足，无法支付存储费。"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "你的背包空空如也"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "最大容量"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "当前保险库剩余容量无法容纳任何库存物品"
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "提取"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "轻点物品即可提取。提取免费。"
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "提取所选"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "完成当前操作后方可提取物品"
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "所选堆叠无法放入，请关闭多选以选择较少数量。"
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "物品金库"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "存入前请先解锁该物品"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "升级金库"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "钱包"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "取出"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "将比特币取出银行"
 			}
 		},
 		"basicInfo": {
@@ -16981,6 +17858,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "关闭"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17161,6 +18042,12 @@
 				"trans": "只显示我可以加入的地下城"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "播放徽章音效"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17312,9 +18199,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "管理员"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "更多应用程序"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "指令"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17507,6 +18402,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "无匹配物品"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "搜索物品..."
@@ -17514,6 +18413,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "密钥"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "已用格数：${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17603,15 +18510,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "您的等级不足以使用此物品",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "你的等级过低无法装备该物品"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "等级不够，穿不上！需要${level}级。",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "当前等级不足，该物品需 ${level} 级方可装备",
 				"vars": [
 					"level"
 				]
@@ -17850,6 +18761,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "长按以选择多个项目"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "已选择 ${count} 项",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17862,6 +18780,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "附近的敌人"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "你可以长按返回键回到城市，体验各类商铺与功能。"
 			}
 		},
 		"login": {
@@ -18713,6 +19637,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "关闭"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18832,6 +19762,16 @@
 					"trans": "显示原始聊天消息"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "在您发送的聊天消息下方显示英文翻译"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "显示我的消息翻译"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "危险区域"
@@ -18919,12 +19859,18 @@
 				"trans": "帮助翻译游戏"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "此语言包是开源的并由玩家贡献, 因此某些翻译可能不完全或有纰漏。如果您想要提供帮助, 请来我们的 GitHub 网站。"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "此社区翻译可能不完整或存在错误。"
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "语言"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "社区翻译"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19034,10 +19980,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "接收全球增益通知"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "保存后游戏将会自动重启"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "保存"
@@ -19054,10 +19996,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "战斗"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "实验性"
 				},
 				"general": {
 					"eng": "General",
@@ -19087,7 +20025,7 @@
 					"trans": "一般"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "小"
 				},
 				"tiny": {
@@ -19599,13 +20537,13 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "登出前开启任务，即可在后台继续收集资源并升级。"
+				"trans": "下线前开启任务，即可在后台持续采集资源并提升等级。"
 			}
 		},
 		"animation": {
 			"asset": {
 				"eng": "Asset",
-				"trans": "资源"
+				"trans": "资产"
 			},
 			"autotask": {
 				"eng": "AUTOTASK",
@@ -19613,19 +20551,19 @@
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
-				"trans": "执行: 购买"
+				"trans": "执行购买"
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "求组 废弃工厂，需要奶妈。"
+				"trans": "求组队，废弃工厂，缺奶妈。"
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "Inv，我带了医疗包。"
+				"trans": "Inv，我拿到医疗包了。"
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "Kael已激活全局增益"
+				"trans": "凯尔已开启全局增益"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19641,15 +20579,15 @@
 			},
 			"system": {
 				"eng": "System:",
-				"trans": "系统:"
+				"trans": "系统："
 			},
 			"waiting": {
 				"eng": "WAITING FOR ORDERS...",
-				"trans": "等待指令..."
+				"trans": "等待指令中..."
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "收益已获取"
+				"trans": "已获取收益"
 			}
 		},
 		"cta": {
@@ -19665,11 +20603,11 @@
 		"economy": {
 			"headline": {
 				"eng": "Player-Driven Economy",
-				"trans": "玩家驱动经济"
+				"trans": "玩家驱动型经济"
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "市场上的每一件物品，都由像你一样的真实玩家亲手打造并进行交易。"
+				"trans": "市场中的每件物品都由和你一样的真实玩家打造与交易"
 			}
 		},
 		"error": {
@@ -19689,11 +20627,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "拒绝数值碾压"
+				"trans": "零付费取胜"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "所有特权增益均已实现全服共享。每当有人为游戏助力，整个社区都将共同获益，携手前行。"
+				"trans": "所有高级增益均为全服共享。每当有玩家支持游戏时，整个社区都能受益并共同进步。"
 			}
 		},
 		"loading": {
@@ -19709,11 +20647,11 @@
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "/ / 连接已建立"
+				"trans": "// 连接已建立"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "系统初始化序列.01"
+				"trans": "系统初始化序列01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

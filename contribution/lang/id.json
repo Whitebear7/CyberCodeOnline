@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Bonus Unit"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Ketuk untuk menyalin"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Unit Bonus Gratis"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Kamu akan menerima tambahan 10% lebih banyak unit dengan pembelian PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Unit tambahan untuk semua pembelian PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL disalin ke papan klip."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "Hapus catatan ini?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Anda Yakin?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "Kompetisi art Karakter Menyeramkan!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Dana ${amount} berhasil ditambahkan ke rekening Anda.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Withdrew ${amount} from your bank.",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Paket Fusi Cache Epik"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Gratis cuy"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Paket Tidak Tersedia"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Peti Equipment Langka"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Kalibrasi (${percent}%) akan diterapkan dalam beberapa menit",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "Kalibrasi ${percent}% telah di deploy",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "Selamat Liburan semuanya!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "Ini adalah waktu yang paling indah tahun ini lagi! Di Shangri-La kami merayakan liburan musim dingin dengan acara khusus!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "Nikmati musik latar meriah selama event berlangsung!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "Waktu paling indah dalam setahun telah tiba kembali! Di Shang-ri-la, kami merayakan liburan musim dingin dengan acara spesial!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "Selamat liburan musim dingin!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Selamat Libur Musim Dingin!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1815,12 @@
 			"trans": "Batal"
 		},
 		"close": {
-			"eng": "TERMINATE",
-			"trans": "TUTUP"
+			"eng": "Close",
+			"trans": "Tutup"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "Apakah kamu yakin?"
+			"eng": "Confirm",
+			"trans": "Konfirmasi"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Tingkatan Donasi yang Dimiliki: [${owned}/${total}]",
+			"trans": "Tingkat Donasi Dimiliki: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "Pratinjau ${tierName} Tier",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Dimiliki: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Pratinjau di Profil"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Pratinjau"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Bingkai Obrolan"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Masuk"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Arah Pesan"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Pemain Lain"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Keluar"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Spanduk Pemain"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Detail Pemain"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Putar Ulang Animasi Masuk"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Pendek / satu baris"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Pesan pratinjau singkat."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Panjang / Pembungkus"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Pesan pratinjau yang lebih panjang ini menguji cara bingkai menangani pelipatan alami pada beberapa baris tanpa patahan paksa."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "Pers Hitam"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Bunga Malam"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "Prestise"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "AKHIRI"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "KESALAHAN SISTEM"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ASET YANG DIPEROLEH"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "TUTUP"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "TIDAK ADA DATA YANG DIAMANKAN"
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Gabungkan ${amount} ${fragmentName} jadi 1 Peti Peralatan Epik acak",
+			"trans": "Gabungkan ${amount} Fragmen Kontainer Epik menjadi 1 Kontainer Peralatan Epik yang dijamin",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "Anda tidak dapat menggunakan item ini karena ada efek status yang bertentangan dengannya",
-			"vars": [
-				"minutes"
-			]
+			"trans": "Anda tidak dapat menggunakan item ini karena ada efek status yang bertentangan dengannya"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "Masukkan email Anda, sistem akan mengirim email reset kata sandi kepada Anda"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Setiap token mengaktifkan akses global ke Epic Cache Fusion selama 5 menit."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Dapatkan 3 Token Akses Tukar Peralatan dengan diskon 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Tersedia sekali seminggu."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Hemat 30% untuk Epic Cache Fusion"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "Apa ini? Baca tutorial Epic Cache Fusion."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "KUNJUNGI TOKO BUNGA NIGHTBLOOM"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Dapatkan 3 Token Akses Tukar Peralatan dengan diskon 30%."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Tersedia sekali seminggu."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Hemat 30% untuk Epic Cache Fusion"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "Lanjut"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Item didapatkan"
+				"trans": "FRAGMEN DITERIMA:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "ITEM YANG DITERIMA:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Sumber daya tidak cukup untuk membuat"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "Indeks slot tidak valid"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Level minimal ${level} diperlukan untuk mengaktifkan furnitur ini",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Kamu perlu berlevel ${level} untuk mengaktifkan furnitur ini",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "Pilih Perabotan"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Kamu perlu mencapai level ${level} untuk menggunakan furnitur ini",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Sumber daya tidak cukup untuk ditukarkan"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Resep Furnitur Tidak Valid"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Festival Mekar Malam"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Bonus September"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Bonus Festival Bunga Malam"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Menara Presisi"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Drop AFK Farming"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Bonus item dari bot otomatis AFK:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Musik latar belakang khusus berputar saat acara"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Hadiah Chatting"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Hadiah khusus bagi kamu yang sering chat selama event ini:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Efek Obrolan"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Drop Peti Dungeon"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Item tambahan dari peti harta gua:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Drop Monster"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Hadiah bonus dari mengalahkan monster:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "persyaratan kontribusi dikurangi:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Drop hasil memulung"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Bonus item dari pencarian:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Menerima unit ${unit}",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Dapatkan ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Dapatkan ${unit} Unit (${bonus} Bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Unit",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Eksploit chat baru saja digunakan, eksploit chat memiliki cooldown penerapan global selama ${minutes} menit",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "Inti AI - Cluster"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Nightbloom Access Shard"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Pemancar Eksploitasi Obrolan [UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Hadiah Lotre Chat yang dapat diperdagangkan, otomatis memberi diskon ${discountPercent}% untuk Lompat Waktu Global apa pun. Akan habis saat digunakan.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Voucher Lewati Undian Chat"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "Token Tahun Baru"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "Infus bunga pekat yang meningkatkan EXP AFK dan BTC yang diperoleh sebesar ${percent}% selama ${minutes} menit.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Infusi Bunga Malam"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "Kelopak bunga bercahaya yang ditemukan selama event September. Tukarkan ke Vesper di Nightbloom Florist untuk memperoleh item."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Kelopak Bunga Malam"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Chat rewards"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Dungeon chests"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game} rewards",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Monster drops"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Scavenging"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "dengan bargaining"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "dari Brutalitas"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "dengan Crit Chance"
@@ -7120,8 +7379,8 @@
 			"trans": "dengan Crit Chance"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "dengan Brutalitas"
+			"eng": "of Crit Damage",
+			"trans": "dari Kerusakan Kritis"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "Anda sudah memiliki Handler."
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "Program bimbingan Anda telah berakhir."
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "Sistem mendeteksi akun lain yang pernah terhubung lewat riwayat perangkat atau menunjukkan aktivitas IP terbaru, sehingga akun ini tidak dapat memilih Handler."
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName} memilih Anda sebagai Handler mereka. Bimbingan mereka akan selesai jika mereka mencapai level ${completionLevel} dan lulus verifikasi sistem.",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "Pilihan Handler ini tidak memenuhi syarat."
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "Handler yang dipilih tidak ditemukan."
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "Akun Anda tidak lagi memenuhi syarat untuk bergabung dalam program mentoring."
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "Level Anda tidak memenuhi syarat untuk pemilihan Handler."
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "Event Tahun Baru!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Konten Acara"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Dirikan Menara Presisi, kumpulkan Kelopak Nightbloom, dan berdagang dengan Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Acara September"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival Mekar Malam"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Menara Presisi. Kelopak Bunga. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Acara September"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival Mekar Malam"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11317,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Teknisi Kembang Api"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Nightbloom itu rapuh. Sistem yang menjaganya tetap hidup tidak rapuh.",
+					"Bawakan aku Kelopak Bunga Malam. Aku akan menukarnya dengan sesuatu yang layak dibawa.",
+					"Menara Presisi aktif. Jaga tumpukan rapi, dan jangan kejar posisi buruk."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Penjual Bunga Malam"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -11818,6 +12153,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "Adopsi hewan peliharaan lagi di cooldown nih, bro/sis"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Kamu membutuhkan apartemen untuk mengadopsi peliharaan"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "Buff belum diaktifkan"
@@ -11931,6 +12270,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Tanpa Nama"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Sehat"
@@ -11999,6 +12342,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Aktifkan"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12018,8 +12365,8 @@
 				"trans": "Kamu perlu mengaktifkan penyembuhan hewan peliharaan terlebih dahulu"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Aktifkan penyembuhan hewan peliharaan"
+				"eng": "Activate pet revive",
+				"trans": "Aktifkan Penghidupan Kembali Peliharaan"
 			}
 		},
 		"reviveButton": {
@@ -12110,8 +12457,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "Anda tidak dapat melakukan tindakan ini sekarang"
+				"eng": "You can't perform this action now",
+				"trans": "Tidak dapat melakukan aksi ini saat ini"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12188,6 +12535,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Makasih udah isi survei, reward-nya udah dikirim ke item inbox kamu, bisa diakses dari tab Penyimpanan ya"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "Aksi ini tidak dapat dilakukan selama buff kelompok aktif"
+				}
 			}
 		}
 	},
@@ -12519,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Protokol Penyelarasan"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Menara Presisi"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "Acara September tidak aktif."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Keluar dan periksa inventaris Anda sebelum menggunakan shard lain."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "Jangan coba lagi hingga status eksekusi diverifikasi"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "SISTEM MENARA NONAKTIF"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Keluar"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "SEMPURNA"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "STRUKTUR DIPULIHKAN"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "TINGKAT ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "TINGKAT ${tier} · STRUKTUR DIPULIHKAN",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Kembali ke Acara"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Tidak ada tingkat hadiah yang diperoleh. Shard terpakai."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "PENYELARASAN HILANG"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "KETINGGIAN"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MAKS"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "TINGGI BERIKUTNYA ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "PULIHKAN ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "TINGKAT ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "MENARA PRESISI"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "KETUK DI MANA SAJA UNTUK MENEMPATKAN"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "AVAILABLE"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "PROTOKOL PENYELARASAN"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "ACARA DITUTUP"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "CONSUMES 1 SHARD"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Potong"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "SERPIHAN CATATAN"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Acara September"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Acara September Nonaktif"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "PERLU SHARD"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TOWER OFFLINE"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Tempat"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Pemulihan"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Ketuk saat pelat yang bergerak tumpang tindih dengan menara."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "Jorongan tanpa penyangga akan dipotong, memperkecil target-target selanjutnya secara permanen."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Setiap ${count} penempatan sempurna beruntun memulihkan sebagian permukaan yang hilang.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Tingkat hadiah terbuka pada ketinggian ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "Meleset dari menara atau menyisakan terlalu sedikit permukaan akan mengakhiri percobaan dan mengirimkan tingkat tertinggi yang dicapai."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "1 SHARD REQUIRED"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "MULAI MENARA"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Menara Presisi"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "SEDANG MENGINISIASI MENARA"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Area Bermain Menara Presisi"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "MENARA DIAMANKAN"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Hadiah Menara"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Tingkat ${tier} dikonfirmasi di ketinggian ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "TINGKAT HADIAH TERAMANKAN"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "Renderer 3D berhenti sebelum eksekusi dapat dikirim."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "RENDERER OFFLINE"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Tinggi"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Sempurna"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Rekor Beruntun"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Keluar dan periksa inventaris Anda sebelum menggunakan shard lain."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "PENGIRIMAN TIDAK DIKETAHUI"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Tinggi ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Sedang mengirim tingkat tertinggi yang dicapai. Jangan ditutup."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Tingkat ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "MENGAMANKAN DATA MENARA"
+			}
 		}
 	},
 	"priceTag": {
@@ -13660,6 +14310,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "ULANGI KONEKSI"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15178,8 +15832,12 @@
 			"trans": "Presisi Kalibrasi - Legendars"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Presisi Kalibrasi (Epik)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Presisi Kalibrasi - Prestige"
+			"trans": "Ketepatan Kalibrasi (Prestise)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15884,8 +16542,16 @@
 			"trans": "Pencuri techno akan jarang muncul di ruang bawah tanah saat Anda membuka peti, mereka menjatuhkan rampasan yang lebih baik, termasuk kemungkinan lebih tinggi dari item epik"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Dungeon geng berpeluang memunculkan misi geng untuk membunuh musuh dari geng NPC tertentu"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Token Dungeon ditambahkan, kamu bisa menggunakannya untuk menukar item dari NPC Weapon Smith, item ini dapat diperoleh dari Techno Thief dan Misi Gang"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Dungeon geng akan memiliki kesempatan untuk menelurkan pencarian geng, yang melibatkan membunuh musuh geng NPC tertentu"
+			"trans": "Dua bingkai donatur baru ditambahkan"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -15995,6 +16661,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} tidak memiliki ruang inventaris yang cukup untuk ${itemName} agar transaksi dapat diselesaikan.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "Ruang inventaris kamu tidak cukup untuk ${itemName} guna menyelesaikan transaksi.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16042,8 +16727,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} tidak memiliki ruang yang cukup dalam Penyimpanan mereka untuk ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} tidak memiliki ruang yang cukup di inventarisnya untuk ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16058,8 +16743,8 @@
 				"trans": "Anda tidak dapat mengirim undangan perdagangan ke pemain ini"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "Pemain target tidak dapat berpartisipasi dalam perdagangan"
+				"eng": "Target player cannot participate in trade",
+				"trans": "Pemain target tidak dapat mengikuti pertukaran"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16084,11 +16769,19 @@
 				"trans": "Anda tidak punya cukup uang untuk menyelesaikan perdagangan."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "Anda tidak memiliki cukup ruang dalam Penyimpanan Anda seharga ${itemName} untuk menyelesaikan perdagangan.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "Ruang di inventarismu tidak cukup untuk ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "Kamu tidak dapat mengirim undangan dagang ke pemain ini"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16295,100 +16988,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Lanjutkan dengan Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Gagal masuk Google. Silakan perbarui aplikasi ke versi terbaru."
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Tekan lama untuk kembali ke kota"
+				"eng": "Long press to go back to city",
+				"trans": "Tekan dan tahan untuk kembali ke kota"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Saldo"
+			"account": {
+				"eng": "Bank",
+				"trans": "Bank"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Arasaka continuity program"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identity. Assets. Access. Preserved across every tomorrow."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Outlive uncertainty."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Private assets. Continuous access. Total control."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Own tomorrow. Secure it today."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Arasaka secure banking"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Amount"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Move ${currency} from wallet to bank",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Wallet → Bank"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Bank balance is empty"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "Amount exceeds your bank balance."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "Amount exceeds your wallet balance."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Enter a valid whole amount."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Max"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka financial // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "Online"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Select"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Select transaction"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Show advertisement ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Transaction request"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Move ${currency} from bank to wallet",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Bank → Wallet"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Setor"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Setor / Masukkan Bitcoin ke bank"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Item ini terkunci dan tidak dapat disimpan."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "Berapa yang ingin Kamu setorkan?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Retrieve ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "Berapa banyak yang ingin Kamu masukkan ke Berangkas?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "Berapa banyak yang ingin Kamu tarik?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "Berapa banyak yang ingin Kamu tarik dari bank?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Simpan ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "Kamu tidak dapat menarik ketika tidak memiliki saldo"
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Setor barang"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Setor / Masukkan barang ke Berangkasmu"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Tarik barang"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Tarik / Ambil barang dari Berangkasmu"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "TINGKATKAN KE ${upgradeToSlot} SLOT",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Menambah jumlah maksimum barang yang dapat Kamu simpan di berangkas ke ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Tingkatkan"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Tingkatkan Brangkasmu"
+					"eng": "Upgrade vault?",
+					"trans": "Upgrade vault?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Add"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Add to vault"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} slots",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Vault empty"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Use + to add items"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} slots used · Store or retrieve items",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / stack",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "Not enough inventory capacity for this retrieval."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Not enough wallet balance for the storage fee."
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Your inventory is empty"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Maximum capacity"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "No inventory item fits the available vault capacity."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Retrieve"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Tap an item to retrieve it. Retrieval is free."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Retrieve selected"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Finish your current action before retrieving items."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Tumpukan terpilih tidak muat. Matikan pilih banyak untuk memilih jumlah yang lebih kecil."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Item vault"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Unlock an item before storing it."
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Upgrade vault"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Wallet"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Tarik"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Tarik / Ambil Bitcoin dari Bank"
 			}
 		},
 		"basicInfo": {
@@ -16793,6 +17670,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Tutup"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -16973,6 +17854,12 @@
 				"trans": "Hanya menunjukkan rubanah yang bisa saya ikuti"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Putar Audio Lambang"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17124,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Admin"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Semua aplikasi"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Perintah"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17319,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "No matching items"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Cari barang..."
@@ -17326,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "Kunci rahasia"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Slots: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17415,15 +18322,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Level mu terlalu rendah untuk item ini",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Levelmu terlalu rendah untuk item ini"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Levelmu tidak mencukupi. Butuh level ${level} untuk memakai item ini",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Level kamu terlalu rendah untuk item ini. Item ini membutuhkan level ${level} untuk dipakai",
 				"vars": [
 					"level"
 				]
@@ -17662,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Tekan lama untuk memilh lebih dari satu barang"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} dipilih",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17674,6 +18592,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Musuh terdekat"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Kamu bisa tekan dan tahan tombol kembali untuk kembali ke kota dan mengunjungi berbagai toko serta fitur"
 			}
 		},
 		"login": {
@@ -18525,6 +19449,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Tutup"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18644,6 +19574,16 @@
 					"trans": "Tampilkan Pesan Chat Asli"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Tampilkan terjemahan bahasa Inggris di bawah pesan chat Anda"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Tampilkan Terjemahan Pesan Saya"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Zona Berbahaya"
@@ -18731,12 +19671,18 @@
 				"trans": "Bantu menerjemahkan game ini ;)"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Paket Bahasa ini adalah open source (Sumber teebuka) dari kontribusi pemain, jadi maklumi beberapa teks yang mungkin belum diterjemahkan sepenuhnya dan bisa terdapat kesalahan. jika berminat, silahkan berkontribusi dengan mengdit file di halaman Github kami"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Terjemahan komunitas ini mungkin tidak lengkap atau memuat kesalahan."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Bahasa"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Terjemahan Komunitas"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -18846,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Terima Notifikasi ketika mendapat Buff Global"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "Aplikasi akan merestart sendiri setelah disimpan (Save)"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "Simpan (Save)"
@@ -18866,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Pertarungan"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Eksperimen"
 				},
 				"general": {
 					"eng": "General",
@@ -18899,7 +19837,7 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
+					"eng": "Small",
 					"trans": "Kecil"
 				},
 				"tiny": {
@@ -19411,7 +20349,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "Jalankan tugas sebelum logout untuk terus mengumpulkan sumber daya dan naik level di latar belakang."
+				"trans": "Mulai tugas sebelum keluar agar tetap mengumpulkan sumber daya dan menaikkan level di latar belakang."
 			}
 		},
 		"animation": {
@@ -19429,15 +20367,15 @@
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "Cari tim Pabrik Terbengkalai, butuh healer."
+				"trans": "Cari tim ke Pabrik Terlantar, butuh penyembuh."
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "Inv, gue dapet medkit."
+				"trans": "Inv, aku sudah dapat beberapa bekas P3K."
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "Buff Global Diaktifkan oleh Kael"
+				"trans": "Penguatan Global Diaktifkan oleh Kael"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19449,7 +20387,7 @@
 			},
 			"reverse_engineering": {
 				"eng": "REVERSE_ENGINEERING",
-				"trans": "REKAYASA BALIK"
+				"trans": "REKAYASA_BALIK"
 			},
 			"system": {
 				"eng": "System:",
@@ -19461,7 +20399,7 @@
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "HASIL DIDAPATKAN"
+				"trans": "YIELD ACQUIRED"
 			}
 		},
 		"cta": {
@@ -19477,11 +20415,11 @@
 		"economy": {
 			"headline": {
 				"eng": "Player-Driven Economy",
-				"trans": "Ekonomi Berbasis Pemain"
+				"trans": "Ekonomi Didorong oleh Pemain"
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "Semua item di pasar dirakit dan diperdagangkan oleh pemain sungguhan seperti kamu."
+				"trans": "Setiap item di pasar dibuat dan diperdagangkan oleh pemain sungguhan seperti Anda."
 			}
 		},
 		"error": {
@@ -19501,11 +20439,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "Tanpa Pay-To-Win"
+				"trans": "Tanpa Bayar untuk Menang"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "Semua buff premium berlaku untuk seluruh server. Saat seseorang mendukung game ini, seluruh komunitas akan merasakan manfaat dan kemajuannya secara bersama-sama."
+				"trans": "Semua buff premium dibagikan secara global di seluruh server. Ketika seseorang mendukung game, seluruh komunitas akan mendapatkan manfaat dan berkembang bersama."
 			}
 		},
 		"loading": {
@@ -19521,11 +20459,11 @@
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "/// Koneksi Tersambung"
+				"trans": "// Koneksi Tersambung"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "Sistem.Urutan_Inisialisasi.01"
+				"trans": "Sistem.Inisialisasi_Urutan.01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

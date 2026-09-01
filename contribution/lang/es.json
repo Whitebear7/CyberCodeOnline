@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "Unidades extra"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Toca para copiar"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Unidades de bono gratis"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "Recibirás un 10% adicional de Unidades en la compra con PayPal."
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "Unidades extras con todas las compras vía PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL copiada al portapapeles."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "¿Borrar esta nota?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "¿Estás seguro?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "¡Competencia de arte de personaje espeluznante!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "Has depositado ${amount} en tu banco.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "Retiraste ${amount} de tu banco.",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "Paquete Epico de Fusion de Cache"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "Gratis"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Paquete no disponible"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "Caja de equipos raros"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "La calibración (${percent}%) se desplegará en unos minutos",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "La calibración (${percent}%) se implementará en unos minutos",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "¡Felices fiestas a todos!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "¡Es la época más maravillosa del año de nuevo! ¡En Shangri-La celebramos las vacaciones de invierno con un evento especial!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "¡Disfruta de la música de fondo festiva durante el evento!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "¡Es otra vez la época más maravillosa del año! En Shang-ri-la celebramos las fiestas de invierno con un evento especial"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "¡Felices vacaciones de invierno!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "¡Feliz temporada invernal!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,11 +1815,11 @@
 			"trans": "Cancelar"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "Cerrar"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
+			"eng": "Confirm",
 			"trans": "Confirmar"
 		},
 		"delete": {
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "Nivel de Donación Adquirido: [${owned}/${total}]",
+			"trans": "Niveles de donación obtenidos: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "previsualizando nivel ${tierName}",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Propios: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "Vista previa en el perfil"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "Vista previa"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "Marco del chat"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "Entrante"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "Dirección del mensaje"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "Otro jugador"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "Saliente"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "Banner del jugador"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "Detalles del jugador"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "Repetir la animación de entrada"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "Corto / una línea"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "Mensaje breve de vista previa."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "Largo / ajuste"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "Este mensaje de vista previa más largo comprueba cómo el cuadro maneja el ajuste natural del texto en varias líneas sin saltos forzados."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "Prensa Negra"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "Flor nocturna"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "AntiVirus"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "TERMINAR"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "ERROR DEL SISTEMA"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ACTIVOS ADQUIRIDOS"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "DESCARTAR"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "No completaste ninguna empanadilla. Se consumió el pase."
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "Combina ${amount} Fragmentos de Caja Épica para obtener 1 Caja de Equipamiento Épico garantizada",
+			"trans": "Fusiona ${amount} Fragmentos de Cofre Épico en 1 Cofre de Equipo Épico Garantizado",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "No puede usar este elemento porque hay un efecto de estado que entra en conflicto con él",
-			"vars": [
-				"minutes"
-			]
+			"trans": "No puede usar este elemento porque hay un efecto de estado que entra en conflicto con él"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "Ingrese su correo electrónico, el sistema le enviará un correo electrónico de reinicio de contraseña"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "Cada token activa el acceso global a Epic Cache Fusion durante 5 minutos."
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Consigue 3 tokens de acceso al intercambio de equipamiento con un 30% de descuento."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Disponible una vez por semana."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Ahorra 30% en la Fusión de Caché Épica"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "¿Qué es esto? Lee el tutorial de Fusión de Caché Épico."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "VISITA AL FLORISTA NIGHTBLOOM"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "Consigue 3 tokens de acceso al intercambio de equipamiento con un 30% de descuento."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "Disponible una vez por semana."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Ahorra 30% en la Fusión de Caché Épica"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "SIGUE"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "Fragmentos recibidos:"
+				"trans": "FRAGMENTOS RECIBIDOS:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "OBJETOS RECIBIDOS:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Faltan recursos para fabricar"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "Índice de ranura inválido"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "Debes alcanzar el nivel ${level} para activar este mueble",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "Debes tener el nivel ${level} para activar este mueble",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "Elige muebles"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "Debes alcanzar el nivel ${level} para usar este mueble",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Recursos insuficientes para el intercambio"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Receta de mobiliario no válida"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "Festival de la Floración Nocturna"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "Bono de Septiembre"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "Bono del Festival de la Floración Nocturna"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "Torre de Precisión"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "Recompensas de Granja en AFK"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "Artículos extra por cultivo automático AFK:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "Se reproduce música de fondo especial durante el evento"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "Recompensas de chat"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "Recompensas por chatear durante el evento:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "Efectos de Chat"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "Drops de cofres de mazmorra"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "Artículos bonus de los cofres de mazmorras:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "Drops de monstruos"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "Botín extra al vencer monstruos:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "Requisitos de contribución reducidos:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "Drops de Recolección"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "Objetos extra al saquear:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "Recibes ${unit} Unidades (${bonus} bonus)",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Recibe ${unit} unidades",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Recibe ${unit} Unidad (${bonus} de bono)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} Unidad",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "El exploit de chat se utilizó recientemente. Los exploits de chat tienen un tiempo de espera global para su despliegue de ${minutes} minutos",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "Agrupamiento de núcleo IA"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "Fragmento de acceso de la Flor Nocturna necesario para iniciar una incursión en la Torre de Precisión. Se obtiene al desplegar el robot de cultivo o abrir cofres de mazmorra durante el Festival de la Flor Nocturna."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "Fragmento de Acceso Flor Nocturna"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "Exploit de Chat [UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "Recompensa intercambiable de la Lotería del Chat que aplica automáticamente un ${discountPercent}% de descuento a cualquier salto temporal global. Se consume al usarse.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "Cupón para saltar la lotería del chat"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "Ficha de Año Nuevo"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "Una infusión floral concentrada que aumenta la EXP y los BTC obtenidos por AFK en un ${percent}% durante ${minutes} minutos.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "Infusión de Floración Nocturna"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "Un pétalo luminoso encontrado durante el evento de septiembre. Cámbialo por artículos con Vesper en la Floristería Nightbloom."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "Pétalo de flor nocturna"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "Recompensas del chat"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "Cofres de mazmorra"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "Recompensas de ${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "Botín de monstruos"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "Recolección"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "Negociador"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "de Brutalidad"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "de Prob. Crítica"
@@ -7120,8 +7379,8 @@
 			"trans": "de Prob. Crítica"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "Brutal"
+			"eng": "of Crit Damage",
+			"trans": "de daño crítico"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "Ya tienes un Handler."
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "Tu mentoría ya está cerrada."
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "El sistema detectó otra cuenta vinculada por el historial del dispositivo en algún momento o por actividad reciente de IP, por lo que esta cuenta no puede seleccionar un gestor."
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName} te ha elegido como su Handler. Su mentoría se completará al alcanzar el nivel ${completionLevel} y superar la verificación del sistema.",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "La selección del Handler no es válida."
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "No se encontró el handler seleccionado."
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "Tu cuenta ya no cumple con los requisitos para acceder a la mentoría."
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "Tu nivel no es elegible para la selección de Operador."
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "¡Evento de Año Nuevo!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "Contenido del evento"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "Levanta la Torre de Precisión, recoge Pétalos de Nightbloom y comercia con Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Evento de septiembre"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival de la Floración Nocturna"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "Torre de Precisión. Pétalos. Vesper."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "Evento de septiembre"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "Festival de la Floración Nocturna"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11317,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "Técnico de fuegos artificiales"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"Los Nightblooms son delicados. Los sistemas que los mantienen con vida no lo son.",
+					"Tráeme los Pétalos de Flor Nocturna. A cambio te daré algo digno de llevar contigo.",
+					"La Torre de Precisión está en línea. Apila limpio y no persigas una mala colocación."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "Florista Nightbloom"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "Vesper"
 			}
 		},
 		"party": {
@@ -11818,6 +12153,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "La adopción de mascotas está en tiempo de reutilización"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "Se requiere un apartamento para adoptar una mascota"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "El buff no está activado"
@@ -11931,6 +12270,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Sin nombre"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "Saludable"
@@ -11999,6 +12342,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Activar"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12018,8 +12365,8 @@
 				"trans": "Primero tienes que activar la resurrección de la mascota"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "Revivir mascota activado"
+				"eng": "Activate pet revive",
+				"trans": "Activar reanimación de mascota"
 			}
 		},
 		"reviveButton": {
@@ -12110,7 +12457,7 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
+				"eng": "You can't perform this action now",
 				"trans": "No puedes realizar esta acción ahora"
 			},
 			"deleteAccountTooEarly": {
@@ -12188,6 +12535,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "Gracias por completar la encuesta, las recompensas han sido enviadas a tu bandeja de objetos, puedes acceder a la bandeja desde la pestaña de inventario"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "No se puede realizar esta acción mientras el bono del grupo esté activo"
+				}
 			}
 		}
 	},
@@ -12519,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "Protocolo de alineación"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Torre de Precisión"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "El evento de septiembre no está activo."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Sal y revisa tu inventario antes de usar otro fragmento."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "No reintentes hasta verificar el estado de la ejecución"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "SISTEMA DE TORRE DESCONECTADO"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "Salir"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "PERFECTO"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "ESTRUCTURA RESTAURADA"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "NIVEL ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "NIVEL ${tier} · ESTRUCTURA RESTAURADA",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "Volver al evento"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "Ningún nivel de recompensa asegurado. Fragmento consumido."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "ALINEAMIENTO PERDIDO"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "ALTURA"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "MÁX"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "SIGUIENTE ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "RESTAURAR ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "NIVEL ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "TORRE DE PRECISIÓN"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "TOCA EN CUALQUIER LUGAR PARA COLOCAR"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "DISPONIBLE"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "PROTOCOLO DE ALINEACIÓN"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "EVENTO CERRADO"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "CONSUME 1 FRAGMENTO"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "Corte"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "FRAGMENTO DE ACCESO"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "Evento de septiembre"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "Evento de septiembre inactivo"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "Fragmento requerido"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "TORRE FUERA DE LÍNEA"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "Lugar"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "Restaurar"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "Toca cuando el bloque en movimiento solape la torre."
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "El voladizo sin soporte se recorta, reduciendo permanentemente los objetivos posteriores."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "Por cada ${count} colocaciones perfectas consecutivas, se recupera parte de la superficie perdida.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "Los niveles de recompensa se desbloquean en las alturas ${heights}.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "No alcanzar la torre o dejar muy poca superficie termina la partida y envía el nivel más alto alcanzado."
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "SE REQUIERE 1 FRAGMENTO"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "INICIAR TORRE"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "Torre de Precisión"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "INICIALIZANDO LA TORRE"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "Área de juego de la Torre de Precisión"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "TORRE ASEGURADA"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "Recompensas de la Torre"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "Nivel ${tier} confirmado a la altura ${height}.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "NIVEL DE RECOMPENSA ASEGURADO"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "El renderizador 3D se detuvo antes de que la ejecución pudiera enviarse."
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "RENDERIZADOR FUERA DE LÍNEA"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "Altura"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "Perfecto"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "Mejor racha"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "Sal y revisa tu inventario antes de usar otro fragmento."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "ENVÍO DESCONOCIDO"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "Altura ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "Enviando el mejor nivel alcanzado. No cierres."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "Nivel ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "ASEGURANDO DATOS DE LA TORRE"
+			}
 		}
 	},
 	"priceTag": {
@@ -13660,6 +14310,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "REINTENTAR CONEXIÓN"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15178,8 +15832,12 @@
 			"trans": "Calibración Precisa [Legendario]"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Precisión de calibración (Épica)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "Calibración Precisa [Épico]"
+			"trans": "Precisión de calibración (Prestigio)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15884,8 +16542,16 @@
 			"trans": "Techno Thief aparecerá raramente en la mazmorra cuando abres cajas y soltara mejores botínes, incluidas las mayores posibilidades de elementos épicos"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "La mazmorra de pandillas tiene posibilidad de generar una misión de pandilla que implica eliminar enemigos de determinadas pandillas de PNJ"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Ficha de mazmorra añadida. Puedes usarla para intercambiar objetos con el PNJ Herrero de Armas. Puedes obtener este objeto del Tecno Ladrón y en las Misiones de Pandilla"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "Gang Dungeon tendrá la oportunidad de generar una búsqueda de pandillas, que implica matar enemigos de pandillas específicas de NPC"
+			"trans": "Añadidos dos nuevos marcos para donantes"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -15995,6 +16661,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "No se puede completar el intercambio porque ${playerName} no tiene espacio suficiente en su inventario para ${itemName}.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "No tienes espacio suficiente en tu inventario para ${itemName} y completar el intercambio.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16042,8 +16727,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} no tiene suficiente espacio en su inventario por ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} no tiene suficiente espacio en su inventario para ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16058,8 +16743,8 @@
 				"trans": "No puedes enviar una invitación comercial a este jugador"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "El jugador objetivo no puede participar en el comercio"
+				"eng": "Target player cannot participate in trade",
+				"trans": "El jugador objetivo no puede participar en el intercambio"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16084,11 +16769,19 @@
 				"trans": "No tienes suficiente dinero para completar el intercambio."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "No tienes suficiente espacio en tu inventario por ${itemName}",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "No tienes espacio suficiente en tu inventario para ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "No se puede enviar una invitación de intercambio a este jugador"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16295,100 +16988,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Continuar con Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "No se pudo iniciar sesión con Google. Actualiza la aplicación a la última versión."
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "Mantén pulsado para volver a la ciudad."
+				"eng": "Long press to go back to city",
+				"trans": "Mantén pulsado para volver a la ciudad"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "Saldo"
+			"account": {
+				"eng": "Bank",
+				"trans": "Banco"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "Programa de continuidad de Arasaka"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "Identidad. Activos. Acceso. Conservados en cada mañana."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "Supera la incertidumbre."
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "Activos privados. Acceso continuo. Control total."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "Domina el mañana. Asegúralo hoy."
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "Banca Segura de Arasaka"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "Monto"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "Transfiere ${currency} de tu billetera al banco",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "Billetera → Banco"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "Saldo bancario vacío"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "Depositar o retirar ${currency} · Banco: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "El monto supera tu saldo bancario."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "El importe supera el saldo de tu billetera."
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "Ingresa una cantidad entera válida."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "Máximo"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "Arasaka financiera // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "En línea"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "Seleccionar"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "Selecciona una operación"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "Mostrar anuncio ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "Cajero automático"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "Solicitud de transacción"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "Transfiere ${currency} del banco a la billetera",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "Banco → Billetera"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "Depositar"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "Depositar bitcoins en el banco"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "Este artículo está bloqueado y no se puede almacenar."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "¿Cuánto te gustaría depositar?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "Retirar ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "¿Cuánto te gustaría colocar en la bóveda?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "¿Cuánto te gustaría retirar?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "¿Cuánto te gustaría retirar del Banco?"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "Guardar ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "No puedes retirar si no tienes dinero en tu cuenta."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "Depositar Objeto"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "Colocar objetos en tu bóveda"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "Retirar Objeto"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "Retirar objetos de tu bóveda"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "AUMENTAR A ${upgradeToSlot} RANURAS",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "Aumentar la cantidad máxima de objetos que puedes almacenar en la bóveda a ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "Mejora"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "Amplía de ${current} a ${next} espacios por ${price} ${currency} desde tu billetera.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "Actualizar la bóveda"
+					"eng": "Upgrade vault?",
+					"trans": "¿Mejorar la bóveda?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "Agregar"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "Añadir a la bóveda"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} ranuras",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "Bóveda vacía"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "Usa + para añadir objetos"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} espacios usados · Guarda o retira objetos",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} / pila",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "No hay suficiente capacidad de inventario para esta recuperación."
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "Saldo insuficiente en la billetera para la tarifa de almacenamiento"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "Tu inventario está vacío"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "Capacidad máxima"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "Ningún objeto del inventario cabe en la capacidad disponible de la bóveda."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "Retirar"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "Toca un objeto para retirarlo. El retiro no tiene costo."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "Recuperar selección"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "Completa la acción actual antes de retirar artículos."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "Las pilas seleccionadas no caben. Desactiva la selección múltiple para elegir una cantidad menor."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "Bóveda de objetos"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "Desbloquea un objeto antes de guardarlo"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "Mejorar bóveda"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "Billetera"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "Retirar"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "Retirar bitcoins del banco"
 			}
 		},
 		"basicInfo": {
@@ -16793,6 +17670,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Cerrar"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -16973,6 +17854,12 @@
 				"trans": "Mostrar solo Mazmorras a las que puedo unirme."
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "Reproducir audio del emblema"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17124,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "Admin"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "Más aplicaciones"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "Comando"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17319,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "Sin coincidencias"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "Buscar artículos..."
@@ -17326,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "Llaves secretas"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "Espacios: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17415,15 +18322,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "Tu nivel es demasiado bajo para usar este objeto",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Tu nivel es demasiado bajo para este objeto"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "Te falta nivel para este objeto. Necesitas ser nivel ${level} para equiparlo",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Tu nivel es demasiado bajo para este objeto, se requiere el nivel ${level} para equiparlo",
 				"vars": [
 					"level"
 				]
@@ -17662,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "Mantén presionado para activar la Selección Múltiple."
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count} seleccionados",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17674,6 +18592,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "Enemigos Cercanos"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "Mantén pulsado el botón de retroceso para volver a la ciudad y visitar distintas tiendas y funciones"
 			}
 		},
 		"login": {
@@ -18525,6 +19449,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "Cerrar"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18644,6 +19574,16 @@
 					"trans": "Mostrar mensaje original"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "Mostrar la traducción en inglés debajo de tus propios mensajes de chat"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "Mostrar traducción de mis mensajes"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "Zona Peligrosa"
@@ -18731,12 +19671,18 @@
 				"trans": "Ayudar a traducir el juego"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "Este paquete de idioma es de código abierto y contribuido por nuestros usuarios, el texto podría no estar completamente traducido o con errores. Puedes contribuir libremente en nuestra página de GitHub"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "Esta traducción de la comunidad puede estar incompleta o contener errores."
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "Idioma"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "Traducción comunitaria"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -18846,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "Recibir notificaciones sobre Mejora Global"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "La aplicación se reiniciará luego de guardar"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "Guardar"
@@ -18866,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "Combate"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "Experimental"
 				},
 				"general": {
 					"eng": "General",
@@ -18899,8 +19837,8 @@
 					"trans": "Normal"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "Pequeña"
+					"eng": "Small",
+					"trans": "Pequeño"
 				},
 				"tiny": {
 					"eng": "Tiny",
@@ -19411,7 +20349,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "Inicia una tarea antes de desconectarte para seguir recolectando recursos y subiendo de nivel en segundo plano."
+				"trans": "Inicia una tarea antes de desconectarte para continuar obteniendo recursos y subiendo de nivel en segundo plano."
 			}
 		},
 		"animation": {
@@ -19421,23 +20359,23 @@
 			},
 			"autotask": {
 				"eng": "AUTOTASK",
-				"trans": "TAREA AUTOMÁTICA"
+				"trans": "Tarea automática"
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
-				"trans": "EJECUTAR: COMPRAR"
+				"trans": "EJECUTAR: COMPRA"
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "Busco grupo para Fábrica Abandonada, necesito healer."
+				"trans": "Buscando grupo para Fábrica Abandonada, necesito a un sanador."
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "Inv, traigo botiquines."
+				"trans": "Inv, ya tengo kits médicos."
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "Mejora global activada por Kael"
+				"trans": "Refuerzo global activado por Kael"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19481,7 +20419,7 @@
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "Cada artículo en el mercado es fabricado y comercializado por jugadores reales como tú."
+				"trans": "Cada objeto del mercado es creado e intercambiado por jugadores reales como tú."
 			}
 		},
 		"error": {
@@ -19501,11 +20439,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "Cero Pay-To-Win"
+				"trans": "Cero pay-to-win"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "Todos los buffs premium se comparten en todo el servidor. Cuando alguien apoya el juego, toda la comunidad se beneficia y progresa junta."
+				"trans": "Todas las ventajas premium se comparten a nivel global en todo el servidor. Cuando alguien apoya al juego, toda la comunidad se beneficia y avanza en conjunto."
 			}
 		},
 		"loading": {
@@ -19516,16 +20454,16 @@
 		},
 		"skip": {
 			"eng": "Skip",
-			"trans": "Saltar"
+			"trans": "Omitir"
 		},
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "/// Conexión establecida"
+				"trans": "// Conexión establecida"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "Sist.Ini_Sec.01"
+				"trans": "Inicialización del Sistema Sec. 01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

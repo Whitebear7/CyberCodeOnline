@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "ボーナスユニット"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "タップでコピー"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "無料ボーナスユニット"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "PayPalで購入すると10％追加でUNITを入手できます"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal購入時に追加ユニットが付与されます"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URLをクリップボードにコピーしました。"
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "このメモを削除しますか？"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "よろしいですか？"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "不気味なキャラクターアートコンペティション！"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "${amount}を銀行に入金しました",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "銀行から${amount}を引き出しました。",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "エピックキャッシュ融合バンドル"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "無料"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "バンドルは利用できません"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "珍しい装備品クレート"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "較正（${percent}%）は数分後に展開されます",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "キャリブレーション（${percent}%）が展開されました",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "ハッピーホリデー！"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "楽しい季節がやってきました！ 特別な報酬やイベントでクリスマスをお祝いしましょう！"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "イベント中は, 華やかなBGMをお楽しみください！"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "また、一年でいちばんすばらしい季節がやってきました！シャングリラでは、冬の祝祭をスペシャルイベントでお祝いします！"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "クリスマス・セレブレーション"
+			"eng": "Happy Winter Holiday!",
+			"trans": "ハッピーウィンターホリデー！"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1815,12 @@
 			"trans": "キャンセル"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "閉じる"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "決定"
+			"eng": "Confirm",
+			"trans": "確認"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "フレーム所持数: [${owned}/${total}]",
+			"trans": "ドネーションティア所持数: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "${tierName} Tier プレビュー中",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "所持数: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "プロフィールでプレビュー"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "プレビュー"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "チャット枠"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "着金"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "メッセージ方向"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "他プレイヤー"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "送金"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "プレイヤーバナー"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "プレイヤー詳細"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "登場アニメーションを再生"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "短文 1行"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "プレビュー用の短いメッセージ。"
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "長文／折り返し"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "この長めのプレビューメッセージは強制改行なしで複数行へ自然に折り返す際のフレームの動作を確認します"
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "ブラックプレス"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "夜咲き"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "名声"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "終了"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "システムエラー"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "取得した資産"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "閉じる"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "ダンプリングを完了できませんでした。パスは消費されました。"
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "${amount}個の${fragmentName}を融合して、ランダムな英雄装備キャッシュ1つを獲得する",
+			"trans": "${amount}個のエピックキャッシュフラグメントを融合すると確実にエピック装備キャッシュ1つが入手できます",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "このアイテムと競合するステータス効果があるため, このアイテムを使用することはできません",
-			"vars": [
-				"minutes"
-			]
+			"trans": "このアイテムと競合するステータス効果があるため, このアイテムを使用することはできません"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "Eメールアドレスを入力してください. パスワードの再設定を行うためのメールが送信されます"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "各トークンで、エピックキャッシュフュージョンへのグローバルアクセスが5分間発動します。"
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "装備交換用アクセストークン3個を3割引きで入手"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "1週間に1回利用可能"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Epic Cache Fusion 30%オフ"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "これは何ですか？エピックキャッシュフュージョンのチュートリアルをお読みください。"
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "ナイトブルーム花屋へ行く"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "装備交換用アクセストークン3個を3割引きで入手"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "1週間に1回利用可能"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "Epic Cache Fusion 30%オフ"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "続行する"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "獲得アイテム:"
+				"trans": "取得フラグメント:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "入手アイテム"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "クラフトに必要なリソースが不足しています"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "無効なスロット番号"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "レベル${level}にならないと、この家具は起動できません",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "この家具を起動するにはレベル${level}が必要です",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "家具を選ぶ"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "この家具を使用するにはレベル${level}以上が必要です",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "取引に必要なリソースが不足しています"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "無効な家具レシピ"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "ナイトブルームフェスティバル"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "9月のボーナス"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "ナイトブルームフェスティバルボーナス"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "プリシジョンタワー"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "AIボットファームボーナス"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "AIボットファームでボーナスアイテムゲット！"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "イベント中に特別なBGMが流れます"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "チャットボーナス"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "イベント中のチャットで獲得できる報酬："
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "チャットエフェクト"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "ダンジョンの宝箱ドロップ"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "ダンジョンクレートからのボーナスアイテム："
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "敵ドロップ"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "敵を倒すとボーナスアイテムがドロップします"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "貢献費用の割引："
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "収集ドロップ"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "収集ボーナスアイテム:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "${unit} UNITを受け取る（${bonus}ボーナス）",
+				"eng": "Receive ${unit} Unit",
+				"trans": "${unit}ユニットを獲得",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "${unit}ユニットを受け取る（${bonus}ボーナス）",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} UNIT",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "チャットエクスプロイトは直前に使用されています チャットエクスプロイトのグローバルデプロイメントクールダウンは${minutes}分です",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "AIコアクラスター"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "ナイトブルームアクセスシャード。プレシジョンタワーのラン1回の初期化に必要。ナイトブルームフェスティバル期間中、ファームボットの展開またはダンジョン宝箱の開封で入手可能。"
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "ナイトブルームアクセスシャード"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "チャットエクスプロイト送信機[UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "取引可能なチャット抽選報酬。あらゆるグローバルタイムスキップに${discountPercent}%割引が自動的に適用されます。使用時に消費されます。",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "チャット抽選スキップ券"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "新年トークン"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "高濃度フローラルインフュージョン。AFK EXPとBTCの獲得量が${percent}%アップし、効果が${minutes}分間続きます。",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "夜咲き注入剤"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "9月のイベントで手に入る輝く花びら。ナイトブルーム花店のベスパーに渡すとアイテムと交換できる。"
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "夜咲きの花びら"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "チャット報酬"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "ダンジョンの宝箱"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game}の報酬",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "敵のドロップ"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "探索"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "交渉の"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "残虐の"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "クリティカルチャンスの"
@@ -7120,8 +7379,8 @@
 			"trans": "クリティカルチャンスの"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "残忍な"
+			"eng": "of Crit Damage",
+			"trans": "会心ダメージ"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "既に担当のハンドラーが付いています。"
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "あなたのメンタシップは既に終了しています。"
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "システムが、過去に一度でもデバイス利用履歴または最近のIPアクセス履歴で紐付けられた別のアカウントを検出したため、このアカウントではハンドラーを選択できません。"
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName}はあなたをハンドラーに選びました。レベル${completionLevel}到達およびシステム認証の完了により、メンタリングは完了します。",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "該当するハンドラーは選択できません。"
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "選択したハンドラーが見つかりません。"
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "メンターシップへの参加資格がなくなりました。"
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "現在レベルではハンドラーを選択できません。"
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "新年イベント！"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "イベント内容"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "精密塔を建て、ナイトブロームの花びらを収集し、ヴェスパーと取引する。"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9月イベント"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "ナイトブルームフェスティバル"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "精密塔。花びら。宵。"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9月イベント"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "ナイトブルームフェスティバル"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11368,6 +11681,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "花火職人"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"ナイトブルームは繊細だ。生命維持システムは決してそうではない。",
+					"夜咲きの花びらをよこせ。持ち帰る価値のある品と交換する。",
+					"精密タワーが稼働中です。スタックは綺麗に、下手な配置には付き合わないで。"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "夜咲き花屋"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "ヴェスパー"
 			}
 		},
 		"party": {
@@ -12032,6 +12367,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "ペット譲渡会はクールダウン中です"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "ペットを引き取るにはアパートが必要です"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "バフが発動していません"
@@ -12145,6 +12484,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "無名"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "健康"
@@ -12213,6 +12556,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "発動"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12232,8 +12579,8 @@
 				"trans": "ペットを復活させるには, まずペット復活バフを起動する必要があります."
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "起動する"
+				"eng": "Activate pet revive",
+				"trans": "ペット蘇生を有効化"
 			}
 		},
 		"reviveButton": {
@@ -12324,8 +12671,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "パーティー中はこのアクションを実行することはできません"
+				"eng": "You can't perform this action now",
+				"trans": "現在この操作を実行できません"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12402,6 +12749,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "アンケートの回答ありがとうございました. 報酬はアイテム受信ボックスに送信されました. インベントリータブから受信ボックスにアクセスできます."
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "パーティバフ発動中はこのアクションを実行できません"
+				}
 			}
 		}
 	},
@@ -12733,6 +13088,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "アライメントプロトコル"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "プリシジョンタワー"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "9月のイベントは現在開催されていません"
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "終了し、別のシャードを使用する前にインベントリを確認してください。"
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "実行状態を確認するまで再試行しないでください"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "タワーシステムオフライン"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "終了"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "パーフェクト"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "構造を復元しました"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "ティア ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "${tier}階層・構造復旧済み",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "イベントに戻る"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "報酬ティアを獲得できませんでした。シャードを消費しました。"
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "アライメント喪失"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "高さ"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "最大"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "次 ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "修復 ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "ティア ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "精密タワー"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "どこでもタップで設置"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "利用可能"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "アライメントプロトコル"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "イベント終了"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "シャード1個消費"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "カット"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "エントリーシャード"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "9月イベント"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "9月イベント 無効"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "シャードが必要"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "タワーオフライン"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "場所"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "復元"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "動くスラブが塔と重なったらタップ"
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "支えのない張り出しは切断され、以降のターゲットが恒久的に縮小します。"
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "${count}回連続のパーフェクト配置ごとに、失われた表面の一部が回復します。",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "報酬ティアは高さ${heights}で解放されます。",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "タワーをミスするか、残った面が少なさすぎると、その時点でランを終了し、到達した最高ティアが送信されます。"
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "シャード1個必要"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "タワー開始"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "プリシジョンタワー"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "タワー初期化中"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "精密タワーのプレイフィールド"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "タワー確保完了"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "タワー報酬"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "高度${height}でティア${tier}を確認",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "報酬ティア確保済み"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "実行が送信される前に3Dレンダラーが停止しました"
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "レンダラー オフライン"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "高さ"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "パーフェクト"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "最高連続記録"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "終了し、別のシャードを使用する前にインベントリを確認してください。"
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "送信状態不明"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "高さ ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "到達した最高ティアを送信しています。閉じないでください。"
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "ティア${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "タワーデータ保護中"
+			}
 		}
 	},
 	"priceTag": {
@@ -13874,6 +14524,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "再接続"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15392,8 +16046,12 @@
 			"trans": "キャリブレーション精度（伝説）"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "キャリブレーション精度（エピック）"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "キャリブレーション精度（英雄）"
+			"trans": "キャリブレーション精度（プレステージ）"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -16098,8 +16756,16 @@
 			"trans": "ダンジョンで箱を開けるとテクノシーフがまれに出現し, より良いアイテム（英雄のアイテムの出現確率も高め）をドロップします."
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "ギャングダンジョンでは特定のNPCギャングの敵を倒すギャングクエストが発生する可能性がある"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "2つの新しい寄付フレームが追加されました."
+			"trans": "新しいドナーフレームを2種追加しました"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16209,6 +16875,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName}のインベントリに${itemName}を収める空きがないため取引を完了できません",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "${itemName}の取引を完了するには、インベントリに十分な空きがありません。",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16256,8 +16941,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} のインベントリには${itemName}を受け取るだけの空きがありません",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName}のインベントリに${itemName}を収納する空きがありません",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16272,8 +16957,8 @@
 				"trans": "このプレーヤーにトレードを提案することはできません"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "このプレイヤーにトレードを提案することはできません"
+				"eng": "Target player cannot participate in trade",
+				"trans": "対象のプレイヤーは取引に参加できません"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16298,11 +16983,19 @@
 				"trans": "トレードのためのビットコインが足りません."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "あなたのインベントリには${itemName}を受け取るだけの空きがありません",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "インベントリに${itemName}を収めるスペースがありません",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "このプレイヤーにはトレード招待を送信できません"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16509,100 +17202,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "Googleで続ける"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Googleログインに失敗しました。アプリを最新版にアップデートしてください。"
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "長押しで中心街に戻る"
+				"eng": "Long press to go back to city",
+				"trans": "長押しでシティへ戻る"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "残高"
+			"account": {
+				"eng": "Bank",
+				"trans": "銀行"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "アラサカ継続プログラム"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "アイデンティティ。資産。アクセス。すべての明日において保全。"
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "不確実な時代を生き抜け"
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "個人資産。常時アクセス。完全制御。"
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "明日を手に入れろ。今日から備えろ。"
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "アラスカ セキュアバンキング"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "金額"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "ウォレットから銀行へ${currency}を移動する",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "ウォレット→銀行"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "銀行残高がありません"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "${currency}の預入または引出し · 銀行残高: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "金額が銀行の残高を超えています。"
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "金額がウォレット残高を超えています。"
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "有効な整数の金額を入力してください。"
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "最大"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "アラサカ金融 // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "オンライン"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "選択"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "取引の種類を選択"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "${number}の広告を表示",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "取引リクエスト"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "銀行口座からウォレットへ${currency}を移します",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "銀行 → ウォレット"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "預金する"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "ビットコインを銀行に預ける"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "このアイテムはロックされており, 保管できません."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "いくらお預けになりますか？"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "${itemName}を引き出す",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "いくつ収納されますか？"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "いくら引き出されますか？"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "いくつ取り出されますか？"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "${itemName}を預ける",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "残高がないため引き出すことができません."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "アイテムを収納する"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "アイテムを保管庫に入れる"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "アイテムを取り出す"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "保管庫からアイテムを取り出す"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "保管庫を${upgradeToSlot}スロットに拡張",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "保管庫に保管できるアイテムの最大量を${upgradeToSlot}に増やす",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "拡張する"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "ウォレットから${price} ${currency}を支払って、スロットを${current}から${next}に拡張します。",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "保管庫の拡張"
+					"eng": "Upgrade vault?",
+					"trans": "金庫を強化しますか？"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "追加"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "金庫に追加"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} スロット",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "金庫は空です"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "+でアイテムを追加"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} スロット使用中 ・ アイテムを保管または取り出す",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency}/スタック",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "この回収に必要なインベントリ容量がありません。"
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "ウォレットの残高では保管料を支払えません"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "インベントリは空です"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "最大容量"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "保管庫の空き容量に収まるアイテムがありません"
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "引き出す"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "アイテムをタップすると引き出せます。引き出しは無料です。"
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "選択項目を取得"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "アイテムを引き出す前に、現在の操作を完了してください。"
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "選択したスタックは収まりません。複数選択をオフにして少ない数を選択してください。"
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "アイテム保管庫"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "アイテムを保管する前にアンロックしてください"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "金庫を強化"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "ウォレット"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "引き出す"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "銀行からビットコインを引き出す"
 			}
 		},
 		"basicInfo": {
@@ -17007,6 +17884,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "閉じる"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17187,6 +18068,12 @@
 				"trans": "参加できるダンジョンのみを表示する"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "エンブレム音声を再生"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17338,9 +18225,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "管理"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "すべてのアプリ"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "コマンド"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17533,6 +18428,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "一致するアイテムはありません"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "アイテム検索…"
@@ -17540,6 +18439,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "シークレットキー"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "スロット:${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17629,15 +18536,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "このアイテムを装備するにはレベル${level}が必要です",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "あなたのレベルではこのアイテムを装備できません"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "レベル不足です. この装備にはレベル${level}が必要です.",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "レベルが低すぎてこのアイテムを装備できません レベル${level}以上が必要です",
 				"vars": [
 					"level"
 				]
@@ -17876,6 +18787,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "長押しして複数選択"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count}件選択済み",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17888,6 +18806,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "近くの敵"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "戻るボタンを長押しするとシティに戻って様々なショップや機能を利用できます"
 			}
 		},
 		"login": {
@@ -18739,6 +19663,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "閉じる"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18858,6 +19788,16 @@
 					"trans": "オリジナルチャットメッセージを表示"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "自分のチャットメッセージの下に英語訳を表示します"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "自分のメッセージの翻訳を表示"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "危険区域"
@@ -18945,12 +19885,18 @@
 				"trans": "ゲームの翻訳を手伝う"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "この言語はオープンソースであり, プレイヤーの皆様からのご協力を得て制作されています. テキストは完全には翻訳されておらず, 誤訳があるかもしれません. よければGithubページから自由に編集して貢献してください."
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "このコミュニティ翻訳は不完全または誤訳を含む可能性があります。"
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "言語"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "コミュニティ翻訳"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -19060,10 +20006,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "グローバルバフ通知を受け取る"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "変更を保存後, アプリは自動で再起動します"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "変更を保存"
@@ -19080,10 +20022,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "バトル"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "実験的"
 				},
 				"general": {
 					"eng": "General",
@@ -19113,8 +20051,8 @@
 					"trans": "普通"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "小さい"
+					"eng": "Small",
+					"trans": "小"
 				},
 				"tiny": {
 					"eng": "Tiny",
@@ -19625,7 +20563,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "ログオフ前にタスクを開始すれば、バックグラウンドでのリソース収集とレベルアップを継続できます。"
+				"trans": "ログアウト前にタスクを開始すると、バックグラウンドでリソースの収集やレベルアップが継続します。"
 			}
 		},
 		"animation": {
@@ -19639,19 +20577,19 @@
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
-				"trans": "実行: 購入"
+				"trans": "購入を実行"
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "廃工場、ヒーラー求む。"
+				"trans": "廃工場、ヒーラー募集中"
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "インベントリ、メドキットはある。"
+				"trans": "インブ、メディキットを持ってる。"
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "Kaelによる全体バフ発動"
+				"trans": "ケイルがグローバルバフを発動"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19659,23 +20597,23 @@
 			},
 			"price": {
 				"eng": "Lowest Price",
-				"trans": "最安値"
+				"trans": "最安価格"
 			},
 			"reverse_engineering": {
 				"eng": "REVERSE_ENGINEERING",
-				"trans": "リバースエンジニアリング"
+				"trans": "逆解析"
 			},
 			"system": {
 				"eng": "System:",
-				"trans": "システム:"
+				"trans": "システム："
 			},
 			"waiting": {
 				"eng": "WAITING FOR ORDERS...",
-				"trans": "命令待機中..."
+				"trans": "指令待機中..."
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "収益獲得"
+				"trans": "収量確保済み"
 			}
 		},
 		"cta": {
@@ -19691,11 +20629,11 @@
 		"economy": {
 			"headline": {
 				"eng": "Player-Driven Economy",
-				"trans": "プレイヤー主導の経済"
+				"trans": "プレイヤー主導型経済"
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "市場のアイテムはすべて、あなたと同じプレイヤーによって製作・取引されています。"
+				"trans": "市場のすべてのアイテムは、あなたと同じく実際のプレイヤーによって作成され、取引されています。"
 			}
 		},
 		"error": {
@@ -19715,11 +20653,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "Pay-to-winゼロ"
+				"trans": "課金優遇ゼロ"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "すべてのプレミアムバフはサーバー全体で共有されます。誰かがゲームを支援すれば、コミュニティ全体がその恩恵を受け、共にさらなる進展へと向かいます。"
+				"trans": "すべてのプレミアムバフはサーバー内でグローバルに共有されています。誰かがゲームを支援すれば、コミュニティ全員がその恩恵を受け、共に成長していきます。"
 			}
 		},
 		"loading": {
@@ -19739,7 +20677,7 @@
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
-				"trans": "システム初期化シーケンス 01"
+				"trans": "システム初期化シーケンス01"
 			},
 			"welcome": {
 				"eng": "Welcome To",

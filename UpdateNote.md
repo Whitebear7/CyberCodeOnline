@@ -16,6 +16,25 @@ Please send your feedback to my Discord or email me directly.
 
 ## Updates
 
+### 0.1900
+
+- Improved `SLANC` with more natural conversations and clearer player replies.
+- Improved performance and presentation for animated NPCs and emblems.
+- Security patch.
+
+### 0.1899
+
+- Improved translated chat so replies retain their context, player names, and formatting, with clearer reply indicators.
+- Improved `Community Raffle` eligibility verification.
+- PayPal bonus banners now show the payment link and let you copy it with a tap.
+- Fixed localized text across several game screens and messages.
+- Fixed visual issues affecting `Donation54` and `Golden New Year` chat frames on some devices.
+
+### 0.1898
+
+- Improved translated chat in `Global Chat` and `Gang Chat`, with better preservation of conversation context, player names, formatting, and message meaning.
+- `Handler` selection now explains why a player is ineligible instead of showing a generic error.
+
 ### 0.1897
 
 - **Community Raffles**:

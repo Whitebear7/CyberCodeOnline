@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "หน่วยโบนัส"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "Tap to copy"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "Free Bonus Units"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "คุณจะได้รับหน่วยเพิ่มเติม 10% พร้อมการซื้อ PayPal"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "เพิ่มหน่วยทุกครั้งที่ซื้อผ่าน PayPal"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL copied to clipboard."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "ลบโน้ตนี้ไหม?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "Are you sure?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "การแข่งขันศิลปะตัวละครที่น่ากลัว!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "ฝาก ${amount} เข้าธนาคารของคุณเรียบร้อยแล้ว",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "ถอน ${amount} จากธนาคารของคุณเรียบร้อยแล้ว",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "แพ็คฟิวชันแคชระดับมหัศจรรย์"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "ฟรี"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "Bundle ยังไม่พร้อมใช้งาน"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "ลังอุปกรณ์หายาก"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "Calibration (${percent}%) will be deployed in a few minutes",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "การปรับแต่ง (${percent}%) จะถูกใช้งานในไม่กี่นาทีแล้วล่ะ",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "สุขสันต์วันหยุดทุกคน!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "เป็นช่วงเวลาที่วิเศษที่สุดของปีอีกครั้ง! ใน Shangri-La เรากำลังฉลองวันหยุดฤดูหนาวด้วยกิจกรรมพิเศษ!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "สนุกกับดนตรีพื้นหลังที่มีบรรยากาศเฉลิมฉลองในระหว่างงาน!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "สุขสันต์วันหยุดฤดูหนาว!"
+			"eng": "Happy Winter Holiday!",
+			"trans": "Happy Winter Holiday!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1815,12 @@
 			"trans": "ยกเลิก"
 		},
 		"close": {
-			"eng": "TERMINATE",
-			"trans": "ปิด"
+			"eng": "Close",
+			"trans": "Close"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "ยืนยัน"
+			"eng": "Confirm",
+			"trans": "Confirm"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "ระดับการบริจาคที่คุณเป็นเจ้าของ: [${owned}/${total}]",
+			"trans": "Donation Tier Owned: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "ตัวอย่าง ${tierName} ระดับ",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "Owned: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "ตัวอย่างบนโปรไฟล์"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "ดูตัวอย่าง"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "กรอบแชต"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "กำลังรับ"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "ทิศทางข้อความ"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "ผู้เล่นคนอื่น"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "ขาออก"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "แบนเนอร์ผู้เล่น"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "ข้อมูลผู้เล่น"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "เล่นแอนิเมชันเปิดตัวซ้ำ"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "สั้น 1 บรรทัด"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "ข้อความตัวอย่างสั้น"
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "ยาว / ขึ้นบรรทัดใหม่"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "ข้อความตัวอย่างที่ยาวขึ้นนี้ใช้ตรวจสอบว่าเฟรมจัดการการขึ้นบรรทัดใหม่ตามธรรมชาติข้ามหลายบรรทัดโดยไม่มีการบังคับตัดบรรทัดได้อย่างไร"
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "สำนักข่าวแบล็ก"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "ราตรีบาน"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "ศักดิ์ศรี"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "TERMINATE"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "ข้อผิดพลาดของระบบ"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "ACQUIRED ASSETS"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "DISMISS"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "ขนมจีบยังไม่ครบ ทำไม่ได้! พาส์ของคุณได้ถูกใช้ไปแล้ว."
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "รวม ${amount} ${fragmentName} เพื่อสร้างกล่องของขวัญอุปกรณ์อีพิกสุ่ม 1 ชิ้น",
+			"trans": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "คุณไม่สามารถใช้รายการนี้ได้เนื่องจากมีผลกระทบสถานะที่ขัดแย้งกับมัน",
-			"vars": [
-				"minutes"
-			]
+			"trans": "คุณไม่สามารถใช้รายการนี้ได้เนื่องจากมีผลกระทบสถานะที่ขัดแย้งกับมัน"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "ป้อนอีเมลของคุณระบบจะส่งอีเมลรหัสผ่านรีเซ็ตให้คุณ"
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "โทเคนแต่ละตัวเปิดสิทธิ์เข้าถึงอีพิคแคชฟิวชันทั่วโลกนาน 5 นาที"
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "รับโทเคนสิทธิ์แลกอุปกรณ์ 3 ชิ้น ลด 30%"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "พร้อมใช้งานสัปดาห์ละครั้ง"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "ลด 30% สำหรับการหลอมรวมแคชระดับอีพิก"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "นี่คืออะไร? อ่านบทเรียนการผสานแคชเอพิค."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "ไปที่ร้านดอกไม้ไนท์บลูม"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "รับโทเคนสิทธิ์แลกอุปกรณ์ 3 ชิ้น ลด 30%"
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "พร้อมใช้งานสัปดาห์ละครั้ง"
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "ลด 30% สำหรับการหลอมรวมแคชระดับอีพิก"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "ดำเนินการต่อ"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "ไอเทมที่ได้รับแล้ว"
+				"trans": "FRAGMENTS RECEIVED:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "RECEIVED ITEMS:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "Insufficient resources to craft"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "ตำแหน่งช่องไม่ถูกต้อง"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "คุณต้องเป็นระดับ ${level} เพื่อเปิดใช้เฟอร์นิเจอร์นี้",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "You need to be level ${level} to activate this furniture",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "เลือกเฟอร์นิเจอร์"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "You need to be level ${level} to use this furniture",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "Insufficient resources to trade"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "Invalid furniture recipe"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "เทศกาลบุปผากลางคืน"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "โบนัสเดือนกันยายน"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "โบนัสเทศกาลบานราตรี"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "หอคอยความแม่นยำ"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "ของจากการฟาร์มทิ้งไว้ (AFK)"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "ฟาร์มบอท AFK ได้ของแถมพิเศษ:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "พบกับเพลงประกอบสุดพิเศษเฉพาะในกิจกรรมนี้"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "รางวัลกิจกรรมแชท"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "รางวัลแชทในกิจกรรม:"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "เอฟเฟกต์แชท"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "ของดรอปจากหีบดันเจี้ยน"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "ของแถมจากหีบในดันเจี้ยน:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "ไอเทมดรอป"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "ของรางวัลพิเศษจากการปราบมอนสเตอร์:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "ลดข้อกำหนดการมีส่วนร่วม:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "ดรอปจากการหาของ"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "ของแถมพิเศษจากการสำรวจ"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "รับ ${unit} หน่วย",
+				"eng": "Receive ${unit} Unit",
+				"trans": "Receive ${unit} Unit",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "Receive ${unit} Unit (${bonus} bonus)",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} หน่วย",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "ai core cluster"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "ชาร์ดสำหรับเข้าถึงไนท์บลูมที่ต้องใช้เพื่อเริ่มรันหอคอยพรีซิชั่นหนึ่งครั้ง พบได้จากการใช้บอทฟาร์มหรือเปิดกล่องดันเจียนระหว่างเทศกาลไนท์บลูม"
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "ชาร์ดสิทธิ์เข้าถึงไนท์บลูม"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "แชท Exploit Transmitter [Uwu]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "รางวัลจับฉลากแชทที่แลกเปลี่ยนได้ ให้ส่วนลด ${discountPercent}% ต่อการข้ามเวลาทั่วโลกทุกรูปแบบโดยอัตโนมัติ และจะหมดไปเมื่อใช้งาน",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "คูปองข้ามล็อตเตอรี่แชท"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "โทเค็นปีใหม่"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "สารสกัดจากดอกไม้เข้มข้น เพิ่มค่า EXP และ BTC ที่ได้รับในโหมด AFK อีก ${percent}% เป็นเวลา ${minutes} นาที.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "น้ำยาดอกบานกลางคืน"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "กลีบดอกไม้เรืองแสงที่พบในช่วงอีเวนต์เดือนกันยายน นำไปแลกเป็นไอเทมกับเวสเปอร์ที่ร้านดอกไม้ไนท์บลูม"
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "กลีบดอกบานกลางคืน"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "รางวัลแชต"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "หีบสมบัติดันเจี้ยน"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "ของรางวัลจาก${game}",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "ของดรอปจากมอนสเตอร์"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "การเก็บของ"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "การเจรจาต่อรอง"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "of Brutality"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "ของโอกาส crit"
@@ -7120,8 +7379,8 @@
 			"trans": "ของโอกาส crit"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "ความเสียหายของ Crit"
+			"eng": "of Crit Damage",
+			"trans": "of Crit Damage"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "คุณมีแฮนเดิลเลอร์อยู่แล้ว"
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "การฝึกสอนของคุณถูกปิดไปแล้ว"
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "ระบบตรวจพบอีกบัญชีหนึ่งที่เคยเชื่อมโยงกันผ่านประวัติอุปกรณ์ในอดีตหรือกิจกรรม IP ล่าสุด ทำให้บัญชีนี้ไม่สามารถเลือกผู้ดูแลได้"
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName} เลือกคุณเป็นผู้ควบคุม การเป็นพี่เลี้ยงจะสำเร็จเมื่อพวกเขาถึงระดับ ${completionLevel} และผ่านการตรวจสอบจากระบบ",
@@ -8929,9 +9200,17 @@
 					"completionLevel"
 				]
 			},
-			"ineligible": {
-				"eng": "This Handler selection is not eligible.",
-				"trans": "การเลือก Handler นี้ไม่ผ่านเกณฑ์"
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "ไม่พบตัวจัดการที่เลือก"
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "บัญชีของคุณหมดสิทธิ์เข้าร่วม Mentorship แล้ว"
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "ระดับของคุณไม่ผ่านเกณฑ์การคัดเลือกโดยแฮนเดิลเลอร์"
 			}
 		}
 	},
@@ -10862,6 +11141,40 @@
 			"trans": "กิจกรรมปีใหม่!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "เนื้อหากิจกรรม"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "สร้างหอคอยพรีซิชั่น เก็บกลีบไนต์บลูม และแลกเปลี่ยนกับเวสเปอร์"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "กิจกรรมเดือนกันยายน"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "เทศกาลบุปผากลางคืน"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "ตึกเพรสซิชั่น. กลีบดอกไม้. เวสเปอร์."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "กิจกรรมเดือนกันยายน"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "เทศกาลบุปผากลางคืน"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11317,6 +11630,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "ช่างดอกไม้ไฟ"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"ไนต์บลูมบอบบาง แต่ระบบที่ประคองชีวิตพวกมันไว้ไม่ได้บอบบาง",
+					"เอากลีบไนท์บลูมมาให้ฉัน ฉันจะแลกด้วยของที่คุ้มที่จะพกติดตัว",
+					"หอคอยความแม่นยำออนไลน์แล้ว จัดชั้นให้เรียบร้อย และอย่าฝืนวางผิดตำแหน่ง"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "นักจัดดอกไม้ไนท์บลูม"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "เวสเปอร์"
 			}
 		},
 		"party": {
@@ -11818,6 +12153,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "การนำเลี้ยงสัตว์เลี้ยงอยู่ในระยะเวลาเย็นแล้ว"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "An apartment is required to adopt a pet"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "บัฟยังไม่ถูกเปิดใช้งานจ้า"
@@ -11931,6 +12270,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "Unnamed"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "สุขภาพดี"
@@ -11999,6 +12342,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "Activate"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12018,8 +12365,8 @@
 				"trans": "ต้องเปิดใช้งานการฟื้นคืนสัตว์เลี้ยงก่อนนะลูก "
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "เปิดใช้งานการฟื้นคืนสัตว์เลี้ยง"
+				"eng": "Activate pet revive",
+				"trans": "Activate pet revive"
 			}
 		},
 		"reviveButton": {
@@ -12110,8 +12457,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "คุณไม่สามารถดำเนินการนี้ได้ในขณะนี้"
+				"eng": "You can't perform this action now",
+				"trans": "You can't perform this action now"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12188,6 +12535,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "ขอบคุณสำหรับการทำแบบสำรวจ รางวัลถูกส่งไปที่กล่องของของของคุณแล้ว คุณสามารถเข้าถึงกล่องของของได้จากแท็บสินค้าในกระเป๋าของคุณ"
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "You can't perform this action during party buff"
+				}
 			}
 		}
 	},
@@ -12519,6 +12874,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "โปรโตคอลจัดแนว"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "หอคอยความแม่นยำ"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "กิจกรรมเดือนกันยายนไม่ได้เปิดใช้งาน"
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "ออกและตรวจสอบคลังของก่อนใช้ชิ้นส่วนอีกชิ้น."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "อย่าลองใหม่จนกว่าจะตรวจสอบสถานะการรันแล้ว"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "ระบบหอคอยออฟไลน์"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "ออก"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "เพอร์เฟกต์"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "โครงสร้างกู้คืนแล้ว"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "ระดับ ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "ระดับ ${tier} · กู้คืนโครงสร้างแล้ว",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "กลับไปที่อีเวนต์"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "ไม่ได้รับระดับรางวัลใดๆ ชาร์ดถูกใช้ไปแล้ว"
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "หลุดแนว"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "ความสูง"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "สูงสุด"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "ขั้นถัดไป ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "ฟื้นฟู ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "ระดับ ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "หอคอยความแม่นยำ"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "แตะที่ใดก็ได้เพื่อวาง"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "พร้อมใช้งาน"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "โปรโตคอลปรับแนว"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "อีเวนต์ปิดแล้ว"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "ใช้ชาร์ด 1 ชิ้น"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "ตัด"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "ชิ้นส่วนทางเข้า"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "กิจกรรมเดือนกันยายน"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "กิจกรรมเดือนกันยายนไม่เปิดใช้งาน"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "ต้องมีชิ้นส่วน"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "หอคอยออฟไลน์"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "สถานที่"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "กู้คืน"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "แตะเมื่อแผ่นที่เลื่อนมาซ้อนทับหocop"
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "ส่วนที่ยื่นออกโดยไม่มีจุดรองรับจะถูกตัดทิ้ง ทำให้เป้าหมายถัดไปเล็กลงถาวร"
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "การวางสมบูรณ์แบบติดกันครบ ${count} ครั้ง จะฟื้นฟูพื้นผิวที่สูญเสียไปบางส่วน",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "ระดับรางวัลจะปลดล็อกที่ความสูง ${heights}",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "หากพลาดหocop หรือเหลือพื้นผิวน้อยเกินไป จะจบรอบและส่งชั้นสูงสุดที่ทำถึง"
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "ต้องใช้ชิ้นส่วน 1 ชิ้น"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "เริ่มหอคอย"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "หอคอยความแม่นยำ"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "กำลังเริ่มต้นหอคอย"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "พื้นที่เล่นของหอคอยความแม่นยำ"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "ยึดหอสำเร็จ"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "รางวัลหอคอย"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "ยืนยันขั้น ${tier} ที่ระดับความสูง ${height}",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "ระดับรางวัลยืนยันแล้ว"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "ตัวเรนเดอร์ 3 มิติหยุดทำงานก่อนจะส่งการรันได้"
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "ตัวเรนเดอร์ออฟไลน์"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "ความสูง"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "เพอร์เฟกต์"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "สถิติต่อเนื่องสูงสุด"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "ออกและตรวจสอบคลังของก่อนใช้ชิ้นส่วนอีกชิ้น."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "การส่งไม่ระบุ"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "ความสูง ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "กำลังส่งระดับสูงสุดที่ทำได้ กรุณาอย่าปิด"
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "ระดับ ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "กำลังปกป้องข้อมูลหอคอย"
+			}
 		}
 	},
 	"priceTag": {
@@ -13660,6 +14310,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "RETRY CONNECTION"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15178,8 +15832,12 @@
 			"trans": "ความแม่นยำในการสอบเทียบ (ตำนาน)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "Calibration Precision (Epic)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "ความแม่นยำการสอบเทียบ ( Epic)"
+			"trans": "Calibration Precision (Prestige)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15884,8 +16542,16 @@
 			"trans": "Techno Thief จะวางไข่ในคุกใต้ดินไม่ค่อย"
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "เพิ่มเฟรมผู้บริจาคใหม่สองเฟรม"
+			"trans": "Two new donator frames added"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -15995,6 +16661,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16042,8 +16727,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName} ไม่มีพื้นที่เพียงพอในสินค้าคงคลังของพวกเขาสำหรับ ${itemName}",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName} does't have enough space in their inventory for ${itemName}",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16058,8 +16743,8 @@
 				"trans": "คุณไม่สามารถส่งคำเชิญทางการค้าไปยังผู้เล่นนี้ได้"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
-				"trans": "ผู้เล่นเป้าหมายไม่สามารถเข้าร่วมการค้าได้"
+				"eng": "Target player cannot participate in trade",
+				"trans": "ผู้เล่นเป้าหมายไม่สามารถเข้าร่วมในการค้าได้"
 			},
 			"tooFrequentlyInvite": {
 				"eng": "You cannot invite too frequently, trade invite cooldown is ${minutes} minutes",
@@ -16084,11 +16769,19 @@
 				"trans": "คุณไม่มีเงินเพียงพอที่จะทำการค้าให้เสร็จ"
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "คุณไม่มีพื้นที่เพียงพอในสินค้าคงคลังของคุณสำหรับ ${itemName} เพื่อทำการค้าให้เสร็จสมบูรณ์",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "You don't have enough space in your inventory for ${itemName}",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "You cannot send trade invite to this player"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16295,100 +16988,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "เข้าสู่ระบบด้วย Google"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "การเข้าสู่ระบบด้วย Google ไม่สำเร็จ กรุณาอัปเดตแอปเป็นเวอร์ชันล่าสุด"
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "กดค้างเพื่อกลับไปที่เมือง"
+				"eng": "Long press to go back to city",
+				"trans": "Long press to go back to city"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "ยอดเงิน"
+			"account": {
+				"eng": "Bank",
+				"trans": "ธนาคาร"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "โครงการความต่อเนื่องของอะราซากา"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "ตัวตน. สินทรัพย์. สิทธิ์การเข้าถึง. ปกป้องไว้ตลอดทุกวันพรุ่งนี้."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "อยู่เหนือความไม่แน่นอน"
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "ทรัพย์สินส่วนตัว เข้าถึงได้ต่อเนื่อง ควบคุมได้เต็มที่"
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "ครอบครองวันพรุ่งนี้ มั่นคงตั้งแต่วันนี้"
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "ธนาคารปลอดภัยโดยอาซาซากะ"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "จำนวนเงิน"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "ฝาก ${currency} จากกระเป๋าเงินเข้าธนาคาร",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "กระเป๋าเงิน → ธนาคาร"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "ยอดคงเหลือในบัญชีธนาคารหมด"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "ฝากหรือถอน ${currency} · ยอดเงินในธนาคาร: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "ยอดเงินเกินยอดคงเหลือในบัญชีของคุณ"
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "จำนวนเงินเกินยอดคงเหลือในกระเป๋าเงินของคุณ"
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "กรุณากรอกจำนวนเงินที่เป็นจำนวนเต็มให้ถูกต้อง"
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "สูงสุด"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "การเงินอาสะซาก้า // ATM-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "ออนไลน์"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "เลือก"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "เลือกธุรกรรม"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "แสดงโฆษณา ${number}",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "เอทีเอ็ม"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "คำขอทำธุรกรรม"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "ถอน ${currency} จากธนาคารเข้ากระเป๋า",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "ธนาคาร → กระเป๋าเงิน"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "ฝากเงิน"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "ใส่ Bitcoins เข้าธนาคาร"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "รายการนี้ถูกล็อคและไม่สามารถเก็บไว้ได้"
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "คุณต้องการฝากเงินเท่าไหร่?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "ถอน${itemName}",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "คุณต้องการที่จะเก็บในห้องนิรภัยเท่าไหร?"
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "คุณต้องการถอนเงินเท่าไหร?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "คุณต้องการถอนจากธนาคารเท่าไหร"
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "เก็บ ${itemName}",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "คุณไม่สามารถถอนได้เมื่อคุณไม่มีเงินที่ฝากไว้"
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "ฝากไอเท็ม"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "ใส่ไอเท็มลงในห้องนิรภัยของคุณ"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "ถอนไอเท็ม"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "นำไอเท็มออกจากห้องนิรภัยของคุณ"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "อัปเกรดเป็น ${upgradeToSlot} สล็อต",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "เพิ่มจำนวนเงินสูงสุดที่คุณสามารถเก็บไว้ในห้องนิรภัยเป็น ${upgradeToSlot}",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "อัพเกรด"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "ขยายช่องจาก ${current} เป็น ${next} ช่อง ในราคา ${price} ${currency} จากกระเป๋าเงินของคุณ",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
-					"trans": "อัพเกรดห้องนิรภัย"
+					"eng": "Upgrade vault?",
+					"trans": "อัปเกรดตู้เซฟ?"
 				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "เพิ่ม"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "เพิ่มลงตู้เซฟ"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} ช่อง",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "ตู้เซฟว่างเปล่า"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "ใช้ + เพื่อเพิ่มของ"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} ช่องที่ใช้ · ฝากหรือถอนของ",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "${price} ${currency} ต่อสแต็ก",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "ความจุช่องเก็บของไม่เพียงพอสำหรับรายการถอนนี้"
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "ยอดคงเหลือในกระเป๋าไม่พอสำหรับค่าธรรมเนียมจัดเก็บ"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "พื้นที่เก็บของของคุณว่างเปล่า"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "ความจุสูงสุด"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "ไม่มีไอเทมใดในคลังที่พอดีกับความจุห้องนิรภัยที่เหลืออยู่"
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "เรียกคืน"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "แตะที่ไอเทมเพื่อรับคืน รับคืนฟรี"
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "เรียกคืนสิ่งที่เลือก"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "ดำเนินการในปัจจุบันให้เสร็จก่อนเบิกของ"
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "กองที่เลือกใส่ไม่ได้ ปิดการเลือกหลายรายการเพื่อเลือกจำนวนให้น้อยลง"
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "ห้องนิรภัยไอเทม"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "โปรดปลดล็อกไอเทมก่อนจัดเก็บ"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
+					"trans": "อัปเกรดห้องนิรภัย"
+				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "กระเป๋าเงิน"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "ถอนเงิน"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "เอา Bitcoins ออกจากธนาคาร"
 			}
 		},
 		"basicInfo": {
@@ -16793,6 +17670,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "close"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -16973,6 +17854,12 @@
 				"trans": "แสดงดันเจี้ยนที่ฉันสามารถเข้าร่วมได้"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "เล่นเสียงตรา"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17124,9 +18011,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "แอดมิน"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "แอพทั้งหมด"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "คำสั่ง"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17319,6 +18214,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "ไม่พบไอเทมที่ตรงกับเงื่อนไข"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "ค้นหาไอเทม..."
@@ -17326,6 +18225,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "กุญแจลับ"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "ช่องที่ใช้: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17415,15 +18322,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "ระดับของคุณต่ำเกินไปสำหรับไอเท็มนี้",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "Your level is too low for this item"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "เลเวลไม่ถึง ใส่ไม่ได้ ไอเทมนี้ต้องเลเวล ${level}",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "Your level is too low for this item, this item requires level ${level} to equip",
 				"vars": [
 					"level"
 				]
@@ -17662,6 +18573,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "กดค้างไว้เพื่อมัลติเลือก"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "เลือกแล้ว ${count} รายการ",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17674,6 +18592,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "ศัตรูใกล้เคียง"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "You can long press the back button to go back to city to visit various shops and features"
 			}
 		},
 		"login": {
@@ -18525,6 +19449,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "close"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18644,6 +19574,16 @@
 					"trans": "แสดงข้อความแชทต้นฉบับ"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "แสดงคำแปลเป็นภาษาอังกฤษใต้ข้อความแชทของคุณเอง"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "แสดงการแปลข้อความของฉัน"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "โซนอันตราย"
@@ -18731,12 +19671,18 @@
 				"trans": "ช่วยเหลือการแปลภาษาในเกม"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "แพคภาษานี้เป็นโอเพนซอร์ส ข้อความอาจจะไม่ถูกแปลโดยสมบูรณ์ และสามารถมีข้อผิดพลาดได้บ้าง (รวมถึงแปลงงๆ บ้าง ) โปรดเข้ามาแก้ไขและมีส่วนร่วมได้ที่ Github ของพวกเรา"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "คำแปลจากชุมชนนี้อาจไม่ครบถ้วนหรือมีข้อผิดพลาด"
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "ภาษา"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "การแปลโดยชุมชน"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -18846,10 +19792,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "รับการแจ้งเตือนบัฟระดับโลก"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "แอปจะเริ่มต้มใหม่หลังจากบันทึก"
-			},
 			"save": {
 				"eng": "save",
 				"trans": "บันทึก"
@@ -18866,10 +19808,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "ต่อสู้"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "ทดลอง"
 				},
 				"general": {
 					"eng": "General",
@@ -18899,8 +19837,8 @@
 					"trans": "ปกติ"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "เล็ก"
+					"eng": "Small",
+					"trans": "Small"
 				},
 				"tiny": {
 					"eng": "Tiny",

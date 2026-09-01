@@ -41,10 +41,6 @@
 				"eventName"
 			]
 		},
-		"bonusUnits": {
-			"eng": "Bonus Units",
-			"trans": "보너스 유닛"
-		},
 		"currency": {
 			"paypalExclusive": {
 				"eng": "PayPal Exclusive!",
@@ -61,15 +57,25 @@
 				}
 			}
 		},
+		"payalBanner": {
+			"paypalWebsiteCopyInstruction": {
+				"eng": "Tap to copy",
+				"trans": "탭하여 복사"
+			},
+			"title": {
+				"eng": "Free Bonus Units",
+				"trans": "무료 보너스 유닛"
+			}
+		},
 		"paypal": {
 			"paypalBonus": {
 				"eng": "You will receive additional 10% more Units with paypal purchase",
 				"trans": "페이팔 결제시 10% 더 많은 유닛을 추가로 받게됩니다"
 			}
 		},
-		"paypalBonusDescription": {
-			"eng": "Extra Units with all PayPal purchases",
-			"trans": "PayPal 결제시 추가 유닛 제공"
+		"paypalWebsiteCopied": {
+			"eng": "URL copied to clipboard.",
+			"trans": "URL이 클립보드에 복사되었습니다."
 		},
 		"purchasing": {
 			"eng": "Purchasing",
@@ -641,6 +647,10 @@
 			"eng": "Delete this note?",
 			"trans": "이 글을 삭제할까요?"
 		},
+		"deleteNoteConfirmTitle": {
+			"eng": "Are you sure?",
+			"trans": "정말 삭제하시겠습니까?"
+		},
 		"error": {
 			"noApartment": {
 				"eng": "You don't have an apartment",
@@ -800,6 +810,26 @@
 		"title": {
 			"eng": "Spooky Character Art Competition!",
 			"trans": "으스스한 캐릭터 아트 경쟁!"
+		}
+	},
+	"bank": {
+		"deposit": {
+			"success": {
+				"eng": "Deposited ${amount} into your bank.",
+				"trans": "은행에 ${amount}를 입금했습니다.",
+				"vars": [
+					"amount"
+				]
+			}
+		},
+		"withdraw": {
+			"success": {
+				"eng": "Withdrew ${amount} from your bank.",
+				"trans": "은행에서 ${amount} 출금을 완료했습니다",
+				"vars": [
+					"amount"
+				]
+			}
 		}
 	},
 	"basicInfo": {
@@ -972,6 +1002,12 @@
 				"percent"
 			]
 		},
+		"fragmentFusion": {
+			"name": {
+				"eng": "Epic Cache Fusion Bundle",
+				"trans": "에픽 캐시 퓨전 번들"
+			}
+		},
 		"free": {
 			"eng": "Free",
 			"trans": "무료"
@@ -985,12 +1021,6 @@
 		"notAvailable": {
 			"eng": "Bundle not available",
 			"trans": "팩 사용 불가"
-		},
-		"rareEquipmentCrate": {
-			"name": {
-				"eng": "Rare Equipment Crate",
-				"trans": "희귀 장비 상자"
-			}
 		},
 		"retro": {
 			"name": {
@@ -1042,6 +1072,13 @@
 	},
 	"caliTrain": {
 		"announcement": {
+			"deployingSoon": {
+				"eng": "Calibration (${percent}%) will be deployed in a few minutes",
+				"trans": "교정 (${percent}%)이 몇 분 내로 배포됩니다",
+				"vars": [
+					"percent"
+				]
+			},
 			"eng": "Calibration ${percent}% has been deployed",
 			"trans": "${percent}%교정이 배포되었습니다",
 			"vars": [
@@ -1348,21 +1385,13 @@
 		}
 	},
 	"christmasPromo": {
-		"chatMessage1": {
-			"eng": "Happy Holidays everyone!",
-			"trans": "즐거운 휴일 되세요, 여러분!"
-		},
 		"desc1": {
-			"eng": "'Tis the season to be jolly! Celebrate Christmas with special rewards and festive events.",
-			"trans": "즐거운 계절입니다! 특별한 보상과 축제 이벤트로 크리스마스를 기념하세요!"
-		},
-		"specialMusic": {
-			"eng": "Enjoy the festive background music during the event!",
-			"trans": "이벤트 동안 축제 분위기의 배경 음악을 즐기세요!"
+			"eng": "It's the most wonderful time of the year again! in Shang-ri-la we are celebrating the winter holiday with a special event!",
+			"trans": "또다시 일 년 중 가장 환상적인 계절이 찾아왔습니다! 샹리라에서는 특별한 이벤트로 겨울 휴일을 축하합니다!"
 		},
 		"title": {
-			"eng": "Christmas Celebration",
-			"trans": "크리스마스 기념 행사"
+			"eng": "Happy Winter Holiday!",
+			"trans": "행복한 윈터홀리데이!"
 		}
 	},
 	"christmasPromoSmall": {
@@ -1786,12 +1815,12 @@
 			"trans": "취소"
 		},
 		"close": {
-			"eng": "TERMINATE",
+			"eng": "Close",
 			"trans": "닫기"
 		},
 		"confirm": {
-			"eng": "Are you sure?",
-			"trans": "확실한가요?"
+			"eng": "Confirm",
+			"trans": "확인"
 		},
 		"delete": {
 			"eng": "Delete",
@@ -2476,24 +2505,25 @@
 				"percent"
 			]
 		},
-		"ownedFrames": {
+		"ownedDonationTierCount": {
 			"eng": "Donation Tier Owned: [${owned}/${total}]",
-			"trans": "보유한 후원 타이틀: [${owned}/${total}]",
+			"trans": "보유한 기부 등급: [${owned}/${total}]",
 			"vars": [
 				"owned",
 				"total"
 			]
 		},
-		"previewMode": {
-			"eng": "Previewing ${tierName} Tier",
-			"trans": "${tierName} 티어 미리보기",
+		"ownedFrames": {
+			"eng": "Owned: [${owned}/${total}]",
+			"trans": "보유: [${owned}/${total}]",
 			"vars": [
-				"tierName"
+				"owned",
+				"total"
 			]
 		},
-		"previewOnProfile": {
-			"eng": "Preview on Profile",
-			"trans": "프로필 미리보기"
+		"previewDonationTier": {
+			"eng": "Preview",
+			"trans": "미리보기"
 		},
 		"previewText": {
 			"eng": "This is how you will look!",
@@ -2853,6 +2883,56 @@
 			]
 		}
 	},
+	"donationPreview": {
+		"chatFrameTab": {
+			"eng": "Chat Frame",
+			"trans": "채팅 프레임"
+		},
+		"incoming": {
+			"eng": "Incoming",
+			"trans": "수신 예정"
+		},
+		"messageDirection": {
+			"eng": "Message direction",
+			"trans": "메시지 방향"
+		},
+		"otherPlayer": {
+			"eng": "Other Player",
+			"trans": "다른 플레이어"
+		},
+		"outgoing": {
+			"eng": "Outgoing",
+			"trans": "보내기"
+		},
+		"playerBanner": {
+			"eng": "Player banner",
+			"trans": "플레이어 배너"
+		},
+		"playerDetailsTab": {
+			"eng": "Player Details",
+			"trans": "플레이어 정보"
+		},
+		"replayAnimation": {
+			"eng": "Replay entry animation",
+			"trans": "등장 애니메이션 다시 재생"
+		},
+		"shortMessage": {
+			"eng": "Short / one line",
+			"trans": "짧게 / 한 줄"
+		},
+		"shortMessageSample": {
+			"eng": "Short preview message.",
+			"trans": "짧은 미리보기 메시지."
+		},
+		"wrappingMessage": {
+			"eng": "Long / wrapping",
+			"trans": "긴 텍스트 / 줄바꿈"
+		},
+		"wrappingMessageSample": {
+			"eng": "This longer preview message checks how the frame handles natural wrapping across multiple lines without forced breaks.",
+			"trans": "이 긴 미리보기 메시지는 프레임이 여러 줄에 걸쳐 강제 줄바꿈 없이 자연스럽게 줄바꿈을 처리하는지 확인합니다."
+		}
+	},
 	"donationType": {
 		"admin": {
 			"eng": "Admin",
@@ -3062,6 +3142,10 @@
 			"eng": "Black Press",
 			"trans": "블랙프레스"
 		},
+		"donation56": {
+			"eng": "Nightbloom",
+			"trans": "야화"
+		},
 		"donation6": {
 			"eng": "Prestige",
 			"trans": "프레스티지"
@@ -3181,6 +3265,10 @@
 			}
 		},
 		"error": {
+			"terminate": {
+				"eng": "TERMINATE",
+				"trans": "종료"
+			},
 			"title": {
 				"eng": "SYSTEM ERROR",
 				"trans": "시스템 오류"
@@ -3201,6 +3289,14 @@
 			}
 		},
 		"gameOver": {
+			"acquiredAssets": {
+				"eng": "ACQUIRED ASSETS",
+				"trans": "획득한 자산"
+			},
+			"dismiss": {
+				"eng": "DISMISS",
+				"trans": "닫기"
+			},
 			"noRewards": {
 				"eng": "NO DATA SECURED",
 				"trans": "아무런 성과가 없습니다."
@@ -3820,8 +3916,17 @@
 			}
 		},
 		"fusionDescription": {
+			"eng": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"trans": "Combine ${amount} ${fragmentName} into 1 random Epic Equipment Cache",
+			"vars": [
+				"amount",
+				"fragmentCount",
+				"fragmentName"
+			]
+		},
+		"fusionTip": {
 			"eng": "Fuse ${amount} Epic Cache Fragments into 1 guaranteed Epic Equipment Cache",
-			"trans": "${amount}개의 ${fragmentName} 융합시 무작위 에픽 장비 캐시 1개 획득 보장",
+			"trans": "${amount}개의 에픽 캐시 조각을 융합하면 에픽 장비 캐시 1개 획득이 확정됩니다",
 			"vars": [
 				"amount"
 			]
@@ -3913,10 +4018,7 @@
 		},
 		"cannotUseItemInStatus": {
 			"eng": "You cannot use this item because there is a status effect that conflicts with it",
-			"trans": "이 아이템과 충돌하는 상태 효과가 있으므로 이 아이템을 사용할 수 없습니다",
-			"vars": [
-				"minutes"
-			]
+			"trans": "이 아이템과 충돌하는 상태 효과가 있으므로 이 아이템을 사용할 수 없습니다"
 		},
 		"itemGlobalCooldown": {
 			"eng": "This item is on global cooldown, you must wait ${seconds} seconds before using this item again",
@@ -3975,6 +4077,46 @@
 			"trans": "이메일을 입력하시면 시스템이 임시 비밀번호 이메일을 보냅니다."
 		}
 	},
+	"fragmentFusionPromo": {
+		"accessDuration": {
+			"eng": "Each token activates global access to Epic Cache Fusion for 5 minutes.",
+			"trans": "토큰 하나당 에픽 캐시 퓨전의 글로벌 접속을 5분간 활성화합니다"
+		},
+		"description": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "장비 교환 접근 토큰 3개를 30% 할인된 가격에 구매하세요."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "주 1회 이용 가능합니다."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "에픽 캐시 퓨전 30% 할인"
+		},
+		"tutorial": {
+			"eng": "What is this? Read the Epic Cache Fusion tutorial.",
+			"trans": "이게 뭐지? 에픽 캐시 퓨전 튜토리얼을 읽어 보세요."
+		},
+		"visitNpc": {
+			"eng": "VISIT NIGHTBLOOM FLORIST",
+			"trans": "나이트블룸 꽃집 방문하기"
+		}
+	},
+	"fragmentFusionPromoSmall": {
+		"loop": {
+			"eng": "Get 3 Equipment Exchange Access Tokens at 30% off.",
+			"trans": "장비 교환 접근 토큰 3개를 30% 할인된 가격에 구매하세요."
+		},
+		"offer": {
+			"eng": "Available once a week.",
+			"trans": "주 1회 이용 가능합니다."
+		},
+		"title": {
+			"eng": "Save 30% on Epic Cache Fusion",
+			"trans": "에픽 캐시 퓨전 30% 할인"
+		}
+	},
 	"fragmentRevelation": {
 		"hud": {
 			"found": {
@@ -4029,9 +4171,23 @@
 				"eng": "CONTINUE",
 				"trans": "계속하기"
 			},
-			"received": {
+			"receivedFragments": {
 				"eng": "FRAGMENTS RECEIVED:",
-				"trans": "조각 획득:"
+				"trans": "수신된 파편:"
+			},
+			"receivedItems": {
+				"eng": "RECEIVED ITEMS:",
+				"trans": "획득한 아이템:"
+			}
+		}
+	},
+	"furnishHub": {
+		"craftKits": {
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to craft",
+					"trans": "제작에 필요한 자원이 부족합니다"
+				}
 			}
 		}
 	},
@@ -4216,8 +4372,8 @@
 				"trans": "유효하지 않은 슬롯 인덱스"
 			},
 			"levelRequired": {
-				"eng": "You need to be level ${level} to use this furniture",
-				"trans": "가구를 이용하려면 ${level} 레벨 이상이어야 합니다",
+				"eng": "You need to be level ${level} to activate this furniture",
+				"trans": "이 가구를 활성화하려면 ${level}레벨 이상이어야 합니다",
 				"vars": [
 					"level"
 				]
@@ -4334,6 +4490,17 @@
 			"eng": "Select Furniture",
 			"trans": "가구 선택"
 		},
+		"setSlot": {
+			"error": {
+				"levelRequired": {
+					"eng": "You need to be level ${level} to use this furniture",
+					"trans": "레벨 ${level}부터 이 가구를 사용할 수 있습니다",
+					"vars": [
+						"level"
+					]
+				}
+			}
+		},
 		"shieldGenerator": {
 			"name": {
 				"eng": "Adaptive Shield Generator",
@@ -4417,6 +4584,16 @@
 					"vars": [
 						"furnitureName"
 					]
+				}
+			},
+			"error": {
+				"insufficientResources": {
+					"eng": "Insufficient resources to trade",
+					"trans": "거래에 필요한 자원이 부족합니다"
+				},
+				"invalidRecipe": {
+					"eng": "Invalid furniture recipe",
+					"trans": "잘못된 가구 레시피"
 				}
 			},
 			"tip": {
@@ -4511,9 +4688,17 @@
 			}
 		},
 		"september": {
+			"displayName": {
+				"eng": "Nightbloom Festival",
+				"trans": "나이트블룸 페스티벌"
+			},
 			"name": {
-				"eng": "September Bonus",
-				"trans": "9월 보너스"
+				"eng": "Nightbloom Festival Bonus",
+				"trans": "나이트블룸 페스티벌 보너스"
+			},
+			"precisionTower": {
+				"eng": "Precision Tower",
+				"trans": "정밀 타워"
 			}
 		},
 		"summer": {
@@ -4558,10 +4743,6 @@
 			"eng": "AFK Farming Drops",
 			"trans": "자동 사냥 보상"
 		},
-		"afkDropsDesc": {
-			"eng": "Bonus items from AFK bot farming:",
-			"trans": "AFK 자동 사냥에서 아이템 추가 드롭:"
-		},
 		"bgm": {
 			"eng": "Special background music plays during the event",
 			"trans": "이벤트 중 특별한 BGM이 재생됩니다"
@@ -4586,10 +4767,6 @@
 			"eng": "Chat Rewards",
 			"trans": "채팅 리워드"
 		},
-		"chatRewardsDesc": {
-			"eng": "Rewards from chatting during the event:",
-			"trans": "이벤트 중 채팅으로 얻을 수 있는 보상입니다"
-		},
 		"chatTitle": {
 			"eng": "Chat Effects",
 			"trans": "채팅 효과"
@@ -4605,10 +4782,6 @@
 		"dungeonDrops": {
 			"eng": "Dungeon Chest Drops",
 			"trans": "던전 상자 보상"
-		},
-		"dungeonDropsDesc": {
-			"eng": "Bonus items from dungeon chests:",
-			"trans": "던전 상자에서 아이템 추가 드롭:"
 		},
 		"earlyContributors": {
 			"eng": "Early contributors receive higher discounts!",
@@ -4637,10 +4810,6 @@
 			"eng": "Monster Drops",
 			"trans": "몬스터 보상"
 		},
-		"monsterDropsDesc": {
-			"eng": "Bonus items from defeating monsters:",
-			"trans": "몬스터를 잡으면 아이템 추가 드롭:"
-		},
 		"partySubtitle": {
 			"eng": "Reduced contribution requirements:",
 			"trans": "모금액 감소:"
@@ -4652,10 +4821,6 @@
 		"scavengingDrops": {
 			"eng": "Scavenging Drops",
 			"trans": "탐색 보상"
-		},
-		"scavengingDropsDesc": {
-			"eng": "Bonus items from scavenging:",
-			"trans": "탐색 아이템 추가 드롭:"
 		},
 		"skipDiscount": {
 			"description": {
@@ -4958,11 +5123,10 @@
 	"iapCurrency": {
 		"currency1": {
 			"description": {
-				"eng": "Receive ${unit} Unit (${bonus} bonus)",
-				"trans": "${unit} 유닛 받기",
+				"eng": "Receive ${unit} Unit",
+				"trans": "유니트 ${unit}개 수취",
 				"vars": [
-					"unit",
-					"bonus"
+					"unit"
 				]
 			},
 			"name": {
@@ -4974,6 +5138,14 @@
 			}
 		},
 		"currency2": {
+			"description": {
+				"eng": "Receive ${unit} Unit (${bonus} bonus)",
+				"trans": "${unit} 유닛 획득 (보너스 ${bonus})",
+				"vars": [
+					"unit",
+					"bonus"
+				]
+			},
 			"name": {
 				"eng": "${unit} Unit",
 				"trans": "${unit} 유닛",
@@ -5159,6 +5331,17 @@
 				}
 			}
 		},
+		"useItem": {
+			"error": {
+				"chatExploitCooldown": {
+					"eng": "Chat exploit has recently been used, chat exploits has an global deployment cooldown of ${minutes} minutes",
+					"trans": "채팅 익스플로잇이 최근에 사용되었습니다. 채팅 익스플로잇의 전역 배포 쿨다운은 ${minutes}분입니다",
+					"vars": [
+						"minutes"
+					]
+				}
+			}
+		},
 		"useItemWithExistingBuffModal": {
 			"confirmText": {
 				"eng": "Use",
@@ -5241,6 +5424,16 @@
 			"name": {
 				"eng": "AI Core Cluster",
 				"trans": "[부품] AI 코어 클러스터"
+			}
+		},
+		"alignmentAccessShard": {
+			"description": {
+				"eng": "A Nightbloom access shard required to initialize one Precision Tower run. Found by deploying the farm bot or opening dungeon chests during the Nightbloom Festival.",
+				"trans": "나이트블룸 축제 기간 중 팜봇을 배치하거나 던전 상자를 열면 획득할 수 있는 나이트블룸 액세스 샤드입니다. Precision Tower 런 1회 초기화에 필요합니다."
+			},
+			"name": {
+				"eng": "Nightbloom Access Shard",
+				"trans": "밤꽃 접근 파편"
 			}
 		},
 		"alloyFrame": {
@@ -5524,6 +5717,19 @@
 			"name": {
 				"eng": "Chat exploit transmitter [UwU]",
 				"trans": "채팅 취약점 송신기 [UwU]"
+			}
+		},
+		"chatLotterySkipVoucher": {
+			"description": {
+				"eng": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"trans": "A tradable Chat Lottery reward that automatically applies a ${discountPercent}% discount to any Global Time Skip. It is consumed when used.",
+				"vars": [
+					"discountPercent"
+				]
+			},
+			"name": {
+				"eng": "Chat Lottery Skip Voucher",
+				"trans": "채팅 추첨 스킵 바우처"
 			}
 		},
 		"chocoBerry": {
@@ -6343,6 +6549,30 @@
 				"trans": "[이벤트] 새해 토큰"
 			}
 		},
+		"nightbloomInfusion": {
+			"description": {
+				"eng": "A concentrated floral infusion that increases AFK EXP and BTC gained by ${percent}% for ${minutes} minutes.",
+				"trans": "농축된 꽃 인퓨전은 ${minutes}분간 AFK 경험치와 BTC 획득량을 ${percent}% 증가시킵니다.",
+				"vars": [
+					"percent",
+					"minutes"
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Infusion",
+				"trans": "야화 침출액"
+			}
+		},
+		"nightbloomPetal": {
+			"description": {
+				"eng": "A luminous flower petal found during the September event. Exchange it for items with Vesper at the Nightbloom Florist.",
+				"trans": "9월 이벤트에서 발견된 빛나는 꽃잎입니다. 나이트블룸 화훼점의 베스퍼와 아이템으로 교환할 수 있습니다."
+			},
+			"name": {
+				"eng": "Nightbloom Petal",
+				"trans": "야화 꽃잎"
+			}
+		},
 		"pawCredit": {
 			"description": {
 				"eng": "A credit that can be used to exchange pet items at Neon Paw Sanctuary",
@@ -7080,6 +7310,31 @@
 					"tier"
 				]
 			}
+		},
+		"event": {
+			"chatRewards": {
+				"eng": "Chat rewards",
+				"trans": "채팅 보상"
+			},
+			"dungeonChests": {
+				"eng": "Dungeon chests",
+				"trans": "던전 상자"
+			},
+			"gameRewards": {
+				"eng": "${game} rewards",
+				"trans": "${game} 보상",
+				"vars": [
+					"game"
+				]
+			},
+			"monsterDrops": {
+				"eng": "Monster drops",
+				"trans": "몬스터 드랍"
+			},
+			"scavenging": {
+				"eng": "Scavenging",
+				"trans": "수색"
+			}
 		}
 	},
 	"itemSourceModal": {
@@ -7111,6 +7366,10 @@
 			"eng": "of Bargaining",
 			"trans": "흥정의"
 		},
+		"brutalityArmor": {
+			"eng": "of Brutality",
+			"trans": "잔혹함의"
+		},
 		"criticalChanceArmor": {
 			"eng": "of Crit Chance",
 			"trans": "치명적인"
@@ -7120,8 +7379,8 @@
 			"trans": "치명적인"
 		},
 		"criticalDamageArmor": {
-			"eng": "of Brutality",
-			"trans": "잔혹한"
+			"eng": "of Crit Damage",
+			"trans": "치명타 피해"
 		},
 		"criticalDamageWeapon": {
 			"eng": "of Crit Damage",
@@ -8921,6 +9180,18 @@
 			}
 		},
 		"select": {
+			"alreadyHasHandler": {
+				"eng": "You already have a Handler.",
+				"trans": "이미 핸들러가 배정되어 있습니다."
+			},
+			"closed": {
+				"eng": "Your mentorship is already closed.",
+				"trans": "해당 멘토링은 이미 종료되었습니다."
+			},
+			"connectedAccount": {
+				"eng": "System detected another account linked by device history at any time or recent IP activity, so this account cannot select a Handler.",
+				"trans": "시스템이 과거 기기 사용 이력 또는 최근 IP 활동으로 다른 계정이 연결된 것을 감지하여 이 계정에서는 핸들러를 선택할 수 없습니다"
+			},
 			"handlerMail": {
 				"eng": "${runnerName} chose you as their Handler. Their mentorship will complete if they reach level ${completionLevel} and pass system verification.",
 				"trans": "${runnerName}(이)가 담당자로 당신을 선택했습니다. 멘토링은 해당 러너의 레벨 ${completionLevel} 달성 및 시스템 검증 통과 시 완료됩니다.",
@@ -8932,6 +9203,17 @@
 			"ineligible": {
 				"eng": "This Handler selection is not eligible.",
 				"trans": "현재 선택한 담당자는 조건을 충족하지 않습니다."
+			"handlerNotFound": {
+				"eng": "Selected Handler could not be found.",
+				"trans": "선택한 핸들러를 찾을 수 없습니다."
+			},
+			"runnerAccountAgeIneligible": {
+				"eng": "Your account is no longer eligible to join mentorship.",
+				"trans": "현재 계정은 멘토링 가입 자격이 없습니다."
+			},
+			"runnerLevelIneligible": {
+				"eng": "Your level is not eligible for Handler selection.",
+				"trans": "현재 레벨로는 핸들러를 선택할 수 없습니다."
 			}
 		}
 	},
@@ -10862,6 +11144,40 @@
 			"trans": "새해 이벤트!"
 		}
 	},
+	"nightbloomEventPromo": {
+		"content": {
+			"label": {
+				"eng": "Event Content",
+				"trans": "이벤트 콘텐츠"
+			}
+		},
+		"description": {
+			"eng": "Raise the Precision Tower, gather Nightbloom Petals, and trade with Vesper.",
+			"trans": "정밀 타워를 세우고 나이트블룸 꽃잎을 모아 베스퍼와 거래하세요"
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9월 이벤트"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "나이트블룸 페스티벌"
+		}
+	},
+	"nightbloomEventPromoSmall": {
+		"description": {
+			"eng": "Precision Tower. Petals. Vesper.",
+			"trans": "정밀 타워. 꽃잎. 베스퍼."
+		},
+		"eyebrow": {
+			"eng": "September Event",
+			"trans": "9월 이벤트"
+		},
+		"title": {
+			"eng": "Nightbloom Festival",
+			"trans": "나이트블룸 페스티벌"
+		}
+	},
 	"notificationModal": {
 		"cancel": {
 			"eng": "Cancel",
@@ -11344,6 +11660,28 @@
 			"npcName": {
 				"eng": "Fireworks Technician",
 				"trans": "폭죽 장인"
+			}
+		},
+		"nightbloom": {
+			"defaultLines": {
+				"eng": [
+					"Nightblooms are delicate. The systems keeping them alive are not.",
+					"Bring me Nightbloom Petals. I'll trade you something worth carrying.",
+					"Precision Tower is online. Stack clean, and don't chase a bad placement."
+				],
+				"trans": [
+					"나이트블룸은 섬세하다. 생명 유지 시스템은 그렇지 않다.",
+					"나이트블룸 꽃잎을 가져와. 값진 것을 바꿔주겠다.",
+					"정밀 타워가 가동 중입니다. 스택은 깔끔하게 유지하고, 잘못된 배치에 매달리지 마세요."
+				]
+			},
+			"name": {
+				"eng": "Nightbloom Florist",
+				"trans": "나이트블룸 꽃집"
+			},
+			"npcName": {
+				"eng": "Vesper",
+				"trans": "베스퍼"
 			}
 		},
 		"party": {
@@ -11902,6 +12240,10 @@
 				"eng": "Pet adoption is on cooldown",
 				"trans": "애완동물 입양은 쿨타임 중입니다"
 			},
+			"noApartment": {
+				"eng": "An apartment is required to adopt a pet",
+				"trans": "반려동물 입양에는 아파트가 필요합니다"
+			},
 			"noBuff": {
 				"eng": "Buff is not activated",
 				"trans": "버프가 비활성화 상태입니다"
@@ -12015,6 +12357,10 @@
 				"item"
 			]
 		},
+		"noName": {
+			"eng": "Unnamed",
+			"trans": "무명"
+		},
 		"noStatus": {
 			"eng": "healthy",
 			"trans": "건강함"
@@ -12083,6 +12429,10 @@
 	},
 	"petReviveModal": {
 		"activateButton": {
+			"buttonText": {
+				"eng": "Activate",
+				"trans": "활성화"
+			},
 			"confirmModal": {
 				"message": {
 					"eng": "Activate a global revive window? Any player whose pet needs revival can revive one pet while it is active.",
@@ -12102,8 +12452,8 @@
 				"trans": "애완동물 부활을 먼저 활성화해야 합니다"
 			},
 			"title": {
-				"eng": "Activate",
-				"trans": "활성화"
+				"eng": "Activate pet revive",
+				"trans": "펫 부활 활성화"
 			}
 		},
 		"reviveButton": {
@@ -12194,8 +12544,8 @@
 		},
 		"error": {
 			"cantPerformAction": {
-				"eng": "You can't perform this action during party buff",
-				"trans": "지금은 작업을 수행 할 수 없습니다"
+				"eng": "You can't perform this action now",
+				"trans": "현재 이 동작은 수행할 수 없습니다"
 			},
 			"deleteAccountTooEarly": {
 				"eng": "You can't delete this account now, please wait a few days",
@@ -12272,6 +12622,14 @@
 			"mail": {
 				"eng": "Thank you for completing the survey, the rewards have been sent to your item inbox, you can access the inbox from the inventory tab",
 				"trans": "설문 조사를 완료해 주셔서 감사합니다. 보상은 우편함으로 전송되었습니다. 인벤토리 탭에서 우편함에 접근할 수 있습니다."
+			}
+		},
+		"rewardAction": {
+			"error": {
+				"partyBuffActive": {
+					"eng": "You can't perform this action during party buff",
+					"trans": "파티 버프가 활성화된 상태에서는 이 작업을 수행할 수 없습니다"
+				}
 			}
 		}
 	},
@@ -12603,6 +12961,301 @@
 			"vars": [
 				"action"
 			]
+		}
+	},
+	"precisionTower": {
+		"button": {
+			"subtitle": {
+				"eng": "Alignment Protocol",
+				"trans": "정렬 프로토콜"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "정밀 타워"
+			}
+		},
+		"entry": {
+			"eventEnded": {
+				"eng": "The September event is not active.",
+				"trans": "9월 이벤트는 현재 진행되지 않습니다."
+			}
+		},
+		"error": {
+			"message": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "종료 후 다른 샤드 사용 전 인벤토리를 확인하세요."
+			},
+			"noRetry": {
+				"eng": "Do not retry until run status is verified",
+				"trans": "실행 상태가 확인될 때까지 재시도하지 마세요"
+			},
+			"title": {
+				"eng": "TOWER SYSTEM OFFLINE",
+				"trans": "타워 시스템 오프라인"
+			}
+		},
+		"exit": {
+			"eng": "Exit",
+			"trans": "나가기"
+		},
+		"feedback": {
+			"perfect": {
+				"eng": "PERFECT",
+				"trans": "퍼펙트"
+			},
+			"restore": {
+				"eng": "STRUCTURE RESTORED",
+				"trans": "구조 복구 완료"
+			},
+			"tier": {
+				"eng": "TIER ${tier}",
+				"trans": "티어 ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"tierRestore": {
+				"eng": "TIER ${tier} · STRUCTURE RESTORED",
+				"trans": "티어 ${tier} · 구조 복구됨",
+				"vars": [
+					"tier"
+				]
+			}
+		},
+		"finish": {
+			"eng": "Return to Event",
+			"trans": "이벤트로 돌아가기"
+		},
+		"gameOver": {
+			"subtitle": {
+				"eng": "No reward tier secured. Shard consumed.",
+				"trans": "보상 등급 미확보. 샤드 소모."
+			},
+			"title": {
+				"eng": "ALIGNMENT LOST",
+				"trans": "정렬 실패"
+			}
+		},
+		"hud": {
+			"height": {
+				"eng": "HEIGHT",
+				"trans": "높이"
+			},
+			"maxTier": {
+				"eng": "MAX",
+				"trans": "최대"
+			},
+			"nextTier": {
+				"eng": "NEXT ${height}",
+				"trans": "다음 ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"restoreProgress": {
+				"eng": "RESTORE ${progress}/${required}",
+				"trans": "복구 ${progress}/${required}",
+				"vars": [
+					"progress",
+					"required"
+				]
+			},
+			"tier": {
+				"eng": "TIER ${tier}/${tierCount}",
+				"trans": "단계 ${tier}/${tierCount}",
+				"vars": [
+					"tier",
+					"tierCount"
+				]
+			},
+			"title": {
+				"eng": "PRECISION TOWER",
+				"trans": "프리시전 타워"
+			}
+		},
+		"instruction": {
+			"place": {
+				"eng": "TAP ANYWHERE TO PLACE",
+				"trans": "어디든 탭하여 배치하세요"
+			}
+		},
+		"intro": {
+			"available": {
+				"eng": "AVAILABLE",
+				"trans": "사용 가능"
+			},
+			"briefing": {
+				"eng": "ALIGNMENT PROTOCOL",
+				"trans": "정렬 프로토콜"
+			},
+			"closed": {
+				"eng": "EVENT CLOSED",
+				"trans": "이벤트 종료"
+			},
+			"consumesShard": {
+				"eng": "CONSUMES 1 SHARD",
+				"trans": "샤드 1개 소모"
+			},
+			"cutTitle": {
+				"eng": "Cut",
+				"trans": "컷"
+			},
+			"entryItem": {
+				"eng": "ENTRY SHARD",
+				"trans": "기록 샤드"
+			},
+			"event": {
+				"eng": "September Event",
+				"trans": "9월 이벤트"
+			},
+			"inactive": {
+				"eng": "September event inactive",
+				"trans": "9월 이벤트 비활성"
+			},
+			"needShard": {
+				"eng": "NEED SHARD",
+				"trans": "파편이 필요합니다"
+			},
+			"offline": {
+				"eng": "TOWER OFFLINE",
+				"trans": "타워 오프라인"
+			},
+			"placeTitle": {
+				"eng": "Place",
+				"trans": "장소"
+			},
+			"restoreTitle": {
+				"eng": "Restore",
+				"trans": "복구"
+			},
+			"rule1": {
+				"eng": "Tap when the moving slab overlaps the tower.",
+				"trans": "움직이는 슬래브가 탑과 겹칠 때 탭하세요"
+			},
+			"rule2": {
+				"eng": "Unsupported overhang is cut away, permanently shrinking later targets.",
+				"trans": "지지대 없는 돌출부는 잘리며, 이후 대상은 영구적으로 축소됩니다."
+			},
+			"rule3": {
+				"eng": "Every ${count} consecutive perfect placements restores some lost surface.",
+				"trans": "완벽한 배치를 ${count}회 연속 달성하면 소실된 표면의 일부를 회복합니다.",
+				"vars": [
+					"count"
+				]
+			},
+			"rule4": {
+				"eng": "Reward tiers unlock at heights ${heights}.",
+				"trans": "보상 단계가 ${heights} 높이에 도달하면 잠금 해제됩니다.",
+				"vars": [
+					"heights"
+				]
+			},
+			"rule5": {
+				"eng": "Missing the tower or leaving too little surface ends the run and submits the highest tier reached.",
+				"trans": "타워를 놓치거나 표면을 너무 적게 남기면 도전이 종료되고 도달한 최고 티어가 제출됩니다"
+			},
+			"shardRequired": {
+				"eng": "1 SHARD REQUIRED",
+				"trans": "파편 1개 필요"
+			},
+			"start": {
+				"eng": "START TOWER",
+				"trans": "타워 시작"
+			},
+			"title": {
+				"eng": "Precision Tower",
+				"trans": "정밀 타워"
+			}
+		},
+		"loading": {
+			"eng": "INITIALIZING TOWER",
+			"trans": "타워 초기화 중"
+		},
+		"playfield": {
+			"label": {
+				"eng": "Precision Tower playfield",
+				"trans": "정밀 타워 플레이필드"
+			}
+		},
+		"results": {
+			"completeTitle": {
+				"eng": "TOWER SECURED",
+				"trans": "타워 확보 완료"
+			},
+			"rewards": {
+				"eng": "Tower Rewards",
+				"trans": "타워 보상"
+			},
+			"subtitle": {
+				"eng": "Tier ${tier} confirmed at height ${height}.",
+				"trans": "높이 ${height}에서 티어 ${tier} 확정 완료.",
+				"vars": [
+					"tier",
+					"height"
+				]
+			},
+			"title": {
+				"eng": "REWARD TIER SECURED",
+				"trans": "보상 등급 확보"
+			}
+		},
+		"runtimeError": {
+			"subtitle": {
+				"eng": "The 3D renderer stopped before the run could be submitted.",
+				"trans": "3D 렌더러가 실행을 제출하기 전에 중단되었습니다"
+			},
+			"title": {
+				"eng": "RENDERER OFFLINE",
+				"trans": "렌더러 오프라인"
+			}
+		},
+		"stats": {
+			"height": {
+				"eng": "Height",
+				"trans": "높이"
+			},
+			"perfect": {
+				"eng": "Perfect",
+				"trans": "퍼펙트"
+			},
+			"streak": {
+				"eng": "Best Streak",
+				"trans": "최고 연속"
+			}
+		},
+		"submissionError": {
+			"subtitle": {
+				"eng": "Exit and verify your inventory before using another shard.",
+				"trans": "종료 후 다른 샤드 사용 전 인벤토리를 확인하세요."
+			},
+			"title": {
+				"eng": "SUBMISSION UNKNOWN",
+				"trans": "제출 상태 알 수 없음"
+			}
+		},
+		"submitting": {
+			"height": {
+				"eng": "Height ${height}",
+				"trans": "높이 ${height}",
+				"vars": [
+					"height"
+				]
+			},
+			"subtitle": {
+				"eng": "Submitting the highest tier reached. Do not close.",
+				"trans": "도달한 최고 티어를 제출 중입니다. 닫지 마세요."
+			},
+			"tier": {
+				"eng": "Tier ${tier}",
+				"trans": "티어 ${tier}",
+				"vars": [
+					"tier"
+				]
+			},
+			"title": {
+				"eng": "SECURING TOWER DATA",
+				"trans": "타워 데이터 보호 중"
+			}
 		}
 	},
 	"priceTag": {
@@ -13744,6 +14397,10 @@
 					"amount"
 				]
 			}
+		},
+		"retryConnection": {
+			"eng": "RETRY CONNECTION",
+			"trans": "연결 재시도"
 		},
 		"row": {
 			"ownedOnly": {
@@ -15262,8 +15919,12 @@
 			"trans": "교정 정확도 (전설)"
 		},
 		"upgradeChance4": {
+			"eng": "Calibration Precision (Epic)",
+			"trans": "교정 정확도 (에픽)"
+		},
+		"upgradeChance5": {
 			"eng": "Calibration Precision (Prestige)",
-			"trans": "교정 정확도 (프레스티지)"
+			"trans": "교정 정밀도(프레스티지)"
 		},
 		"upgradeNoBreak": {
 			"eng": "Calibration Safety Nano Bot",
@@ -15968,8 +16629,16 @@
 			"trans": "기술자는 던전에서 상자를 열 때 낮은 확률로 생성됩니다. 그들은 더 높은 확률의 에픽 아이템을 포함한 더욱 좋은 노획물을 남깁니다."
 		},
 		"desc2": {
+			"eng": "Gang dungeon will have chance to spawn a gang quest, involving killing enemies of specific npc gangs",
+			"trans": "갱 던전에서는 특정 NPC 갱의 적을 처치하는 갱 퀘스트가 확률적으로 발생한다"
+		},
+		"desc3": {
+			"eng": "Added Dungeon token, you can use it to exchange items from Weapon Smith NPC, you can acquire this item from Techno Thief and Gang Quests",
+			"trans": "던전 토큰이 추가되었습니다 이 토큰은 무기 대장장이 NPC에게서 아이템을 교환하는 데 사용할 수 있으며 테크노 도둑과 갱 퀘스트에서 획득할 수 있습니다"
+		},
+		"desc4": {
 			"eng": "Two new donator frames added",
-			"trans": "새로운 후원자 프레임 두개 추가"
+			"trans": "신규 후원자 프레임 2종 추가됨"
 		},
 		"title": {
 			"eng": "Anniversary Update!",
@@ -16079,6 +16748,25 @@
 		}
 	},
 	"trade": {
+		"completion": {
+			"error": {
+				"otherPlayerNotEnoughSpace": {
+					"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
+					"trans": "${playerName}의 인벤토리에 ${itemName}을 위한 공간이 부족하여 거래를 완료할 수 없습니다.",
+					"vars": [
+						"itemName",
+						"playerName"
+					]
+				},
+				"youNotEnoughSpace": {
+					"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
+					"trans": "인베토리 공간이 부족하여 ${itemName}의 거래를 완료할 수 없습니다",
+					"vars": [
+						"itemName"
+					]
+				}
+			}
+		},
 		"error": {
 			"cantStartTradeLimited": {
 				"eng": "You can not start a trade now",
@@ -16126,8 +16814,8 @@
 				]
 			},
 			"otherPlayerNotEnoughSpace": {
-				"eng": "${playerName} doesn't have enough space in their inventory for ${itemName} to complete the trade.",
-				"trans": "${playerName}은 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
+				"eng": "${playerName} does't have enough space in their inventory for ${itemName}",
+				"trans": "${playerName}의 인벤토리에 ${itemName} 수납 용량이 부족합니다",
 				"vars": [
 					"itemName",
 					"playerName"
@@ -16142,7 +16830,7 @@
 				"trans": "이 플레이어에게 거래 초대를 보낼 수 없습니다"
 			},
 			"targetPlayerLimited": {
-				"eng": "You cannot send trade invite to this player",
+				"eng": "Target player cannot participate in trade",
 				"trans": "대상 플레이어는 거래에 참여할 수 없습니다"
 			},
 			"tooFrequentlyInvite": {
@@ -16168,11 +16856,19 @@
 				"trans": "돈이 부족해 거래를 진행할 수 없습니다."
 			},
 			"youNotEnoughSpace": {
-				"eng": "You don't have enough space in your inventory for ${itemName} to complete the trade.",
-				"trans": "당신은 인벤토리에 ${itemName}을(를) 위한 공간이 부족해서 거래를 완료할 수 없습니다.",
+				"eng": "You don't have enough space in your inventory for ${itemName}",
+				"trans": "인벤토리의 ${itemName} 저장 공간이 부족합니다",
 				"vars": [
 					"itemName"
 				]
+			}
+		},
+		"invite": {
+			"error": {
+				"associatedPlayer": {
+					"eng": "You cannot send trade invite to this player",
+					"trans": "이 플레이어에게는 거래 초대를 보낼 수 없습니다"
+				}
 			}
 		},
 		"leaveButton": {
@@ -16379,100 +17075,284 @@
 			"continueWithGoogle": {
 				"eng": "Continue with Google",
 				"trans": "구글로 계속하기"
+			},
+			"googleLoginOldPluginError": {
+				"eng": "Google login failed. please update the app to the latest version.",
+				"trans": "Google 로그인에 실패했습니다. 앱을 최신 버전으로 업데이트해 주세요."
 			}
 		},
 		"backToPreviusLoc": {
 			"longPressBackToCity": {
-				"eng": "You can long press the back button to go back to city to visit various shops and features",
-				"trans": "길게 눌러 도시로 돌아가기"
+				"eng": "Long press to go back to city",
+				"trans": "길게 눌러 도시로 복귀하기"
 			}
 		},
 		"bank": {
-			"balance": {
-				"eng": "balance",
-				"trans": "잔고"
+			"account": {
+				"eng": "Bank",
+				"trans": "은행"
+			},
+			"atm": {
+				"advert2Advertiser": {
+					"eng": "Arasaka continuity program",
+					"trans": "아라사카 연속성 프로그램"
+				},
+				"advert2Body": {
+					"eng": "Identity. Assets. Access. Preserved across every tomorrow.",
+					"trans": "신원. 자산. 액세스. 모든 내일의 변함없는 보호."
+				},
+				"advert2Headline": {
+					"eng": "Outlive uncertainty.",
+					"trans": "불확실성보다 오래 살아남아라"
+				},
+				"advertBody": {
+					"eng": "Private assets. Continuous access. Total control.",
+					"trans": "개인 자산. 상시 접근. 완전한 통제."
+				},
+				"advertHeadline": {
+					"eng": "Own tomorrow. Secure it today.",
+					"trans": "내일의 주인공이 되세요 오늘 확보하세요"
+				},
+				"advertiser": {
+					"eng": "Arasaka secure banking",
+					"trans": "아라사카 보안 뱅킹"
+				},
+				"amount": {
+					"eng": "Amount",
+					"trans": "금액"
+				},
+				"available": {
+					"eng": "${account}: ${amount} ${currency}",
+					"trans": "${account}: ${amount} ${currency}",
+					"vars": [
+						"account",
+						"amount",
+						"currency"
+					]
+				},
+				"depositDescription": {
+					"eng": "Move ${currency} from wallet to bank",
+					"trans": "${currency}를 지갑에서 은행으로 이동합니다",
+					"vars": [
+						"currency"
+					]
+				},
+				"depositDirection": {
+					"eng": "Wallet → Bank",
+					"trans": "지갑 → 은행"
+				},
+				"emptyBank": {
+					"eng": "Bank balance is empty",
+					"trans": "잔고가 없습니다"
+				},
+				"entryDescription": {
+					"eng": "Deposit or withdraw ${currency} · Bank: ${balance}",
+					"trans": "${currency} 입출금 · 은행 잔액: ${balance}",
+					"vars": [
+						"currency",
+						"balance"
+					]
+				},
+				"exceedsBankBalance": {
+					"eng": "Amount exceeds your bank balance.",
+					"trans": "입력한 금액이 은행 잔액보다 많습니다."
+				},
+				"exceedsWalletBalance": {
+					"eng": "Amount exceeds your wallet balance.",
+					"trans": "입력한 금액이 지갑 잔액을 초과합니다"
+				},
+				"invalidAmount": {
+					"eng": "Enter a valid whole amount.",
+					"trans": "올바른 정수 금액을 입력하세요."
+				},
+				"max": {
+					"eng": "Max",
+					"trans": "최대"
+				},
+				"network": {
+					"eng": "Arasaka financial // ATM-06",
+					"trans": "아라사카 금융 // 현금자동입출금기-06"
+				},
+				"online": {
+					"eng": "Online",
+					"trans": "온라인"
+				},
+				"select": {
+					"eng": "Select",
+					"trans": "선택"
+				},
+				"selectTransaction": {
+					"eng": "Select transaction",
+					"trans": "거래 선택"
+				},
+				"showAdvert": {
+					"eng": "Show advertisement ${number}",
+					"trans": "광고 ${number} 보기",
+					"vars": [
+						"number"
+					]
+				},
+				"title": {
+					"eng": "ATM",
+					"trans": "ATM"
+				},
+				"transactionRequest": {
+					"eng": "Transaction request",
+					"trans": "거래 요청"
+				},
+				"withdrawDescription": {
+					"eng": "Move ${currency} from bank to wallet",
+					"trans": "은행에서 ${currency}를 지갑으로 이동합니다",
+					"vars": [
+						"currency"
+					]
+				},
+				"withdrawDirection": {
+					"eng": "Bank → Wallet",
+					"trans": "은행 → 지갑"
+				}
 			},
 			"deposit": {
 				"eng": "Deposit",
 				"trans": "입금"
 			},
-			"depositDesc": {
-				"eng": "Put Bitcoins into bank",
-				"trans": "은행에 비트코인 입금하기"
-			},
-			"itemLocked": {
-				"eng": "This item is locked and can not be stored.",
-				"trans": "이 항목은 잠겨져 보관할 수 없습니다."
-			},
 			"modal": {
-				"selectDeposit": {
-					"eng": "How much would you like to deposit?",
-					"trans": "얼마를 입금하시겠습니까?"
+				"selectRetrieveAmount": {
+					"eng": "Retrieve ${itemName}",
+					"trans": "${itemName} 인출",
+					"vars": [
+						"itemName"
+					]
 				},
-				"selectDepositItem": {
-					"eng": "How many would you like to put in the vault?",
-					"trans": "보관할 수량을 입력해주세요."
-				},
-				"selectWithdraw": {
-					"eng": "How much would you like to withdraw?",
-					"trans": "얼마를 출금하시겠습니까?"
-				},
-				"selectWithdrawItem": {
-					"eng": "How many would you like to withdraw from the bank?",
-					"trans": "회수할 수량을 입력해주세요."
+				"selectStoreAmount": {
+					"eng": "Store ${itemName}",
+					"trans": "${itemName} 보관",
+					"vars": [
+						"itemName"
+					]
 				}
-			},
-			"noBalance": {
-				"eng": "You can't withdraw when you have no balance.",
-				"trans": "통장에 잔고가 없습니다."
-			},
-			"putItemToVault": {
-				"eng": "Deposit Item",
-				"trans": "아이템 보관"
-			},
-			"putItemToVaultDesc": {
-				"eng": "Put items into your vault",
-				"trans": "금고에 물건 보관하기"
-			},
-			"takeItemFromVault": {
-				"eng": "Withdraw Item",
-				"trans": "아이템 회수"
-			},
-			"takeItemFromVaultDesc": {
-				"eng": "Take items out from your vault",
-				"trans": "금고에서 물건 회수하기"
-			},
-			"upgradeSlot": {
-				"eng": "UPGRADE TO ${upgradeToSlot} SLOTS",
-				"trans": "슬롯을 ${upgradeToSlot}개로 업그레이드",
-				"vars": [
-					"upgradeToSlot"
-				]
-			},
-			"upgradeSlotDesc": {
-				"eng": "Increase the max amount of items you can store in vault to ${upgradeToSlot}",
-				"trans": "금고에 저장 가능한 아이템들의 수량을 ${upgradeToSlot}개로 늘립니다",
-				"vars": [
-					"upgradeToSlot"
-				]
 			},
 			"upgradeVaultModal": {
 				"confirm": {
 					"eng": "Upgrade",
 					"trans": "업그레이드"
 				},
+				"description": {
+					"eng": "Expand ${current} → ${next} slots for ${price} ${currency} from your wallet.",
+					"trans": "지갑에서 ${price} ${currency}를 사용해 슬롯을 ${current}개 → ${next}개로 확장합니다.",
+					"vars": [
+						"current",
+						"next",
+						"price",
+						"currency"
+					]
+				},
 				"title": {
-					"eng": "Upgrade Vault",
+					"eng": "Upgrade vault?",
+					"trans": "보안 금고 업그레이드할까요?"
+				}
+			},
+			"vault": {
+				"add": {
+					"eng": "Add",
+					"trans": "추가"
+				},
+				"addItems": {
+					"eng": "Add to vault",
+					"trans": "금고에 추가"
+				},
+				"capacity": {
+					"eng": "${used} / ${size} slots",
+					"trans": "${used} / ${size} 슬롯",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"empty": {
+					"eng": "Vault empty",
+					"trans": "금고가 비어 있습니다"
+				},
+				"emptyHint": {
+					"eng": "Use + to add items",
+					"trans": "아이템을 추가하려면 +를 사용하세요"
+				},
+				"entryDescription": {
+					"eng": "${used} / ${size} slots used · Store or retrieve items",
+					"trans": "${used} / ${size} 슬롯 사용 중 · 아이템 보관 또는 인출",
+					"vars": [
+						"used",
+						"size"
+					]
+				},
+				"feePerStack": {
+					"eng": "${price} ${currency} / stack",
+					"trans": "스택당 ${price} ${currency}",
+					"vars": [
+						"price",
+						"currency"
+					]
+				},
+				"insufficientInventoryCapacity": {
+					"eng": "Not enough inventory capacity for this retrieval.",
+					"trans": "이번 수령에 필요한 인벤토리 용량이 부족합니다"
+				},
+				"insufficientStorageFunds": {
+					"eng": "Not enough wallet balance for the storage fee.",
+					"trans": "보관료 지불을 위한 지갑 잔액이 부족합니다"
+				},
+				"inventoryEmpty": {
+					"eng": "Your inventory is empty",
+					"trans": "인벤토리가 비어 있습니다"
+				},
+				"maximumCapacity": {
+					"eng": "Maximum capacity",
+					"trans": "최대 용량"
+				},
+				"noStorageCapacity": {
+					"eng": "No inventory item fits the available vault capacity.",
+					"trans": "금고의 남은 용량에는 어떤 아이템도 들어갈 수 없습니다."
+				},
+				"retrieve": {
+					"eng": "Retrieve",
+					"trans": "인출"
+				},
+				"retrieveDescription": {
+					"eng": "Tap an item to retrieve it. Retrieval is free.",
+					"trans": "항목을 탭하여 인출하세요. 인출은 무료입니다."
+				},
+				"retrieveSelected": {
+					"eng": "Retrieve selected",
+					"trans": "선택한 항목 가져오기"
+				},
+				"retrieveUnavailable": {
+					"eng": "Finish your current action before retrieving items.",
+					"trans": "현재 작업을 완료한 후 아이템을 인출하세요."
+				},
+				"selectedStacksDoNotFit": {
+					"eng": "The selected stacks do not fit. Turn off multi-select to choose a smaller amount.",
+					"trans": "선택한 스택이 들어가지 않습니다. 다중 선택을 해제하고 더 적은 수량을 선택하세요."
+				},
+				"title": {
+					"eng": "Item vault",
+					"trans": "물품 보관함"
+				},
+				"unlockToStore": {
+					"eng": "Unlock an item before storing it.",
+					"trans": "보관하려면 먼저 아이템을 잠금해제하세요"
+				},
+				"upgrade": {
+					"eng": "Upgrade vault",
 					"trans": "금고 업그레이드"
 				}
+			},
+			"wallet": {
+				"eng": "Wallet",
+				"trans": "지갑"
 			},
 			"withdraw": {
 				"eng": "Withdraw",
 				"trans": "출금"
-			},
-			"withdrawDesc": {
-				"eng": "Take Bitcoins out of bank",
-				"trans": "은행에서 비트코인 출금하기"
 			}
 		},
 		"basicInfo": {
@@ -16877,6 +17757,10 @@
 			}
 		},
 		"communityItemLore": {
+			"close": {
+				"eng": "close",
+				"trans": "닫기"
+			},
 			"noLoreButton": {
 				"title": {
 					"eng": "Create Lore",
@@ -17057,6 +17941,12 @@
 				"trans": "참여 가능한 던전만 보여줍니다"
 			}
 		},
+		"emblem": {
+			"playAudio": {
+				"eng": "Play emblem audio",
+				"trans": "엠블럼 사운드 재생"
+			}
+		},
 		"equipment": {
 			"equipped": {
 				"eng": "Equipped",
@@ -17208,9 +18098,17 @@
 			}
 		},
 		"fab": {
+			"admin": {
+				"eng": "Admin",
+				"trans": "관리자"
+			},
 			"apps": {
 				"eng": "All Apps",
 				"trans": "모든 앱들"
+			},
+			"command": {
+				"eng": "Command",
+				"trans": "명령"
 			},
 			"dungeonList": {
 				"eng": "Dungeon List",
@@ -17403,6 +18301,10 @@
 					"count"
 				]
 			},
+			"noMatches": {
+				"eng": "No matching items",
+				"trans": "일치하는 아이템이 없습니다"
+			},
 			"search": {
 				"eng": "Search items...",
 				"trans": "아이템 검색..."
@@ -17410,6 +18312,14 @@
 			"secretKeys": {
 				"eng": "secret keys",
 				"trans": "암호 키"
+			},
+			"slotsUsed": {
+				"eng": "Slots: ${used}/${total}",
+				"trans": "슬롯: ${used}/${total}",
+				"vars": [
+					"used",
+					"total"
+				]
 			},
 			"sort": {
 				"active": {
@@ -17499,15 +18409,19 @@
 				]
 			},
 			"cantEquip": {
-				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
-				"trans": "이 아이템을 사용하기에는 레벨이 너무 낮습니다. 해당 아이템을 착용하기 위해선 ${level}레벨 이상이어야 합니다.",
-				"vars": [
-					"level"
-				]
+				"eng": "Your level is too low for this item",
+				"trans": "현재 레벨로는 장착할 수 없습니다"
 			},
 			"cantEquip2": {
 				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
 				"trans": "레벨이 낮아서 이 아이템은 착용할 수 없습니다. 착용하려면 레벨 ${level}이 되어야 합니다",
+				"vars": [
+					"level"
+				]
+			},
+			"cantEquipLevelRequirement": {
+				"eng": "Your level is too low for this item, this item requires level ${level} to equip",
+				"trans": "현재 레벨이 부족합니다. 이 아이템은 레벨 ${level} 이상에서 장착할 수 있습니다",
 				"vars": [
 					"level"
 				]
@@ -17746,6 +18660,13 @@
 			"longPressToMultiSelect": {
 				"eng": "Long press to select",
 				"trans": "길게 눌러 여러개를 선택하세요"
+			},
+			"selectedCount": {
+				"eng": "${count} selected",
+				"trans": "${count}개 선택됨",
+				"vars": [
+					"count"
+				]
 			}
 		},
 		"localCombat": {
@@ -17758,6 +18679,12 @@
 					"eng": "Nearby Enemies",
 					"trans": "주변의 적들"
 				}
+			}
+		},
+		"locationDisplay": {
+			"longPressBackToCityTutorial": {
+				"eng": "You can long press the back button to go back to city to visit various shops and features",
+				"trans": "뒤로 가기 버튼을 길게 누르면 도시로 돌아가 다양한 상점과 기능을 이용할 수 있습니다"
 			}
 		},
 		"login": {
@@ -18609,6 +19536,12 @@
 				}
 			}
 		},
+		"randomLore": {
+			"close": {
+				"eng": "close",
+				"trans": "닫기"
+			}
+		},
 		"rangeSelector": {
 			"selectMaxValue": {
 				"title": {
@@ -18728,6 +19661,16 @@
 					"trans": "원본 채팅 보기"
 				}
 			},
+			"chatTranslationShowOwn": {
+				"description": {
+					"eng": "Show the English translation under your own chat messages",
+					"trans": "내 채팅 메시지 아래에 영어 번역을 표시합니다"
+				},
+				"title": {
+					"eng": "Show My Message Translation",
+					"trans": "내 메시지 번역 표시"
+				}
+			},
 			"dangerZone": {
 				"eng": "Danger Zone",
 				"trans": "위험 구역"
@@ -18815,12 +19758,18 @@
 				"trans": "한글화 참여하기"
 			},
 			"langWarning": {
-				"eng": "This language pack is open source and contributed by our players, the text may not be fully translated and could contain mistakes. please feel free to edit and contribute from our Github page",
-				"trans": "이 언어 팩은 오픈 소스라서 게임의 플레이어들이 기여를 해 주었고, 모든 텍스트가 다 번역되어 있지 않을 수 있으며 실수가 있을 수 있습니다. GitHub 페이지에서 편집을 해서 기여해 주시기 바랍니다"
+				"eng": "This community translation may be incomplete or contain mistakes.",
+				"trans": "이 커뮤니티 번역은 불완전하거나 오류가 있을 수 있습니다"
 			},
 			"language": {
 				"eng": "Language",
 				"trans": "언어"
+			},
+			"languageInfo": {
+				"title": {
+					"eng": "Community Translation",
+					"trans": "커뮤니티 번역"
+				}
 			},
 			"mailNotificationSound": {
 				"description": {
@@ -18930,10 +19879,6 @@
 				"eng": "Receive Global Buff Notification",
 				"trans": "글로벌 버프 알림 받기"
 			},
-			"restartRequired": {
-				"eng": "App will self restart after save",
-				"trans": "앱은 저장 후 자동으로 재시작될 것입니다."
-			},
 			"save": {
 				"eng": "save",
 				"trans": "저장하기"
@@ -18950,10 +19895,6 @@
 				"combat": {
 					"eng": "Combat",
 					"trans": "전투"
-				},
-				"experimental": {
-					"eng": "Experimental",
-					"trans": "실험적"
 				},
 				"general": {
 					"eng": "General",
@@ -18983,8 +19924,8 @@
 					"trans": "보통"
 				},
 				"small": {
-					"eng": "Tiny",
-					"trans": "작음"
+					"eng": "Small",
+					"trans": "작게"
 				},
 				"tiny": {
 					"eng": "Tiny",
@@ -19495,7 +20436,7 @@
 			},
 			"sentence": {
 				"eng": "Start a task before logging off to continue gathering resources and leveling up in the background.",
-				"trans": "로그아웃 전 작업을 개시하여 백그라운드 자원 수집 및 레벨업을 지속하십시오."
+				"trans": "로그아웃 전에 작업을 시작하면 백그라운드에서 자원 수집과 레벨업이 이어집니다"
 			}
 		},
 		"animation": {
@@ -19505,23 +20446,23 @@
 			},
 			"autotask": {
 				"eng": "AUTOTASK",
-				"trans": "자동 작업"
+				"trans": "자동 임무"
 			},
 			"buy": {
 				"eng": "EXECUTE: BUY",
-				"trans": "실행: 구매"
+				"trans": "구매 실행"
 			},
 			"chat1": {
 				"eng": "LFG Abandoned Factory, need healer.",
-				"trans": "버려진 공장 파티 모집, 힐러 필요."
+				"trans": "폐공장 파티 모집, 힐러 필요."
 			},
 			"chat2": {
 				"eng": "Inv, I got medkits.",
-				"trans": "인브, 메드킷 있어."
+				"trans": "인브, 메디킷 있어."
 			},
 			"chat3": {
 				"eng": "Global Buff Activated by Kael",
-				"trans": "카엘의 글로벌 버프 발동"
+				"trans": "케일이 글로벌 버프를 활성화했습니다"
 			},
 			"efficiency": {
 				"eng": "Efficiency",
@@ -19533,7 +20474,7 @@
 			},
 			"reverse_engineering": {
 				"eng": "REVERSE_ENGINEERING",
-				"trans": "리버스 엔지니어링"
+				"trans": "역공학"
 			},
 			"system": {
 				"eng": "System:",
@@ -19545,7 +20486,7 @@
 			},
 			"yield_acquired": {
 				"eng": "YIELD ACQUIRED",
-				"trans": "수익 획득"
+				"trans": "산출량 확보"
 			}
 		},
 		"cta": {
@@ -19565,7 +20506,7 @@
 			},
 			"sentence": {
 				"eng": "Every item in the market is crafted and traded by real players like you.",
-				"trans": "시장의 모든 아이템은 당신과 같은 실제 플레이어들이 직접 제작하고 거래합니다."
+				"trans": "마켓의 모든 아이템은 당신과 같은 실제 유저가 제작하고 거래하는 것입니다"
 			}
 		},
 		"error": {
@@ -19585,11 +20526,11 @@
 		"fairness": {
 			"headline": {
 				"eng": "Zero Pay-To-Win",
-				"trans": "P2W 제로"
+				"trans": "페이투윈 제로"
 			},
 			"sentence": {
 				"eng": "All premium buffs are shared globally across the server. When someone supports the game, the entire community benefits and progresses together.",
-				"trans": "모든 프리미엄 버프는 서버 전체에 공유됩니다. 누군가의 후원은 커뮤니티 전체의 혜택과 동반 성장으로 이어집니다."
+				"trans": "모든 프리미엄 버프는 서버 전체에서 공통으로 적용됩니다. 누군가가 게임을 후원하면, 커뮤니티 모두가 함께 혜택을 누리고 성장합니다."
 			}
 		},
 		"loading": {
@@ -19605,7 +20546,7 @@
 		"splash": {
 			"connection": {
 				"eng": "// Connection Established",
-				"trans": "// 연결 확립"
+				"trans": "// 연결 완료"
 			},
 			"sys_init": {
 				"eng": "Sys.Init_Seq.01",
@@ -19613,7 +20554,7 @@
 			},
 			"welcome": {
 				"eng": "Welcome To",
-				"trans": "~에 오신 것을 환영합니다"
+				"trans": "환영합니다"
 			}
 		}
 	}
